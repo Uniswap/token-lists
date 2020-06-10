@@ -1,0 +1,26 @@
+{
+  "name": "My Example List",
+  "keywords": ["abc"],
+  "tags": {
+    "1": {
+      "name": "tag 1",
+      "description": "blah blah"
+    }
+  },
+  "timestamp": 100,
+  "tokens": [
+    {
+      "name": "blah",
+      "address": "0x0000000000000000000000000000000000000000",
+      "chainId": 1,
+      "decimals": 18,
+      "logoUrl": "https://test",
+      "symbol": "abc"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

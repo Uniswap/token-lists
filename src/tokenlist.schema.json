@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://uniswap.org/token-list.schema.json",
+  "title": "Uniswap Token List",
+  "description": "A list of tokens compatible with the Uniswap Interface",
+  "$ref": "#/definitions/TokenList",
+  "definitions": {
+    "Version": {
+      "type": "object",
+      "description": "A version number for a piece of data, useful for change detection",
+      "properties": {
+        "major": {
+          "type": "integer",
+          "description": "The major version of the list. Recommend incrementing major version when tokens are removed.",
+          "minimum": 1
+        },
+        "minor": {
+          "type": "integer",
+          "description": "The minor version of the list. Recommend incrementing minor version when tokens are added.",
+          "minimum": 0
+        },
+        "patch": {
+          "type": "integer",
+          "description": "The patch version of the list. Recommend incrementing for changes to tokens.",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "major",
+        "minor",
+        "patch"
+      ]
+    },
+    "TagDefinition": {
+      "type": "object",
+      "description": "Tag definition",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the tag",
+          "pattern": "^[\\s\\w]+$",
+          "minLength": 1,
+          "maxLength": 10
+        },
+        "description": {
+          "type": "string",
+          "description": "The user-friendly description of the tag",
+          "pattern": "^[\\s\\w\\.]+$",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "name",
+        "description"
+      ]
+    },
+    "TokenInfo": {
+      "type": "object",
+      "description": "Information about a single token",
+      "properties": {
+        "chainId": {
+          "type": "integer",
+          "description": "The chain ID of the chain where this token lives",
+          "minimum": 1
+        },
+        "address": {
+          "type": "string",
+          "description": "The address of the token",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "decimals": {
+          "type": "integer",
+          "description": "How many decimals the token has. Defaults to on-chain data",
+          "minimum": 0,
+          "maximum": 78
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the token. Defaults to on-chain data",
+          "minLength": 1
+        },
+        "symbol": {
+          "type": "string",
+          "description": "The symbol for the token. Defaults to on-chain data",
+          "pattern": "^[a-zA-Z0-9]+$",
+          "minLength": 1,
+          "maxLength": 20
+        },
+        "logoUrl": {
+          "type": "string",
+          "description": "A URL to the token description",
+          "pattern": "^(https|ipfs|ipns)://.+$"
+        }
+      },
+      "required": [
+        "chainId",
+        "address"
+      ]
+    },
+    "TokenList": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the token list",
+          "minLength": 1,
+          "maxLength": 20
+        },
+        "timestamp": {
+          "type": "integer",
+          "description": "The epoch seconds timestamp of the list version"
+        },
+        "version": {
+          "$ref": "#/definitions/Version"
+        },
+        "tokens": {
+          "type": "array",
+          "description": "The list of tokens included in the list",
+          "items": {
+            "$ref": "#/definitions/TokenInfo"
+          },
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "keywords": {
+          "type": "array",
+          "description": "Keywords associated with the contents of the list",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20,
+            "pattern": "^[\\w]+$"
+          },
+          "uniqueItems": true
+        },
+        "tags": {
+          "type": "object",
+          "description": "A mapping of tag identifiers to their name and description.",
+          "propertyNames": {
+            "pattern": "^\\d+$"
+          },
+          "additionalProperties": {
+            "$ref": "#/definitions/TagDefinition"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "timestamp",
+        "version",
+        "tokens"
+      ]
+    }
+  }
+}
