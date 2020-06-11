@@ -1,27 +1,27 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://uniswap.org/token-list.schema.json",
-  "title": "Uniswap Token List",
-  "description": "A list of tokens compatible with the Uniswap Interface",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://uniswap.org/token-lists.schema.json",
+  "title": "Uniswap Token Lists",
+  "description": "Schema for lists of tokens compatible with the Uniswap Interface",
   "$ref": "#/definitions/TokenList",
   "definitions": {
     "Version": {
       "type": "object",
-      "description": "A version number for a piece of data, useful for change detection",
+      "description": "A version number for a piece of data, used in list change detection",
       "properties": {
         "major": {
           "type": "integer",
-          "description": "The major version of the list. Recommend incrementing major version when tokens are removed.",
-          "minimum": 1
+          "description": "The major version of the list. Must be incremented when tokens are removed from the list or token addresses are changed.",
+          "minimum": 0
         },
         "minor": {
           "type": "integer",
-          "description": "The minor version of the list. Recommend incrementing minor version when tokens are added.",
+          "description": "The minor version of the list. Must be incremented when tokens are added to the list.",
           "minimum": 0
         },
         "patch": {
           "type": "integer",
-          "description": "The patch version of the list. Recommend incrementing for changes to tokens.",
+          "description": "The patch version of the list. Must be incremented for any changes to the list.",
           "minimum": 0
         }
       },
@@ -31,9 +31,16 @@
         "patch"
       ]
     },
+    "TagIdentifier": {
+      "type": "string",
+      "description": "The identifier of a tag",
+      "minLength": 1,
+      "maxLength": 10,
+      "pattern": "^[\\w]+$"
+    },
     "TagDefinition": {
       "type": "object",
-      "description": "Tag definition",
+      "description": "Definition of a tag that can be associated with a token",
       "properties": {
         "name": {
           "type": "string",
@@ -44,7 +51,7 @@
         },
         "description": {
           "type": "string",
-          "description": "The user-friendly description of the tag",
+          "description": "A user-friendly description of the tag",
           "pattern": "^[\\s\\w\\.]+$",
           "minLength": 1,
           "maxLength": 200
@@ -57,40 +64,49 @@
     },
     "TokenInfo": {
       "type": "object",
-      "description": "Information about a single token",
+      "description": "Information about a single token on the token list",
       "properties": {
         "chainId": {
           "type": "integer",
-          "description": "The chain ID of the chain where this token lives",
+          "description": "The chain ID of the Ethereum network where this token is deployed",
           "minimum": 1
         },
         "address": {
           "type": "string",
-          "description": "The address of the token",
+          "description": "The address of the token on the given chain ID",
           "pattern": "^0x[a-fA-F0-9]{40}$"
         },
         "decimals": {
           "type": "integer",
-          "description": "How many decimals the token has. Defaults to on-chain data",
+          "description": "The number of decimals for the token balance; if not set, defaults to on-chain data",
           "minimum": 0,
           "maximum": 78
         },
         "name": {
           "type": "string",
-          "description": "The name of the token. Defaults to on-chain data",
-          "minLength": 1
+          "description": "The name of the token; if not set, defaults to on-chain data",
+          "minLength": 1,
+          "pattern": "^[\\s\\w]+$"
         },
         "symbol": {
           "type": "string",
-          "description": "The symbol for the token. Defaults to on-chain data",
+          "description": "The symbol for the token; must be alphanumeric; if not set, defaults to on-chain data",
           "pattern": "^[a-zA-Z0-9]+$",
           "minLength": 1,
           "maxLength": 20
         },
         "logoUrl": {
           "type": "string",
-          "description": "A URL to the token description",
+          "description": "A URL to the token logo asset; if not set, interface will attempt to find a logo based on the address",
           "pattern": "^(https|ipfs|ipns)://.+$"
+        },
+        "tags": {
+          "type": "array",
+          "description": "An array of tag identifiers associated with the token",
+          "items": {
+            "$ref": "#/definitions/TagIdentifier"
+          },
+          "maxLength": 10
         }
       },
       "required": [
@@ -105,11 +121,13 @@
           "type": "string",
           "description": "The name of the token list",
           "minLength": 1,
-          "maxLength": 20
+          "maxLength": 20,
+          "pattern": "^[\\w\\s]+$"
         },
         "timestamp": {
           "type": "integer",
-          "description": "The epoch seconds timestamp of the list version"
+          "description": "The epoch seconds timestamp of the list version; must be after June 11, 2020",
+          "minimum": 1591833600
         },
         "version": {
           "$ref": "#/definitions/Version"
@@ -125,7 +143,7 @@
         },
         "keywords": {
           "type": "array",
-          "description": "Keywords associated with the contents of the list",
+          "description": "Keywords associated with the contents of the list; may be used in list discoverability",
           "items": {
             "type": "string",
             "minLength": 1,
@@ -136,9 +154,9 @@
         },
         "tags": {
           "type": "object",
-          "description": "A mapping of tag identifiers to their name and description.",
+          "description": "A mapping of tag identifiers to their name and description; tag identifier keys are slugs",
           "propertyNames": {
-            "pattern": "^\\d+$"
+            "$ref": "#/definitions/TagIdentifier"
           },
           "additionalProperties": {
             "$ref": "#/definitions/TagDefinition"

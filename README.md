@@ -1,7 +1,11 @@
 # @uniswap/token-lists
 
-This package includes a JSON schema for token lists, and TypeScript for
-validating token lists against the schema.
+This package includes a JSON schema for token lists, and TypeScript utilities for working with token lists.
+
+## Validating token lists
+
+This package does not include token list validation. You can easily do this by including a library such as 
+[ajv](https://ajv.js.org/) to perform the validation against the JSON schema. 
 
 ## Local Development
 

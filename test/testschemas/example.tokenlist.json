@@ -7,7 +7,7 @@
       "description": "blah blah"
     }
   },
-  "timestamp": 100,
+  "timestamp": 1591897594,
   "tokens": [
     {
       "name": "blah",
@@ -19,8 +19,8 @@
     }
   ],
   "version": {
-    "major": 1,
+    "major": 0,
     "minor": 0,
-    "patch": 0
+    "patch": 1
   }
 }

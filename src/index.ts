@@ -1,7 +1,6 @@
-import { TokenList } from 'types';
+import schema from './tokenlist.schema.json';
 
 export * from './types';
+export * from './isVersionUpdate';
 
-export function validateTokenList(list: unknown): list is TokenList {
-  return typeof list === 'object';
-}
+export { schema };
