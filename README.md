@@ -1,5 +1,7 @@
 # @uniswap/token-lists
 
+![.github/workflows/tests.yaml](https://github.com/Uniswap/token-lists/workflows/.github/workflows/tests.yaml/badge.svg)
+
 This package includes a JSON schema for token lists, and TypeScript utilities for working with token lists.
 
 ## Validating token lists
