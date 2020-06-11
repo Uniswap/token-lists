@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`schema checks token address 1`] = `
+Array [
+  Object {
+    "dataPath": ".tokens[0].address",
+    "keyword": "pattern",
+    "message": "should match pattern \\"^0x[a-fA-F0-9]{40}$\\"",
+    "params": Object {
+      "pattern": "^0x[a-fA-F0-9]{40}$",
+    },
+    "schemaPath": "#/properties/address/pattern",
+  },
+]
+`;
+
+exports[`schema checks version 1`] = `
+Array [
+  Object {
+    "dataPath": ".version.patch",
+    "keyword": "minimum",
+    "message": "should be >= 0",
+    "params": Object {
+      "comparison": ">=",
+      "exclusive": false,
+      "limit": 0,
+    },
+    "schemaPath": "#/definitions/Version/properties/patch/minimum",
+  },
+]
+`;
+
+exports[`schema checks version 2`] = `
+Array [
+  Object {
+    "dataPath": ".version.minor",
+    "keyword": "minimum",
+    "message": "should be >= 0",
+    "params": Object {
+      "comparison": ">=",
+      "exclusive": false,
+      "limit": 0,
+    },
+    "schemaPath": "#/definitions/Version/properties/minor/minimum",
+  },
+]
+`;
+
+exports[`schema checks version 3`] = `
+Array [
+  Object {
+    "dataPath": ".version.major",
+    "keyword": "minimum",
+    "message": "should be >= 0",
+    "params": Object {
+      "comparison": ">=",
+      "exclusive": false,
+      "limit": 0,
+    },
+    "schemaPath": "#/definitions/Version/properties/major/minimum",
+  },
+]
+`;
+
+exports[`schema empty list fails 1`] = `
+Array [
+  Object {
+    "dataPath": ".tokens",
+    "keyword": "minItems",
+    "message": "should NOT have fewer than 1 items",
+    "params": Object {
+      "limit": 1,
+    },
+    "schemaPath": "#/properties/tokens/minItems",
+  },
+]
+`;
+
+exports[`schema fails with big names 1`] = `
+Array [
+  Object {
+    "dataPath": ".tokens[0].name",
+    "keyword": "maxLength",
+    "message": "should NOT be longer than 20 characters",
+    "params": Object {
+      "limit": 20,
+    },
+    "schemaPath": "#/properties/name/maxLength",
+  },
+]
+`;
+
+exports[`schema requires name, timestamp, version, tokens 1`] = `
+Array [
+  Object {
+    "dataPath": "",
+    "keyword": "required",
+    "message": "should have required property 'name'",
+    "params": Object {
+      "missingProperty": "name",
+    },
+    "schemaPath": "#/required",
+  },
+  Object {
+    "dataPath": "",
+    "keyword": "required",
+    "message": "should have required property 'timestamp'",
+    "params": Object {
+      "missingProperty": "timestamp",
+    },
+    "schemaPath": "#/required",
+  },
+  Object {
+    "dataPath": "",
+    "keyword": "required",
+    "message": "should have required property 'version'",
+    "params": Object {
+      "missingProperty": "version",
+    },
+    "schemaPath": "#/required",
+  },
+  Object {
+    "dataPath": "",
+    "keyword": "required",
+    "message": "should have required property 'tokens'",
+    "params": Object {
+      "missingProperty": "tokens",
+    },
+    "schemaPath": "#/required",
+  },
+]
+`;
+
+exports[`schema works for example schema 1`] = `null`;

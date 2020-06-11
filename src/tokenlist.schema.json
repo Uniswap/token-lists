@@ -86,6 +86,7 @@
           "type": "string",
           "description": "The name of the token; if not set, defaults to on-chain data",
           "minLength": 1,
+          "maxLength": 20,
           "pattern": "^[\\s\\w]+$"
         },
         "symbol": {
