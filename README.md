@@ -1,6 +1,6 @@
 # @uniswap/token-lists
 
-![.github/workflows/tests.yaml](https://github.com/Uniswap/token-lists/workflows/.github/workflows/tests.yaml/badge.svg)
+[![Tests](https://github.com/Uniswap/token-lists/workflows/Tests/badge.svg)](https://github.com/Uniswap/token-lists/actions?query=workflow%3ATests)
 
 This package includes a JSON schema for token lists, and TypeScript utilities for working with token lists.
 
