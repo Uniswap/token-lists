@@ -1,9 +1,11 @@
 import Ajv from 'ajv';
 import { schema } from '../src';
-import example from './testschemas/example.tokenlist.json';
-const ajv = new Ajv({ allErrors: true });
+import exampleList from './testschemas/example.tokenlist.json';
+import emptyList from './testschemas/empty.tokenlist.json';
 
+const ajv = new Ajv({ allErrors: true });
 const validator = ajv.compile(schema);
+
 describe('schema', () => {
   it('is valid', () => {
     expect(ajv.validateSchema(schema)).toEqual(true);
@@ -42,7 +44,19 @@ describe('schema', () => {
     ]);
   });
   it('works for example schema', () => {
-    expect(validator(example)).toEqual(true);
+    expect(validator(exampleList)).toEqual(true);
     expect(validator.errors).toBeNull();
+  });
+  it('empty list fails', () => {
+    expect(validator(emptyList)).toEqual(false);
+    expect(validator.errors).toEqual([
+      {
+        dataPath: '.tokens',
+        keyword: 'minItems',
+        message: 'should NOT have fewer than 1 items',
+        params: { limit: 1 },
+        schemaPath: '#/properties/tokens/minItems',
+      },
+    ]);
   });
 });

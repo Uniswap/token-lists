@@ -47,7 +47,7 @@
           "description": "The name of the tag",
           "pattern": "^[\\s\\w]+$",
           "minLength": 1,
-          "maxLength": 10
+          "maxLength": 20
         },
         "description": {
           "type": "string",
@@ -138,8 +138,8 @@
           "items": {
             "$ref": "#/definitions/TokenInfo"
           },
-          "minLength": 1,
-          "maxLength": 1000
+          "minItems": 1,
+          "maxItems": 1000
         },
         "keywords": {
           "type": "array",
@@ -150,6 +150,7 @@
             "maxLength": 20,
             "pattern": "^[\\w]+$"
           },
+          "maxItems": 20,
           "uniqueItems": true
         },
         "tags": {
@@ -160,7 +161,8 @@
           },
           "additionalProperties": {
             "$ref": "#/definitions/TagDefinition"
-          }
+          },
+          "maxProperties": 20
         }
       },
       "required": [

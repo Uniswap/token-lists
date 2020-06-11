@@ -1,9 +1,11 @@
 {
   "name": "My Example List",
-  "keywords": ["abc"],
+  "keywords": [
+    "abc"
+  ],
   "tags": {
-    "1": {
-      "name": "tag 1",
+    "coin": {
+      "name": "Stablecoin",
       "description": "blah blah"
     }
   },
@@ -15,7 +17,10 @@
       "chainId": 1,
       "decimals": 18,
       "logoUrl": "https://test",
-      "symbol": "abc"
+      "symbol": "abc",
+      "tags": [
+        "coin"
+      ]
     }
   ],
   "version": {

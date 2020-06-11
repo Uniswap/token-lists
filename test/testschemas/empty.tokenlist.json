@@ -1,0 +1,20 @@
+{
+  "name": "My Example List",
+  "keywords": [
+    "abc"
+  ],
+  "tags": {
+    "1": {
+      "name": "tag 1",
+      "description": "blah blah"
+    }
+  },
+  "timestamp": 1591897594,
+  "tokens": [
+  ],
+  "version": {
+    "major": 0,
+    "minor": 0,
+    "patch": 1
+  }
+}
