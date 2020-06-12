@@ -81,9 +81,9 @@ Array [
   Object {
     "dataPath": ".tokens[0].name",
     "keyword": "maxLength",
-    "message": "should NOT be longer than 20 characters",
+    "message": "should NOT be longer than 40 characters",
     "params": Object {
-      "limit": 20,
+      "limit": 40,
     },
     "schemaPath": "#/properties/name/maxLength",
   },
