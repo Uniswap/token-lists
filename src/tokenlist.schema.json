@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://uniswap.org/token-lists.schema.json",
+  "$id": "https://uniswap.org/tokenlist.schema.json",
   "title": "Uniswap Token Lists",
   "description": "Schema for lists of tokens compatible with the Uniswap Interface",
   "$ref": "#/definitions/TokenList",
