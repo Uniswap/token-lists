@@ -24,7 +24,9 @@ code editors do, such as [IntelliJ](https://www.jetbrains.com/help/idea/json.htm
 can be found [here](https://json-schema.org/implementations.html#editors).
 
 The schema is registered in the [SchemaStore](https://github.com/SchemaStore/schemastore), and any file that matches
-the pattern `*.tokenlist.json` should automatically utilize the schema.
+the pattern `*.tokenlist.json` should 
+[automatically utilize](https://www.jetbrains.com/help/idea/json.html#ws_json_using_schemas) 
+the schema (when supported by your text editor.)
 
 In order for your token list to be able to be used, it must pass JSON schema validation.
 
