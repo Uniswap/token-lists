@@ -66,6 +66,6 @@ Changing a token address or chain ID is considered both a remove and an add, and
 
 You can find a valid example of a token list [here](test/schema/example.tokenlist.json).
 
-## Local Development
+## Local development
 
-Local development instructions [here](./DEVELOPMENT.md).
+Instructions for developing in this repo are [here](./DEVELOPMENT.md).
