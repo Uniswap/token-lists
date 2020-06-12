@@ -19,9 +19,13 @@ code editors do, such as [IntelliJ](https://www.jetbrains.com/help/idea/json.htm
 can be found [here](https://json-schema.org/implementations.html#editors).
 
 Once you have set up the JSON schema, you should get inline validation errors, which provide details about each field
-in the token list schema.
+in the token list schema. 
 
 Note that in order for your token list to be able to be used, it must pass JSON schema validation. 
+
+## Examples
+
+You can find a valid example of a token list [here](./test/testschemas/example.tokenlist.json).
 
 ## Local Development
 
