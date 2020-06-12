@@ -86,7 +86,7 @@
           "type": "string",
           "description": "The name of the token; if not set, defaults to on-chain data",
           "minLength": 1,
-          "maxLength": 40,
+          "maxLength": 20,
           "pattern": "^[\\s\\w]+$"
         },
         "logoURI": {
@@ -112,7 +112,7 @@
           "type": "string",
           "description": "The name of the token list",
           "minLength": 1,
-          "maxLength": 40,
+          "maxLength": 20,
           "pattern": "^[\\w\\s]+$"
         },
         "timestamp": {
