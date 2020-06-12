@@ -18,7 +18,9 @@ for ease of use.
 
 ## Authoring token lists
 
-The best way to author token lists is to use an editor that supports JSON schema validation. Most popular
+### Manual
+
+The best way to manually author token lists is to use an editor that supports JSON schema validation. Most popular
 code editors do, such as [IntelliJ](https://www.jetbrains.com/help/idea/json.html#ws_json_schema_add_custom) or 
 [VSCode](https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings). Other editors
 can be found [here](https://json-schema.org/implementations.html#editors).
@@ -29,6 +31,24 @@ the pattern `*.tokenlist.json` should
 the schema (when supported by your text editor.)
 
 In order for your token list to be able to be used, it must pass JSON schema validation.
+
+### Automated
+
+If you want to automate token listing, e.g. by pulling from a smart contract, or other sources, you can use the 
+npm package to take advantage of the JSON schema for validation and the TypeScript types. 
+Otherwise, you are simply working with JSON. All the usual tools apply, e.g.:
+
+```typescript
+import { TokenList, schema } from '@uniswap/token-lists'
+
+// generate your token list however you like.
+const myList: TokenList = generateMyTokenList();
+
+// use a tool like `ajv` to validate your generated token list
+validateMyTokenList(myList, schema);
+
+process.stdout.write(JSON.stringify(myList));
+```
 
 ## Semantic versioning
 
