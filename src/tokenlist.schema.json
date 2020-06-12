@@ -103,7 +103,7 @@
         },
         "tags": {
           "type": "array",
-          "description": "An array of tag identifiers associated with the token",
+          "description": "An array of tag identifiers associated with the token; tags are defined at the list level",
           "items": {
             "$ref": "#/definitions/TagIdentifier"
           },

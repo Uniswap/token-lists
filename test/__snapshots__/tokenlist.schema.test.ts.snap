@@ -76,6 +76,8 @@ Array [
 ]
 `;
 
+exports[`schema example schema works for example schema 1`] = `null`;
+
 exports[`schema fails with big names 1`] = `
 Array [
   Object {

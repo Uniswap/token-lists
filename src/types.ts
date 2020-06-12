@@ -5,7 +5,7 @@ export interface TokenInfo {
   decimals?: number;
   symbol?: string;
   logoURI?: string;
-  tagIds?: string[];
+  tags?: string[];
 }
 
 export interface Version {
@@ -23,7 +23,7 @@ export interface Tags {
 
 export interface TokenList {
   name: string;
-  timestamp: number;
+  timestamp: string;
   version: Version;
   tokens: TokenInfo[];
   keywords?: string[];

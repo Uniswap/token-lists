@@ -1,14 +1,14 @@
 import Ajv from 'ajv';
 import { schema } from '../src';
-import exampleList from './testschemas/example.tokenlist.json';
-import emptyList from './testschemas/empty.tokenlist.json';
-import bigWords from './testschemas/bigwords.tokenlist.json';
-import invalidTokenAddress from './testschemas/invalidtokenaddress.tokenlist.json';
-import invalidTimestamp from './testschemas/invalidtimestamp.tokenlist.json';
-import invalidLogoURI from './testschemas/invalidlogouri.tokenlist.json';
-import invalidVersion1 from './testschemas/invalidversion.1.tokenlist.json';
-import invalidVersion2 from './testschemas/invalidversion.2.tokenlist.json';
-import invalidVersion3 from './testschemas/invalidversion.3.tokenlist.json';
+import exampleList from './schema/example.tokenlist.json';
+import emptyList from './schema/empty.tokenlist.json';
+import bigWords from './schema/bigwords.tokenlist.json';
+import invalidTokenAddress from './schema/invalidtokenaddress.tokenlist.json';
+import invalidTimestamp from './schema/invalidtimestamp.tokenlist.json';
+import invalidLogoURI from './schema/invalidlogouri.tokenlist.json';
+import invalidVersion1 from './schema/invalidversion.1.tokenlist.json';
+import invalidVersion2 from './schema/invalidversion.2.tokenlist.json';
+import invalidVersion3 from './schema/invalidversion.3.tokenlist.json';
 
 const ajv = new Ajv({ allErrors: true, format: 'full' });
 const validator = ajv.compile(schema);
@@ -23,12 +23,14 @@ describe('schema', () => {
     expect(validator.errors).toMatchSnapshot();
   }
 
-  it('requires name, timestamp, version, tokens', () => {
-    checkSchema({}, false);
+  describe('example schema', () => {
+    it('works for example schema', () => {
+      checkSchema(exampleList, true);
+    });
   });
 
-  it('works for example schema', () => {
-    checkSchema(exampleList, true);
+  it('requires name, timestamp, version, tokens', () => {
+    checkSchema({}, false);
   });
 
   it('empty list fails', () => {

@@ -25,7 +25,7 @@ Note that in order for your token list to be able to be used, it must pass JSON 
 
 ## Examples
 
-You can find a valid example of a token list [here](./test/testschemas/example.tokenlist.json).
+You can find a valid example of a token list [here](test/schema/example.tokenlist.json).
 
 ## Local Development
 
