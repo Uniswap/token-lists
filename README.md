@@ -62,6 +62,17 @@ List versions must follow the rules:
 
 Changing a token address or chain ID is considered both a remove and an add, and should be a major version update.
 
+## Deploying your list
+
+Once you have authored the list, you can make it available at any URI. Prefer pinning your list to IPFS 
+(e.g. via [pinata.cloud](https://pinata.cloud)) and referencing the list by an ENS name that resolves to the 
+contenthash.
+
+### Linking an ENS name to the list
+
+An ENS name can be linked to a IPFS hash via the [contenthash](https://eips.ethereum.org/EIPS/eip-1577) text record.
+This is the preferred way of referencing your list.
+
 ## Examples
 
 You can find a valid example of a token list [here](test/schema/example.tokenlist.json).

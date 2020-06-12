@@ -1,6 +1,7 @@
 import Ajv from 'ajv';
 import { schema } from '../src';
 import exampleList from './schema/example.tokenlist.json';
+import exampleListMinimum from './schema/exampleminimum.tokenlist.json';
 import emptyList from './schema/empty.tokenlist.json';
 import bigWords from './schema/bigwords.tokenlist.json';
 import invalidTokenAddress from './schema/invalidtokenaddress.tokenlist.json';
@@ -25,10 +26,12 @@ describe('schema', () => {
     expect(validator.errors).toMatchSnapshot();
   }
 
-  describe('example schema', () => {
-    it('works for example schema', () => {
-      checkSchema(exampleList, true);
-    });
+  it('works for example schema', () => {
+    checkSchema(exampleList, true);
+  });
+
+  it('minimum example schema', () => {
+    checkSchema(exampleListMinimum, true);
   });
 
   it('requires name, timestamp, version, tokens', () => {

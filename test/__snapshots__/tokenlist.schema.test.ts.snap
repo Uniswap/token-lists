@@ -76,8 +76,6 @@ Array [
 ]
 `;
 
-exports[`schema example schema works for example schema 1`] = `null`;
-
 exports[`schema fails with big names 1`] = `
 Array [
   Object {
@@ -152,6 +150,8 @@ Array [
 ]
 `;
 
+exports[`schema minimum example schema 1`] = `null`;
+
 exports[`schema requires name, timestamp, version, tokens 1`] = `
 Array [
   Object {
@@ -192,3 +192,5 @@ Array [
   },
 ]
 `;
+
+exports[`schema works for example schema 1`] = `null`;
