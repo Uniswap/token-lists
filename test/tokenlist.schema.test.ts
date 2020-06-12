@@ -9,6 +9,8 @@ import invalidLogoURI from './schema/invalidlogouri.tokenlist.json';
 import invalidVersion1 from './schema/invalidversion.1.tokenlist.json';
 import invalidVersion2 from './schema/invalidversion.2.tokenlist.json';
 import invalidVersion3 from './schema/invalidversion.3.tokenlist.json';
+import invalidDecimals1 from './schema/invaliddecimals.1.tokenlist.json';
+import invalidDecimals2 from './schema/invaliddecimals.2.tokenlist.json';
 
 const ajv = new Ajv({ allErrors: true, format: 'full' });
 const validator = ajv.compile(schema);
@@ -51,6 +53,11 @@ describe('schema', () => {
 
   it('invalid logo URI', () => {
     checkSchema(invalidLogoURI, false);
+  });
+
+  it('invalid decimals', () => {
+    checkSchema(invalidDecimals1, false);
+    checkSchema(invalidDecimals2, false);
   });
 
   it('checks version', () => {

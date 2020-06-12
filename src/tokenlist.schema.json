@@ -80,7 +80,7 @@
           "type": "integer",
           "description": "The number of decimals for the token balance; if not set, defaults to on-chain data",
           "minimum": 0,
-          "maximum": 78
+          "maximum": 255
         },
         "name": {
           "type": "string",

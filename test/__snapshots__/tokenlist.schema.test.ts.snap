@@ -92,6 +92,38 @@ Array [
 ]
 `;
 
+exports[`schema invalid decimals 1`] = `
+Array [
+  Object {
+    "dataPath": ".tokens[0].decimals",
+    "keyword": "maximum",
+    "message": "should be <= 255",
+    "params": Object {
+      "comparison": "<=",
+      "exclusive": false,
+      "limit": 255,
+    },
+    "schemaPath": "#/properties/decimals/maximum",
+  },
+]
+`;
+
+exports[`schema invalid decimals 2`] = `
+Array [
+  Object {
+    "dataPath": ".tokens[0].decimals",
+    "keyword": "minimum",
+    "message": "should be >= 0",
+    "params": Object {
+      "comparison": ">=",
+      "exclusive": false,
+      "limit": 0,
+    },
+    "schemaPath": "#/properties/decimals/minimum",
+  },
+]
+`;
+
 exports[`schema invalid logo URI 1`] = `
 Array [
   Object {
