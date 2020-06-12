@@ -4,6 +4,8 @@
 
 This package includes a JSON schema for token lists, and TypeScript utilities for working with token lists.
 
+The JSON schema represents the specification for a token list which can be used in the Uniswap Interface.
+
 ## Validating token lists
 
 This package does not include token list validation. You can easily do this by including a library such as 
