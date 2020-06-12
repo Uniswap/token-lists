@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://uniswap.org/tokenlist.schema.json",
-  "title": "Uniswap Token Lists",
+  "title": "Uniswap Token List",
   "description": "Schema for lists of tokens compatible with the Uniswap Interface",
   "$ref": "#/definitions/TokenList",
   "definitions": {
@@ -73,7 +73,7 @@
         },
         "address": {
           "type": "string",
-          "description": "The address of the token on the given chain ID",
+          "description": "The address of the token on the specified chain ID",
           "pattern": "^0x[a-fA-F0-9]{40}$"
         },
         "decimals": {
@@ -96,10 +96,10 @@
           "minLength": 1,
           "maxLength": 20
         },
-        "logoUrl": {
+        "logoURI": {
           "type": "string",
-          "description": "A URL to the token logo asset; if not set, interface will attempt to find a logo based on the address",
-          "pattern": "^(https|ipfs|ipns)://.+$"
+          "description": "A URI to the token logo asset; if not set, interface will attempt to find a logo based on the address",
+          "format": "uri"
         },
         "tags": {
           "type": "array",
@@ -126,9 +126,9 @@
           "pattern": "^[\\w\\s]+$"
         },
         "timestamp": {
-          "type": "integer",
-          "description": "The epoch seconds timestamp of the list version; must be after June 11, 2020",
-          "minimum": 1591833600
+          "type": "string",
+          "format": "date-time",
+          "description": "The update timestamp of the list version; i.e. when this version was created"
         },
         "version": {
           "$ref": "#/definitions/Version"

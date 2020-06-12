@@ -4,7 +4,7 @@ export interface TokenInfo {
   name?: string;
   decimals?: number;
   symbol?: string;
-  logoUrl?: string;
+  logoURI?: string;
   tagIds?: string[];
 }
 

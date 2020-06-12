@@ -90,6 +90,34 @@ Array [
 ]
 `;
 
+exports[`schema invalid logo URI 1`] = `
+Array [
+  Object {
+    "dataPath": ".tokens[0].logoURI",
+    "keyword": "format",
+    "message": "should match format \\"uri\\"",
+    "params": Object {
+      "format": "uri",
+    },
+    "schemaPath": "#/properties/logoURI/format",
+  },
+]
+`;
+
+exports[`schema invalid timestamp 1`] = `
+Array [
+  Object {
+    "dataPath": ".timestamp",
+    "keyword": "format",
+    "message": "should match format \\"date-time\\"",
+    "params": Object {
+      "format": "date-time",
+    },
+    "schemaPath": "#/properties/timestamp/format",
+  },
+]
+`;
+
 exports[`schema requires name, timestamp, version, tokens 1`] = `
 Array [
   Object {

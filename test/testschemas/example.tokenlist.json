@@ -1,25 +1,41 @@
 {
-  "name": "My Example List",
+  "name": "My Token List",
   "keywords": [
-    "abc"
+    "audited",
+    "verified"
   ],
   "tags": {
-    "coin": {
+    "stablecoin": {
       "name": "Stablecoin",
-      "description": "blah blah"
+      "description": "Tokens that are fixed to an external asset"
+    },
+    "compound": {
+      "name": "Compound Finance",
+      "description": "Tokens that earn interest on compound.finance"
     }
   },
-  "timestamp": 1591897594,
+  "timestamp": "2020-06-12T00:00:00+00:00",
   "tokens": [
     {
-      "name": "blah",
-      "address": "0x0000000000000000000000000000000000000000",
       "chainId": 1,
-      "decimals": 18,
-      "logoUrl": "https://test",
-      "symbol": "abc",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "decimals": 6,
+      "logoURI": "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM",
       "tags": [
-        "coin"
+        "stablecoin"
+      ]
+    },
+    {
+      "chainId": 1,
+      "address": "0x39AA39c021dfbaE8faC545936693aC917d5E7563",
+      "symbol": "cUSDC",
+      "name": "Compound USD Coin",
+      "decimals": 8,
+      "logoURI": "ipfs://QmUSNbwUxUYNMvMksKypkgWs8unSm8dX2GjCPBVGZ7GGMr",
+      "tags": [
+        "compound"
       ]
     }
   ],
