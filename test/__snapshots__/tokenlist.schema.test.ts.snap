@@ -160,5 +160,3 @@ Array [
   },
 ]
 `;
-
-exports[`schema works for example schema 1`] = `null`;
