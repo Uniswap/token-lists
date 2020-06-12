@@ -1,7 +1,6 @@
 {
   "name": "My Token List",
-  "keywords": [
-  ],
+  "keywords": [],
   "timestamp": "2020-06-12T00:00:00+00:00",
   "tokens": [
     {
@@ -11,9 +10,7 @@
       "name": "USD Coin",
       "decimals": 6,
       "logoURI": "hello",
-      "tags": [
-        "stablecoin"
-      ]
+      "tags": ["stablecoin"]
     }
   ],
   "version": {

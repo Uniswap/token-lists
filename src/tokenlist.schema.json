@@ -25,11 +25,7 @@
           "minimum": 0
         }
       },
-      "required": [
-        "major",
-        "minor",
-        "patch"
-      ]
+      "required": ["major", "minor", "patch"]
     },
     "TagIdentifier": {
       "type": "string",
@@ -57,10 +53,7 @@
           "maxLength": 200
         }
       },
-      "required": [
-        "name",
-        "description"
-      ]
+      "required": ["name", "description"]
     },
     "TokenInfo": {
       "type": "object",
@@ -110,10 +103,7 @@
           "maxLength": 10
         }
       },
-      "required": [
-        "chainId",
-        "address"
-      ]
+      "required": ["chainId", "address"]
     },
     "TokenList": {
       "type": "object",
@@ -166,12 +156,7 @@
           "maxProperties": 20
         }
       },
-      "required": [
-        "name",
-        "timestamp",
-        "version",
-        "tokens"
-      ]
+      "required": ["name", "timestamp", "version", "tokens"]
     }
   }
 }

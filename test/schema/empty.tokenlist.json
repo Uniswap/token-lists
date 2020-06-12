@@ -1,8 +1,6 @@
 {
   "name": "My Example List",
-  "keywords": [
-    "abc"
-  ],
+  "keywords": ["abc"],
   "tags": {
     "1": {
       "name": "tag 1",
@@ -10,8 +8,7 @@
     }
   },
   "timestamp": "2018-11-13T20:20:39+00:00",
-  "tokens": [
-  ],
+  "tokens": [],
   "version": {
     "major": 0,
     "minor": 0,

@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ '10', '12' ]
+        node: ['10', '12']
     name: Node ${{ matrix.node }}
     steps:
       - uses: actions/checkout@v2
@@ -13,5 +13,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-      - run: npm install
-      - run: npm test
+      - run: yarn install
+      - run: yarn format
+      - run: yarn lint
+      - run: yarn test

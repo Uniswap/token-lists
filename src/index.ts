@@ -1,6 +1,6 @@
-import schema from './tokenlist.schema.json';
+import schema from './tokenlist.schema.json'
 
-export * from './types';
-export * from './isVersionUpdate';
+export * from './types'
+export * from './isVersionUpdate'
 
-export { schema };
+export { schema }

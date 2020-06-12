@@ -1,9 +1,6 @@
 {
   "name": "My Token List",
-  "keywords": [
-    "audited",
-    "verified"
-  ],
+  "keywords": ["audited", "verified"],
   "tags": {
     "stablecoin": {
       "name": "Stablecoin",
@@ -23,9 +20,7 @@
       "name": "USD Coin",
       "decimals": 6,
       "logoURI": "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM",
-      "tags": [
-        "stablecoin"
-      ]
+      "tags": ["stablecoin"]
     },
     {
       "chainId": 1,
@@ -34,9 +29,7 @@
       "name": "Compound USD Coin",
       "decimals": 8,
       "logoURI": "ipfs://QmUSNbwUxUYNMvMksKypkgWs8unSm8dX2GjCPBVGZ7GGMr",
-      "tags": [
-        "compound"
-      ]
+      "tags": ["compound"]
     }
   ],
   "version": {
