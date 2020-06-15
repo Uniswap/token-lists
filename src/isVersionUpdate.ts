@@ -13,6 +13,8 @@ export function isVersionUpdate(base: Version, update: Version): boolean {
   if (update.minor > base.minor) {
     return true;
   }
-  if (update.minor < base.minor) return false;
+  if (update.minor < base.minor) {
+    return false;
+  }
   return update.patch > base.patch;
 }
