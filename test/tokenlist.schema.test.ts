@@ -1,6 +1,7 @@
 import Ajv from 'ajv';
 import { schema } from '../src';
 import exampleList from './schema/example.tokenlist.json';
+import bigExampleList from './schema/bigexample.tokenlist.json';
 import exampleListMinimum from './schema/exampleminimum.tokenlist.json';
 import emptyList from './schema/empty.tokenlist.json';
 import bigWords from './schema/bigwords.tokenlist.json';
@@ -28,6 +29,10 @@ describe('schema', () => {
 
   it('works for example schema', () => {
     checkSchema(exampleList, true);
+  });
+
+  it('works for big example schema', () => {
+    checkSchema(bigExampleList, true);
   });
 
   it('minimum example schema', () => {
