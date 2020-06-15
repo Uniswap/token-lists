@@ -136,6 +136,20 @@ Array [
 ]
 `;
 
+exports[`schema invalid logo URI 2`] = `
+Array [
+  Object {
+    "dataPath": ".logoURI",
+    "keyword": "format",
+    "message": "should match format \\"uri\\"",
+    "params": Object {
+      "format": "uri",
+    },
+    "schemaPath": "#/properties/logoURI/format",
+  },
+]
+`;
+
 exports[`schema invalid timestamp 1`] = `
 Array [
   Object {

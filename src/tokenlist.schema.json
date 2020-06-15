@@ -98,7 +98,7 @@
         },
         "logoURI": {
           "type": "string",
-          "description": "A URI to the token logo asset; if not set, interface will attempt to find a logo based on the token address",
+          "description": "A URI to the token logo asset; if not set, interface will attempt to find a logo based on the token address; suggest SVG or PNG of size 64x64",
           "format": "uri"
         },
         "tags": {
@@ -159,7 +159,7 @@
         },
         "tags": {
           "type": "object",
-          "description": "A mapping of tag identifiers to their name and description; tag identifier keys are slugs",
+          "description": "A mapping of tag identifiers to their name and description",
           "propertyNames": {
             "$ref": "#/definitions/TagIdentifier"
           },
@@ -167,6 +167,11 @@
             "$ref": "#/definitions/TagDefinition"
           },
           "maxProperties": 20
+        },
+        "logoURI": {
+          "type": "string",
+          "description": "A URI for the list's logo; prefer SVG or PNG of size 256x256",
+          "format": "uri"
         }
       },
       "required": [

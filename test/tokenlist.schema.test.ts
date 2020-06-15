@@ -7,7 +7,8 @@ import emptyList from './schema/empty.tokenlist.json';
 import bigWords from './schema/bigwords.tokenlist.json';
 import invalidTokenAddress from './schema/invalidtokenaddress.tokenlist.json';
 import invalidTimestamp from './schema/invalidtimestamp.tokenlist.json';
-import invalidLogoURI from './schema/invalidlogouri.tokenlist.json';
+import invalidLogoURI1 from './schema/invalidlogouri.1.tokenlist.json';
+import invalidLogoURI2 from './schema/invalidlogouri.2.tokenlist.json';
 import invalidVersion1 from './schema/invalidversion.1.tokenlist.json';
 import invalidVersion2 from './schema/invalidversion.2.tokenlist.json';
 import invalidVersion3 from './schema/invalidversion.3.tokenlist.json';
@@ -60,7 +61,8 @@ describe('schema', () => {
   });
 
   it('invalid logo URI', () => {
-    checkSchema(invalidLogoURI, false);
+    checkSchema(invalidLogoURI1, false);
+    checkSchema(invalidLogoURI2, false);
   });
 
   it('invalid decimals', () => {
