@@ -85,4 +85,6 @@ This is the preferred way of referencing your list.
 
 ## Examples
 
-You can find an example of a token list [here](test/schema/example.tokenlist.json).
+You can find a simple example of a token list in [test/schema/example.tokenlist.json](test/schema/example.tokenlist.json).
+
+A larger example can be found in [test/schema/bigexample.tokenlist.json](test/schema/bigexample.tokenlist.json).
