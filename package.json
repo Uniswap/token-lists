@@ -12,6 +12,10 @@
   "engines": {
     "node": ">=10"
   },
+  "repository": {
+    "url": "https://github.com/Uniswap/token-lists",
+    "type": "git"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
