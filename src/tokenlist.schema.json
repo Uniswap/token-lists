@@ -8,6 +8,13 @@
       "title": "Version",
       "type": "object",
       "description": "A version number for a piece of data, used in list change detection",
+      "examples": [
+        {
+          "major": 1,
+          "minor": 0,
+          "patch": 0
+        }
+      ],
       "properties": {
         "major": {
           "type": "integer",
@@ -49,7 +56,11 @@
       "description": "The unique identifier of a tag",
       "minLength": 1,
       "maxLength": 10,
-      "pattern": "^[\\w]+$"
+      "pattern": "^[\\w]+$",
+      "examples": [
+        "compound",
+        "stablecoin"
+      ]
     },
     "TagDefinition": {
       "title": "Tag Definition",
@@ -74,6 +85,12 @@
       "required": [
         "name",
         "description"
+      ],
+      "examples": [
+        {
+          "name": "Stablecoin",
+          "description": "A token with value pegged to another asset"
+        }
       ]
     },
     "TokenInfo": {
@@ -94,11 +111,14 @@
         "address": {
           "title": "Token Address",
           "type": "string",
-          "description": "The address of the token on the specified chain ID",
-          "pattern": "^0x[a-fA-F0-9]{40}$"
+          "description": "The checksummed address of the token on the specified chain ID",
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "examples": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+          ]
         },
         "decimals": {
-          "title": "Decimals",
+          "title": "Token Decimals",
           "type": "integer",
           "description": "The number of decimals for the token balance",
           "minimum": 0,
@@ -130,6 +150,7 @@
           ]
         },
         "logoURI": {
+          "title": "Token Logo URI",
           "type": "string",
           "description": "A URI to the token logo asset; if not set, interface will attempt to find a logo based on the token address; suggest SVG or PNG of size 64x64",
           "format": "uri",
@@ -138,6 +159,7 @@
           ]
         },
         "tags": {
+          "title": "Token Tag List",
           "type": "array",
           "description": "An array of tag identifiers associated with the token; tags are defined at the list level",
           "items": {
@@ -196,18 +218,19 @@
       "type": "array",
       "description": "Keywords associated with the contents of the list; may be used in list discoverability",
       "items": {
+        "title": "List Keyword",
         "type": "string",
         "minLength": 1,
         "maxLength": 20,
-        "pattern": "^[\\w]+$"
+        "pattern": "^[\\w]+$",
+        "examples": [
+          "compound",
+          "lending",
+          "personal tokens"
+        ]
       },
       "maxItems": 20,
-      "uniqueItems": true,
-      "examples": [
-        "compound",
-        "lending",
-        "personal tokens"
-      ]
+      "uniqueItems": true
     },
     "tags": {
       "title": "Tag ID Mapping",
@@ -219,11 +242,20 @@
       "additionalProperties": {
         "$ref": "#/definitions/TagDefinition"
       },
-      "maxProperties": 20
+      "maxProperties": 20,
+      "examples": [
+        {
+          "stablecoin": {
+            "name": "Stablecoin",
+            "description": "A token with value pegged to another asset"
+          }
+        }
+      ]
     },
     "logoURI": {
+      "title": "List Logo URI",
       "type": "string",
-      "description": "A URI for the list's logo; prefer SVG or PNG of size 256x256",
+      "description": "A URI for the logo of the token list; prefer SVG or PNG of size 256x256",
       "format": "uri",
       "examples": [
         "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM"
