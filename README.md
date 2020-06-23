@@ -88,4 +88,4 @@ This is the preferred way of referencing your list.
 
 You can find a simple example of a token list in [test/schema/example.tokenlist.json](test/schema/example.tokenlist.json).
 
-A larger example can be found in [test/schema/bigexample.tokenlist.json](test/schema/bigexample.tokenlist.json).
+A snapshot of the Uniswap default list encoded as a token list is found in [test/schema/bigexample.tokenlist.json](test/schema/bigexample.tokenlist.json).
