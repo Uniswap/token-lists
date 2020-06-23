@@ -28,14 +28,14 @@ can be found [here](https://json-schema.org/implementations.html#editors).
 The schema is registered in the [SchemaStore](https://github.com/SchemaStore/schemastore), and any file that matches
 the pattern `*.tokenlist.json` should 
 [automatically utilize](https://www.jetbrains.com/help/idea/json.html#ws_json_using_schemas) 
-the schema (when supported by your text editor.)
+the JSON schema for the [supported text editors](https://www.schemastore.org/json/#editors).
 
-In order for your token list to be able to be used, it must pass JSON schema validation.
+In order for your token list to be able to be used, it must pass all JSON schema validation.
 
 ### Automated
 
-If you want to automate token listing, e.g. by pulling from a smart contract, or other sources, you can use the 
-npm package to take advantage of the JSON schema for validation and the TypeScript types. 
+If you want to automate token listing, e.g. by pulling from a smart contract, or other sources, you can use this
+npm package to take advantage of the JSON schema for validation and the TypeScript types.
 Otherwise, you are simply working with JSON. All the usual tools apply, e.g.:
 
 ```typescript
@@ -47,6 +47,7 @@ const myList: TokenList = generateMyTokenList();
 // use a tool like `ajv` to validate your generated token list
 validateMyTokenList(myList, schema);
 
+// print the resulting JSON to stdout
 process.stdout.write(JSON.stringify(myList));
 ```
 
@@ -66,17 +67,13 @@ Changing a token address or chain ID is considered both a remove and an add, and
 
 Once you have authored the list, you can make it available at any URI. Prefer pinning your list to IPFS 
 (e.g. via [pinata.cloud](https://pinata.cloud)) and referencing the list by an ENS name that resolves to the 
-contenthash.
+[contenthash](https://eips.ethereum.org/EIPS/eip-1577).
 
 ### Linking an ENS name to the list
 
-An ENS name can be linked to a IPFS hash via the [contenthash](https://eips.ethereum.org/EIPS/eip-1577) text record.
+An ENS name can be assigned to an IPFS hash via the [contenthash](https://eips.ethereum.org/EIPS/eip-1577) text record.
 This is the preferred way of referencing your list.
 
 ## Examples
 
-You can find a valid example of a token list [here](test/schema/example.tokenlist.json).
-
-## Local development
-
-Instructions for developing in this repo are [here](./DEVELOPMENT.md).
+You can find an example of a token list [here](test/schema/example.tokenlist.json).
