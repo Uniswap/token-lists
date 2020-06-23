@@ -4,7 +4,16 @@
 
 This package includes a JSON schema for token lists, and TypeScript utilities for working with token lists.
 
-The JSON schema represents the specification for a token list which can be used in the Uniswap Interface.
+The JSON schema represents the specification for a token list which can be used in a dApp interface, such as the Uniswap Interface.
+
+## What are token lists?
+
+Token lists are [JSON](https://www.json.org/json-en.html) blobs that contain lists of ERC20 token metadata for use in dApp 
+user interfaces.
+These JSON blobs must follow a specific [JSON schema](https://json-schema.org/) in order to be considered a valid token list.
+Token lists organize tokens such that end users can easily find them.
+
+The Uniswap Interface uses token lists to allow users to easily find tokens of interest.
 
 ## JSON Schema $id
 
