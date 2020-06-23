@@ -3,26 +3,38 @@
   "$id": "https://uniswap.org/tokenlist.schema.json",
   "title": "Uniswap Token List",
   "description": "Schema for lists of tokens compatible with the Uniswap Interface",
-  "$ref": "#/definitions/TokenList",
   "definitions": {
     "Version": {
+      "title": "Version",
       "type": "object",
       "description": "A version number for a piece of data, used in list change detection",
       "properties": {
         "major": {
           "type": "integer",
           "description": "The major version of the list. Must be incremented when tokens are removed from the list or token addresses are changed.",
-          "minimum": 0
+          "minimum": 0,
+          "examples": [
+            1,
+            2
+          ]
         },
         "minor": {
           "type": "integer",
           "description": "The minor version of the list. Must be incremented when tokens are added to the list.",
-          "minimum": 0
+          "minimum": 0,
+          "examples": [
+            0,
+            1
+          ]
         },
         "patch": {
           "type": "integer",
           "description": "The patch version of the list. Must be incremented for any changes to the list.",
-          "minimum": 0
+          "minimum": 0,
+          "examples": [
+            0,
+            1
+          ]
         }
       },
       "required": [
@@ -32,15 +44,17 @@
       ]
     },
     "TagIdentifier": {
+      "title": "Tag Identifier",
       "type": "string",
-      "description": "The identifier of a tag",
+      "description": "The unique identifier of a tag",
       "minLength": 1,
       "maxLength": 10,
       "pattern": "^[\\w]+$"
     },
     "TagDefinition": {
+      "title": "Tag Definition",
       "type": "object",
-      "description": "Definition of a tag that can be associated with a token",
+      "description": "Definition of a tag that can be associated with a token via its identifier",
       "properties": {
         "name": {
           "type": "string",
@@ -63,43 +77,65 @@
       ]
     },
     "TokenInfo": {
+      "title": "Token Info",
       "type": "object",
-      "description": "Information about a single token on the token list",
+      "description": "Metadata for a single token in a token list",
       "properties": {
         "chainId": {
+          "title": "Chain ID",
           "type": "integer",
           "description": "The chain ID of the Ethereum network where this token is deployed",
-          "minimum": 1
+          "minimum": 1,
+          "examples": [
+            1,
+            42
+          ]
         },
         "address": {
+          "title": "Token Address",
           "type": "string",
           "description": "The address of the token on the specified chain ID",
           "pattern": "^0x[a-fA-F0-9]{40}$"
         },
         "decimals": {
+          "title": "Decimals",
           "type": "integer",
           "description": "The number of decimals for the token balance",
           "minimum": 0,
-          "maximum": 255
+          "maximum": 255,
+          "examples": [
+            18
+          ]
         },
         "name": {
+          "title": "Token Name",
           "type": "string",
           "description": "The name of the token",
           "minLength": 1,
           "maxLength": 40,
-          "pattern": "^[\\s\\w+.]+$"
+          "pattern": "^[\\s\\w+.]+$",
+          "examples": [
+            "USD Coin"
+          ]
         },
         "symbol": {
+          "title": "Token Symbol",
           "type": "string",
           "description": "The symbol for the token; must be alphanumeric",
           "pattern": "^[a-zA-Z0-9+]+$",
           "minLength": 1,
-          "maxLength": 20
+          "maxLength": 20,
+          "examples": [
+            "USDC"
+          ]
         },
         "logoURI": {
           "type": "string",
           "description": "A URI to the token logo asset; if not set, interface will attempt to find a logo based on the token address; suggest SVG or PNG of size 64x64",
-          "format": "uri"
+          "format": "uri",
+          "examples": [
+            "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM"
+          ]
         },
         "tags": {
           "type": "array",
@@ -107,7 +143,11 @@
           "items": {
             "$ref": "#/definitions/TagIdentifier"
           },
-          "maxLength": 10
+          "maxLength": 10,
+          "examples": [
+            "stablecoin",
+            "compound"
+          ]
         }
       },
       "required": [
@@ -117,69 +157,83 @@
         "name",
         "symbol"
       ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "Token List Name",
+      "type": "string",
+      "description": "The name of the token list",
+      "minLength": 1,
+      "maxLength": 20,
+      "pattern": "^[\\w\\s]+$",
+      "examples": [
+        "My Token List"
+      ]
     },
-    "TokenList": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "The name of the token list",
-          "minLength": 1,
-          "maxLength": 20,
-          "pattern": "^[\\w\\s]+$"
-        },
-        "timestamp": {
-          "type": "string",
-          "format": "date-time",
-          "description": "The update timestamp of the list version; i.e. when this version was created"
-        },
-        "version": {
-          "$ref": "#/definitions/Version"
-        },
-        "tokens": {
-          "type": "array",
-          "description": "The list of tokens included in the list",
-          "items": {
-            "$ref": "#/definitions/TokenInfo"
-          },
-          "minItems": 1,
-          "maxItems": 1000
-        },
-        "keywords": {
-          "type": "array",
-          "description": "Keywords associated with the contents of the list; may be used in list discoverability",
-          "items": {
-            "type": "string",
-            "minLength": 1,
-            "maxLength": 20,
-            "pattern": "^[\\w]+$"
-          },
-          "maxItems": 20,
-          "uniqueItems": true
-        },
-        "tags": {
-          "type": "object",
-          "description": "A mapping of tag identifiers to their name and description",
-          "propertyNames": {
-            "$ref": "#/definitions/TagIdentifier"
-          },
-          "additionalProperties": {
-            "$ref": "#/definitions/TagDefinition"
-          },
-          "maxProperties": 20
-        },
-        "logoURI": {
-          "type": "string",
-          "description": "A URI for the list's logo; prefer SVG or PNG of size 256x256",
-          "format": "uri"
-        }
+    "timestamp": {
+      "title": "List Version Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The timestamp of this list version; i.e. when this immutable version of the list was created"
+    },
+    "version": {
+      "$ref": "#/definitions/Version"
+    },
+    "tokens": {
+      "title": "Tokens",
+      "type": "array",
+      "description": "The list of tokens included in the list",
+      "items": {
+        "$ref": "#/definitions/TokenInfo"
       },
-      "required": [
-        "name",
-        "timestamp",
-        "version",
-        "tokens"
+      "minItems": 1,
+      "maxItems": 1000
+    },
+    "keywords": {
+      "title": "List Keywords",
+      "type": "array",
+      "description": "Keywords associated with the contents of the list; may be used in list discoverability",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 20,
+        "pattern": "^[\\w]+$"
+      },
+      "maxItems": 20,
+      "uniqueItems": true,
+      "examples": [
+        "compound",
+        "lending",
+        "personal tokens"
+      ]
+    },
+    "tags": {
+      "title": "Tag ID Mapping",
+      "type": "object",
+      "description": "A mapping of tag identifiers to their name and description",
+      "propertyNames": {
+        "$ref": "#/definitions/TagIdentifier"
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/TagDefinition"
+      },
+      "maxProperties": 20
+    },
+    "logoURI": {
+      "type": "string",
+      "description": "A URI for the list's logo; prefer SVG or PNG of size 256x256",
+      "format": "uri",
+      "examples": [
+        "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM"
       ]
     }
-  }
+  },
+  "required": [
+    "name",
+    "timestamp",
+    "version",
+    "tokens"
+  ]
 }
