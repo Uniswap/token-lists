@@ -9,7 +9,7 @@ The JSON schema represents the technical specification for a token list which ca
 
 ## What are token lists?
 
-Token Lists are a specification for lists of token data, used in the Uniswap Interface for decentralizing the token listing process.
+Uniswap Token Lists is a specification for lists of token data, used in the Uniswap Interface for decentralizing the token listing process.
 
 Specifically a token list is a [JSON](https://www.json.org/json-en.html) blob that contains a list of ERC20 token metadata for use in dApp 
 user interfaces.
