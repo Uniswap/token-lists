@@ -5,9 +5,8 @@
   "description": "Schema for lists of tokens compatible with the Uniswap Interface",
   "definitions": {
     "Version": {
-      "title": "Version",
       "type": "object",
-      "description": "A version number for a piece of data, used in list change detection",
+      "description": "The version of the list, used in change detection",
       "examples": [
         {
           "major": 1,
@@ -51,7 +50,6 @@
       ]
     },
     "TagIdentifier": {
-      "title": "Tag Identifier",
       "type": "string",
       "description": "The unique identifier of a tag",
       "minLength": 1,
@@ -63,21 +61,20 @@
       ]
     },
     "TagDefinition": {
-      "title": "Tag Definition",
       "type": "object",
       "description": "Definition of a tag that can be associated with a token via its identifier",
       "properties": {
         "name": {
           "type": "string",
           "description": "The name of the tag",
-          "pattern": "^[\\s\\w]+$",
+          "pattern": "^[ \\w]+$",
           "minLength": 1,
           "maxLength": 20
         },
         "description": {
           "type": "string",
           "description": "A user-friendly description of the tag",
-          "pattern": "^[\\s\\w\\.]+$",
+          "pattern": "^[ \\w\\.]+$",
           "minLength": 1,
           "maxLength": 200
         }
@@ -94,12 +91,10 @@
       ]
     },
     "TokenInfo": {
-      "title": "Token Info",
       "type": "object",
       "description": "Metadata for a single token in a token list",
       "properties": {
         "chainId": {
-          "title": "Chain ID",
           "type": "integer",
           "description": "The chain ID of the Ethereum network where this token is deployed",
           "minimum": 1,
@@ -109,7 +104,6 @@
           ]
         },
         "address": {
-          "title": "Token Address",
           "type": "string",
           "description": "The checksummed address of the token on the specified chain ID",
           "pattern": "^0x[a-fA-F0-9]{40}$",
@@ -118,7 +112,6 @@
           ]
         },
         "decimals": {
-          "title": "Token Decimals",
           "type": "integer",
           "description": "The number of decimals for the token balance",
           "minimum": 0,
@@ -128,18 +121,16 @@
           ]
         },
         "name": {
-          "title": "Token Name",
           "type": "string",
           "description": "The name of the token",
           "minLength": 1,
           "maxLength": 40,
-          "pattern": "^[\\s\\w+.]+$",
+          "pattern": "^[ \\w+.]+$",
           "examples": [
             "USD Coin"
           ]
         },
         "symbol": {
-          "title": "Token Symbol",
           "type": "string",
           "description": "The symbol for the token; must be alphanumeric",
           "pattern": "^[a-zA-Z0-9+]+$",
@@ -150,7 +141,6 @@
           ]
         },
         "logoURI": {
-          "title": "Token Logo URI",
           "type": "string",
           "description": "A URI to the token logo asset; if not set, interface will attempt to find a logo based on the token address; suggest SVG or PNG of size 64x64",
           "format": "uri",
@@ -159,7 +149,6 @@
           ]
         },
         "tags": {
-          "title": "Token Tag List",
           "type": "array",
           "description": "An array of tag identifiers associated with the token; tags are defined at the list level",
           "items": {
@@ -184,18 +173,16 @@
   "type": "object",
   "properties": {
     "name": {
-      "title": "Token List Name",
       "type": "string",
       "description": "The name of the token list",
       "minLength": 1,
       "maxLength": 20,
-      "pattern": "^[\\w\\s]+$",
+      "pattern": "^[\\w ]+$",
       "examples": [
         "My Token List"
       ]
     },
     "timestamp": {
-      "title": "List Version Timestamp",
       "type": "string",
       "format": "date-time",
       "description": "The timestamp of this list version; i.e. when this immutable version of the list was created"
@@ -204,7 +191,6 @@
       "$ref": "#/definitions/Version"
     },
     "tokens": {
-      "title": "Tokens",
       "type": "array",
       "description": "The list of tokens included in the list",
       "items": {
@@ -214,15 +200,14 @@
       "maxItems": 1000
     },
     "keywords": {
-      "title": "List Keywords",
       "type": "array",
       "description": "Keywords associated with the contents of the list; may be used in list discoverability",
       "items": {
-        "title": "List Keyword",
         "type": "string",
+        "description": "A keyword to describe the contents of the list",
         "minLength": 1,
         "maxLength": 20,
-        "pattern": "^[\\w]+$",
+        "pattern": "^[\\w ]+$",
         "examples": [
           "compound",
           "lending",
@@ -233,7 +218,6 @@
       "uniqueItems": true
     },
     "tags": {
-      "title": "Tag ID Mapping",
       "type": "object",
       "description": "A mapping of tag identifiers to their name and description",
       "propertyNames": {
@@ -253,7 +237,6 @@
       ]
     },
     "logoURI": {
-      "title": "List Logo URI",
       "type": "string",
       "description": "A URI for the logo of the token list; prefer SVG or PNG of size 256x256",
       "format": "uri",
