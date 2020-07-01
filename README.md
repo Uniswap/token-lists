@@ -9,7 +9,7 @@ The JSON schema represents the technical specification for a token list which ca
 
 ## What are token lists?
 
-Uniswap Token Lists is a specification for lists of token metadata (e.g. address, decimals, ...) that can be used by any dApp interfaces that needs lists of tokens.
+Uniswap Token Lists is a specification for lists of token metadata (e.g. address, decimals, ...) that can be used by any dApp interfaces that needs one or more lists of tokens.
 
 Anyone can create and maintain a token list, as long as they follow the specification.
 
