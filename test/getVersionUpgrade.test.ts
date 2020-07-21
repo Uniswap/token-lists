@@ -1,108 +1,108 @@
-import { isVersionUpdate } from '../src';
+import { getVersionUpgrade, VersionUpgrade } from '../src';
 
-describe('#isVersionUpdate', () => {
+describe('#getVersionUpgrade', () => {
   it('major version', () => {
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 0, patch: 0 },
         { major: 2, minor: 0, patch: 0 }
       )
-    ).toEqual(true);
+    ).toEqual(VersionUpgrade.MAJOR);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 0, patch: 0 },
         { major: 1, minor: 0, patch: 0 }
       )
-    ).toEqual(false);
+    ).toEqual(VersionUpgrade.NONE);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 0, patch: 0 },
         { major: 0, minor: 0, patch: 0 }
       )
-    ).toEqual(false);
+    ).toEqual(VersionUpgrade.NONE);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 1, patch: 0 },
         { major: 2, minor: 0, patch: 0 }
       )
-    ).toEqual(true);
+    ).toEqual(VersionUpgrade.MAJOR);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 0, patch: 2 },
         { major: 1, minor: 0, patch: 1 }
       )
-    ).toEqual(false);
+    ).toEqual(VersionUpgrade.NONE);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 0, patch: 2 },
         { major: 1, minor: 0, patch: 2 }
       )
-    ).toEqual(false);
+    ).toEqual(VersionUpgrade.NONE);
   });
 
   it('minor version', () => {
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 0, patch: 0 },
         { major: 1, minor: 1, patch: 0 }
       )
-    ).toEqual(true);
+    ).toEqual(VersionUpgrade.MINOR);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 0, patch: 0 },
         { major: 1, minor: 0, patch: 0 }
       )
-    ).toEqual(false);
+    ).toEqual(VersionUpgrade.NONE);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 1, patch: 0 },
         { major: 1, minor: 0, patch: 0 }
       )
-    ).toEqual(false);
+    ).toEqual(VersionUpgrade.NONE);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 1, patch: 1 },
         { major: 1, minor: 2, patch: 0 }
       )
-    ).toEqual(true);
+    ).toEqual(VersionUpgrade.MINOR);
   });
 
   it('patch version', () => {
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 0, patch: 0 },
         { major: 1, minor: 1, patch: 0 }
       )
-    ).toEqual(true);
+    ).toEqual(VersionUpgrade.MINOR);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 0, patch: 0 },
         { major: 1, minor: 0, patch: 0 }
       )
-    ).toEqual(false);
+    ).toEqual(VersionUpgrade.NONE);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 1, patch: 0 },
         { major: 1, minor: 0, patch: 0 }
       )
-    ).toEqual(false);
+    ).toEqual(VersionUpgrade.NONE);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 1, patch: 1 },
         { major: 1, minor: 2, patch: 0 }
       )
-    ).toEqual(true);
+    ).toEqual(VersionUpgrade.MINOR);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 1, minor: 1, patch: 1 },
         { major: 2, minor: 1, patch: 1 }
       )
-    ).toEqual(true);
+    ).toEqual(VersionUpgrade.MAJOR);
     expect(
-      isVersionUpdate(
+      getVersionUpgrade(
         { major: 2, minor: 1, patch: 1 },
         { major: 2, minor: 1, patch: 2 }
       )
-    ).toEqual(true);
+    ).toEqual(VersionUpgrade.PATCH);
   });
 });
