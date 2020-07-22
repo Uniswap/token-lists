@@ -14,6 +14,7 @@
           "patch": 0
         }
       ],
+      "additionalProperties": false,
       "properties": {
         "major": {
           "type": "integer",
@@ -63,6 +64,7 @@
     "TagDefinition": {
       "type": "object",
       "description": "Definition of a tag that can be associated with a token via its identifier",
+      "additionalProperties": false,
       "properties": {
         "name": {
           "type": "string",
@@ -93,6 +95,7 @@
     "TokenInfo": {
       "type": "object",
       "description": "Metadata for a single token in a token list",
+      "additionalProperties": false,
       "properties": {
         "chainId": {
           "type": "integer",
@@ -125,7 +128,7 @@
           "description": "The name of the token",
           "minLength": 1,
           "maxLength": 40,
-          "pattern": "^[ \\w+.]+$",
+          "pattern": "^[ \\w+.'-]+$",
           "examples": [
             "USD Coin"
           ]
@@ -171,6 +174,7 @@
     }
   },
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "name": {
       "type": "string",
