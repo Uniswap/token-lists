@@ -1,36 +1,31 @@
 import { VersionUpgrade } from './getVersionUpgrade';
-import { minVersionBump } from './minVersionBump';
-import { TokenInfo, TokenList, Version } from './types';
+import { Version } from './types';
 
 /**
- * Returns the next version of the list given a base list and the updated token list.
- * @param base base list
- * @param updatedList updated list of tokens for the next list
+ * Returns the next version of the list given a base version and the upgrade type
+ * @param base current version
+ * @param bump the upgrade type
  */
-export function nextVersion(
-  base: TokenList,
-  updatedList: TokenInfo[]
-): Version {
-  const bump = minVersionBump(base.tokens, updatedList);
+export function nextVersion(base: Version, bump: VersionUpgrade): Version {
   switch (bump) {
     case VersionUpgrade.NONE:
-      return base.version;
+      return base;
 
     case VersionUpgrade.MAJOR:
-      return { major: base.version.major + 1, minor: 0, patch: 0 };
+      return { major: base.major + 1, minor: 0, patch: 0 };
 
     case VersionUpgrade.MINOR:
       return {
-        major: base.version.major,
-        minor: base.version.minor + 1,
+        major: base.major,
+        minor: base.minor + 1,
         patch: 0,
       };
 
     case VersionUpgrade.PATCH:
       return {
-        major: base.version.major,
-        minor: base.version.minor,
-        patch: base.version.patch + 1,
+        major: base.major,
+        minor: base.minor,
+        patch: base.patch + 1,
       };
   }
 }

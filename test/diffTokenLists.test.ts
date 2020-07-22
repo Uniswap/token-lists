@@ -9,10 +9,14 @@ const tokenA: TokenInfo = {
   decimals: 18,
   tags: ['hello', 'world'],
 };
-const tokenAChanged: TokenInfo = {
+const tokenAChangedNameDecimals: TokenInfo = {
   ...tokenA,
   name: 'blah',
   decimals: 12,
+};
+const tokenAChangedTags: TokenInfo = {
+  ...tokenA,
+  tags: ['hello', 'worlds'],
 };
 const tokenB: TokenInfo = {
   chainId: 1,
@@ -21,7 +25,7 @@ const tokenB: TokenInfo = {
   symbol: 'defg',
   name: 'token b',
   decimals: 9,
-  tags: ['hello', 'world'],
+  tags: ['token', 'other'],
 };
 
 describe('#diffTokenLists', () => {
@@ -34,12 +38,39 @@ describe('#diffTokenLists', () => {
   });
 
   it('change name', () => {
-    expect(diffTokenLists([tokenB, tokenA], [tokenB, tokenAChanged])).toEqual({
+    expect(
+      diffTokenLists([tokenB, tokenA], [tokenB, tokenAChangedNameDecimals])
+    ).toEqual({
       added: [],
       removed: [],
       changed: {
         1: {
           '0x0a': ['name', 'decimals'],
+        },
+      },
+    });
+  });
+
+  it('change tags', () => {
+    expect(diffTokenLists([tokenB, tokenA], [tokenAChangedTags])).toEqual({
+      added: [],
+      removed: [tokenB],
+      changed: {
+        1: {
+          '0x0a': ['tags'],
+        },
+      },
+    });
+  });
+  it('remove tags', () => {
+    expect(
+      diffTokenLists([tokenB, tokenA], [{ ...tokenA, tags: undefined }])
+    ).toEqual({
+      added: [],
+      removed: [tokenB],
+      changed: {
+        1: {
+          '0x0a': ['tags'],
         },
       },
     });
