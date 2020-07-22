@@ -1,31 +1,31 @@
 export interface TokenInfo {
-  chainId: number;
-  address: string;
-  name: string;
-  decimals: number;
-  symbol: string;
-  logoURI?: string;
-  tags?: string[];
+  readonly chainId: number;
+  readonly address: string;
+  readonly name: string;
+  readonly decimals: number;
+  readonly symbol: string;
+  readonly logoURI?: string;
+  readonly tags?: string[];
 }
 
 export interface Version {
-  major: number;
-  minor: number;
-  patch: number;
+  readonly major: number;
+  readonly minor: number;
+  readonly patch: number;
 }
 
 export interface Tags {
-  [tagId: string]: {
-    name: string;
-    description: string;
+  readonly [tagId: string]: {
+    readonly name: string;
+    readonly description: string;
   };
 }
 
 export interface TokenList {
-  name: string;
-  timestamp: string;
-  version: Version;
-  tokens: TokenInfo[];
-  keywords?: string[];
-  tags?: Tags;
+  readonly name: string;
+  readonly timestamp: string;
+  readonly version: Version;
+  readonly tokens: TokenInfo[];
+  readonly keywords?: string[];
+  readonly tags?: Tags;
 }
