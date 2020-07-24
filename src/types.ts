@@ -28,4 +28,5 @@ export interface TokenList {
   readonly tokens: TokenInfo[];
   readonly keywords?: string[];
   readonly tags?: Tags;
+  readonly logoURI?: string;
 }
