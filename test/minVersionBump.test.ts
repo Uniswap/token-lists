@@ -40,11 +40,11 @@ describe('#minVersionBump', () => {
       VersionUpgrade.PATCH
     );
   });
-  it('minor for remove only', () => {
-    expect(minVersionBump([tokenA], [])).toBe(VersionUpgrade.MINOR);
+  it('major for remove', () => {
+    expect(minVersionBump([tokenA], [])).toBe(VersionUpgrade.MAJOR);
   });
-  it('major for add', () => {
-    expect(minVersionBump([], [tokenA])).toBe(VersionUpgrade.MAJOR);
+  it('minor for add', () => {
+    expect(minVersionBump([], [tokenA])).toBe(VersionUpgrade.MINOR);
   });
   it('major for add/remove', () => {
     expect(minVersionBump([tokenB], [tokenA])).toBe(VersionUpgrade.MAJOR);

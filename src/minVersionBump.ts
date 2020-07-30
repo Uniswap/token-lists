@@ -12,8 +12,8 @@ export function minVersionBump(
   updatedList: TokenInfo[]
 ): VersionUpgrade {
   const diff = diffTokenLists(baseList, updatedList);
-  if (diff.added.length > 0) return VersionUpgrade.MAJOR;
-  if (diff.removed.length > 0) return VersionUpgrade.MINOR;
+  if (diff.removed.length > 0) return VersionUpgrade.MAJOR;
+  if (diff.added.length > 0) return VersionUpgrade.MINOR;
   if (Object.keys(diff.changed).length > 0) return VersionUpgrade.PATCH;
   return VersionUpgrade.NONE;
 }
