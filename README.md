@@ -85,6 +85,8 @@ Once you have authored the list, you can make it available at any URI. Prefer pi
 (e.g. via [pinata.cloud](https://pinata.cloud)) and referencing the list by an ENS name that resolves to the 
 [contenthash](https://eips.ethereum.org/EIPS/eip-1577).
 
+If hosted on HTTPS, make sure the endpoint is configured to send an access-control-allow-origin header to avoid CORS errors.
+
 ### Linking an ENS name to the list
 
 An ENS name can be assigned to an IPFS hash via the [contenthash](https://eips.ethereum.org/EIPS/eip-1577) text record.
