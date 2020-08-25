@@ -1,6 +1,7 @@
 import Ajv from 'ajv';
 import { schema } from '../src';
 import exampleList from './schema/example.tokenlist.json';
+import exampleNameSymbolSpecialCharacters from './schema/example-name-symbol-special-characters.tokenlist.json';
 import bigExampleList from './schema/bigexample.tokenlist.json';
 import exampleListMinimum from './schema/exampleminimum.tokenlist.json';
 import emptyList from './schema/empty.tokenlist.json';
@@ -30,6 +31,10 @@ describe('schema', () => {
 
   it('works for example schema', () => {
     checkSchema(exampleList, true);
+  });
+
+  it('works for special characters schema', () => {
+    checkSchema(exampleNameSymbolSpecialCharacters, true);
   });
 
   it('works for big example schema', () => {

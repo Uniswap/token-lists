@@ -1,0 +1,25 @@
+{
+  "name": "My Token List",
+  "timestamp": "2020-06-12T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x9A48BD0EC040ea4f1D3147C025cd4076A2e71e3e",
+      "symbol": "USD++",
+      "name": "PieDAO USD++ Pool",
+      "decimals": 18
+    },
+    {
+      "chainId": 1,
+      "address": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+      "symbol": "USDC/ETH+50/50%",
+      "name": "Uniswap V2 USDC/ETH+50/50%",
+      "decimals": 18
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
