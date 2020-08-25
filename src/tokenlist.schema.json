@@ -76,7 +76,7 @@
         "description": {
           "type": "string",
           "description": "A user-friendly description of the tag",
-          "pattern": "^[ \\w\\.]+$",
+          "pattern": "^[ \\w\\.,]+$",
           "minLength": 1,
           "maxLength": 200
         }

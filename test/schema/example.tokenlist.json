@@ -9,7 +9,7 @@
   "tags": {
     "stablecoin": {
       "name": "Stablecoin",
-      "description": "Tokens that are fixed to an external asset"
+      "description": "Tokens that are fixed to an external asset, e.g. the US dollar"
     },
     "compound": {
       "name": "Compound Finance",
