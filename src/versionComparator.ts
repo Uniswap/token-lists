@@ -1,4 +1,4 @@
-import { Version } from 'types';
+import { Version } from './types';
 
 /**
  * Comparator function that allows sorting version from lowest to highest
