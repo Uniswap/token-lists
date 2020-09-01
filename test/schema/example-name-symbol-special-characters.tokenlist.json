@@ -15,6 +15,13 @@
       "symbol": "UNI-USDC/ETH+50/50%",
       "name": "Uniswap V2-USDC/ETH+50/50%",
       "decimals": 18
+    },
+    {
+      "chainId": 1,
+      "address": "0x9A48BD0EC040ea4f1D3147C025cd4076A2e71e3e",
+      "symbol": "DIACRITIC",
+      "name": "Ázertíyuöp",
+      "decimals": 18
     }
   ],
   "version": {
