@@ -1,7 +1,7 @@
 import { diffTokenLists, TokenInfo } from '../src';
 
 const tokenA: TokenInfo = {
-  chainId: 1,
+  chainId: '1',
   address: '0x0a',
   logoURI: 'ipfs://test',
   symbol: 'abcd',
@@ -19,7 +19,7 @@ const tokenAChangedTags: TokenInfo = {
   tags: ['hello', 'worlds'],
 };
 const tokenB: TokenInfo = {
-  chainId: 1,
+  chainId: '1',
   address: '0x0b',
   logoURI: 'ipfs://blah',
   symbol: 'defg',

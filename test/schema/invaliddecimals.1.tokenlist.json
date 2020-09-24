@@ -14,7 +14,7 @@
     {
       "name": "name",
       "address": "0x0000000000000000000000000000000000000000",
-      "chainId": 1,
+      "chainId": "1",
       "decimals": 256,
       "logoURI": "https://test",
       "symbol": "abc",

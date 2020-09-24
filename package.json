@@ -1,5 +1,5 @@
 {
-  "name": "@uniswap/token-lists",
+  "name": "@tosch110/token-lists",
   "author": "Moody Salem",
   "description": "📚 The Token Lists specification",
   "version": "1.0.0-beta.16",
@@ -14,7 +14,7 @@
     "node": ">=10"
   },
   "repository": {
-    "url": "https://github.com/Uniswap/token-lists",
+    "url": "https://github.com/tosch110/token-lists",
     "type": "git"
   },
   "scripts": {

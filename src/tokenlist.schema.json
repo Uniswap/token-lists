@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://uniswap.org/tokenlist.schema.json",
-  "title": "Uniswap Token List",
-  "description": "Schema for lists of tokens compatible with the Uniswap Interface",
+  "$id": "https://cosmos.network/tokenlist.schema.json",
+  "title": "Cosmos Token List",
+  "description": "Schema for lists of tokens compatible with the Cosmos Token List Interface",
   "definitions": {
     "Version": {
       "type": "object",
@@ -98,12 +98,12 @@
       "additionalProperties": false,
       "properties": {
         "chainId": {
-          "type": "integer",
-          "description": "The chain ID of the Ethereum network where this token is deployed",
+          "type": "string",
+          "description": "The chain ID of the Cosmos network where this token is deployed",
           "minimum": 1,
           "examples": [
-            1,
-            42
+            "cosmoshub-4",
+            "24"
           ]
         },
         "address": {
@@ -120,7 +120,7 @@
           "minimum": 0,
           "maximum": 255,
           "examples": [
-            18
+            6
           ]
         },
         "name": {
@@ -130,7 +130,7 @@
           "maxLength": 40,
           "pattern": "^[ \\w.'+\\-%/À-ÖØ-öø-ÿ]+$",
           "examples": [
-            "USD Coin"
+            "Cosmos ATOM"
           ]
         },
         "symbol": {
@@ -140,7 +140,7 @@
           "minLength": 1,
           "maxLength": 20,
           "examples": [
-            "USDC"
+            "ATOM"
           ]
         },
         "logoURI": {
