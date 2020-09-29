@@ -2,7 +2,7 @@
   "name": "@uniswap/token-lists",
   "author": "Moody Salem",
   "description": "📚 The Token Lists specification",
-  "version": "1.0.0-beta.16",
+  "version": "1.0.0-beta.17",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
