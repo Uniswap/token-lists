@@ -80,4 +80,20 @@ describe('schema', () => {
     checkSchema(invalidVersion2, false);
     checkSchema(invalidVersion3, false);
   });
+
+  it('allows up to 10k tokens', () => {
+    const exampleListWith10kTokens = {
+      ...exampleList,
+      tokens: [...Array(10000)].map(() => exampleList.tokens[0]),
+    };
+    checkSchema(exampleListWith10kTokens, true);
+  });
+
+  it('fails with 10001 tokens', () => {
+    const exampleListWith10kTokensPlusOne = {
+      ...exampleList,
+      tokens: [...Array(10001)].map(() => exampleList.tokens[0]),
+    };
+    checkSchema(exampleListWith10kTokensPlusOne, false);
+  });
 });

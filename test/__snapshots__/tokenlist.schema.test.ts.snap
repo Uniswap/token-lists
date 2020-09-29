@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`schema allows up to 10k tokens 1`] = `null`;
+
 exports[`schema checks token address 1`] = `
 Array [
   Object {
@@ -72,6 +74,20 @@ Array [
       "limit": 1,
     },
     "schemaPath": "#/properties/tokens/minItems",
+  },
+]
+`;
+
+exports[`schema fails with 10001 tokens 1`] = `
+Array [
+  Object {
+    "dataPath": ".tokens",
+    "keyword": "maxItems",
+    "message": "should NOT have more than 10000 items",
+    "params": Object {
+      "limit": 10000,
+    },
+    "schemaPath": "#/properties/tokens/maxItems",
   },
 ]
 `;
