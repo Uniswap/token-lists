@@ -162,6 +162,18 @@
             "stablecoin",
             "compound"
           ]
+        },
+        "extensions": {
+          "type": "object",
+          "description": "An object containing any arbitrary or vendor-specific token metadata",
+          "additionalProperties": true,
+          "maxProperties": 69,
+          "examples": [
+            {
+              "color": "#000000",
+              "is_verified_by_me": true
+            }
+          ]
         }
       },
       "required": [
