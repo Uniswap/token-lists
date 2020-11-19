@@ -865,6 +865,14 @@
       "name": "Maker",
       "symbol": "MKR",
       "decimals": 18
+    },
+    {
+
+      "address": "0xa2947F125D98fB8e0aE2EB0D523CfdA92BFf789D",
+      "chainId": 43,
+      "name": "NFTDeFi",
+      "symbol": "NFTDeFi",
+      "decimals": 18
     }
   ]
 }
