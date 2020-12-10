@@ -15,6 +15,8 @@ import invalidVersion2 from './schema/invalidversion.2.tokenlist.json';
 import invalidVersion3 from './schema/invalidversion.3.tokenlist.json';
 import invalidDecimals1 from './schema/invaliddecimals.1.tokenlist.json';
 import invalidDecimals2 from './schema/invaliddecimals.2.tokenlist.json';
+import extensionsValid from './schema/extensions-valid.tokenlist.json';
+import extensionsInvalid from './schema/extensions-invalid.tokenlist.json';
 
 const ajv = new Ajv({ allErrors: true, format: 'full' });
 const validator = ajv.compile(schema);
@@ -25,8 +27,9 @@ describe('schema', () => {
   });
 
   function checkSchema(schema: any, valid: boolean): void {
-    expect(validator(schema)).toEqual(valid);
+    const isValid = validator(schema);
     expect(validator.errors).toMatchSnapshot();
+    expect(isValid).toEqual(valid);
   }
 
   it('works for example schema', () => {
@@ -79,6 +82,11 @@ describe('schema', () => {
     checkSchema(invalidVersion1, false);
     checkSchema(invalidVersion2, false);
     checkSchema(invalidVersion3, false);
+  });
+
+  it('checks extensions', () => {
+    checkSchema(extensionsValid, true);
+    checkSchema(extensionsInvalid, false);
   });
 
   it('allows up to 10k tokens', () => {
