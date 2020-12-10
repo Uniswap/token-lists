@@ -1,0 +1,31 @@
+{
+  "name": "My Token List",
+  "timestamp": "2020-06-12T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "decimals": 18,
+      "name": "required name",
+      "symbol": "symbol",
+      "extensions": {
+        "abc": ["1234"],
+        "def": [1235],
+        "isBoolean": {"abc": 534},
+        "isNull": {"thing":  null}
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x39AA39c021dfbaE8faC545936693aC917d5E7563",
+      "decimals": 18,
+      "name": "required name",
+      "symbol": "symbol"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

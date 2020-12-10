@@ -61,6 +61,45 @@
         "stablecoin"
       ]
     },
+    "ExtensionIdentifier": {
+      "type": "string",
+      "description": "The name of a token extension property",
+      "minLength": 1,
+      "maxLength": 30,
+      "pattern": "^[\\w]+$",
+      "examples": [
+        "color",
+        "is_fee_on_transfer",
+        "aliases"
+      ]
+    },
+    "ExtensionValue": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 30,
+          "examples": [
+            "#00000"
+          ]
+        },
+        {
+          "type": "boolean",
+          "examples": [
+            true
+          ]
+        },
+        {
+          "type": "number",
+          "examples": [
+            15
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
     "TagDefinition": {
       "type": "object",
       "description": "Definition of a tag that can be associated with a token via its identifier",
@@ -161,6 +200,23 @@
           "examples": [
             "stablecoin",
             "compound"
+          ]
+        },
+        "extensions": {
+          "type": "object",
+          "description": "An object containing any arbitrary or vendor-specific token metadata",
+          "propertyNames": {
+            "$ref": "#/definitions/ExtensionIdentifier"
+          },
+          "additionalProperties": {
+            "$ref": "#/definitions/ExtensionValue"
+          },
+          "maxProperties": 10,
+          "examples": [
+            {
+              "color": "#000000",
+              "is_verified_by_me": true
+            }
           ]
         }
       },

@@ -2,6 +2,185 @@
 
 exports[`schema allows up to 10k tokens 1`] = `null`;
 
+exports[`schema checks extensions 1`] = `null`;
+
+exports[`schema checks extensions 2`] = `
+Array [
+  Object {
+    "dataPath": ".tokens[0].extensions['abc']",
+    "keyword": "type",
+    "message": "should be string",
+    "params": Object {
+      "type": "string",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['abc']",
+    "keyword": "type",
+    "message": "should be boolean",
+    "params": Object {
+      "type": "boolean",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['abc']",
+    "keyword": "type",
+    "message": "should be number",
+    "params": Object {
+      "type": "number",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['abc']",
+    "keyword": "type",
+    "message": "should be null",
+    "params": Object {
+      "type": "null",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['abc']",
+    "keyword": "anyOf",
+    "message": "should match some schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/definitions/ExtensionValue/anyOf",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['def']",
+    "keyword": "type",
+    "message": "should be string",
+    "params": Object {
+      "type": "string",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['def']",
+    "keyword": "type",
+    "message": "should be boolean",
+    "params": Object {
+      "type": "boolean",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['def']",
+    "keyword": "type",
+    "message": "should be number",
+    "params": Object {
+      "type": "number",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['def']",
+    "keyword": "type",
+    "message": "should be null",
+    "params": Object {
+      "type": "null",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['def']",
+    "keyword": "anyOf",
+    "message": "should match some schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/definitions/ExtensionValue/anyOf",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "keyword": "type",
+    "message": "should be string",
+    "params": Object {
+      "type": "string",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "keyword": "type",
+    "message": "should be boolean",
+    "params": Object {
+      "type": "boolean",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "keyword": "type",
+    "message": "should be number",
+    "params": Object {
+      "type": "number",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "keyword": "type",
+    "message": "should be null",
+    "params": Object {
+      "type": "null",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "keyword": "anyOf",
+    "message": "should match some schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/definitions/ExtensionValue/anyOf",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isNull']",
+    "keyword": "type",
+    "message": "should be string",
+    "params": Object {
+      "type": "string",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isNull']",
+    "keyword": "type",
+    "message": "should be boolean",
+    "params": Object {
+      "type": "boolean",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isNull']",
+    "keyword": "type",
+    "message": "should be number",
+    "params": Object {
+      "type": "number",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isNull']",
+    "keyword": "type",
+    "message": "should be null",
+    "params": Object {
+      "type": "null",
+    },
+    "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
+  },
+  Object {
+    "dataPath": ".tokens[0].extensions['isNull']",
+    "keyword": "anyOf",
+    "message": "should match some schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/definitions/ExtensionValue/anyOf",
+  },
+]
+`;
+
 exports[`schema checks token address 1`] = `
 Array [
   Object {
