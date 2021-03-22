@@ -12,7 +12,8 @@
         "abc": ["1234"],
         "def": [1235],
         "isBoolean": {"abc": 534},
-        "isNull": {"thing":  null}
+        "isNull": {"thing":  null},
+        "tooLong": "0x00000000000000000000000000000000000000001"
       }
     },
     {
