@@ -23,7 +23,7 @@
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepublishOnly": "tsdx test && tsdx build",
-    "postbuild": "cpy --cwd=src --parents '**/*.json' ../dist/"
+    "postbuild": "cp src/tokenlist.schema.json dist/tokenlist.schema.json"
   },
   "peerDependencies": {},
   "husky": {
