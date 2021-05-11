@@ -20,10 +20,10 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
+    "postbuild": "cp src/tokenlist.schema.json dist/tokenlist.schema.json",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepublishOnly": "tsdx test && tsdx build",
-    "postbuild": "cp src/tokenlist.schema.json dist/tokenlist.schema.json"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "peerDependencies": {},
   "husky": {
