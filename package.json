@@ -22,7 +22,8 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepublishOnly": "tsdx test && tsdx build"
+    "prepublishOnly": "tsdx test && tsdx build",
+    "postbuild": "cpy --cwd=src --parents '**/*.json' ../dist/"
   },
   "peerDependencies": {},
   "husky": {
@@ -39,6 +40,7 @@
   "module": "dist/token-lists.esm.js",
   "devDependencies": {
     "ajv": "^6.12.2",
+    "cpy-cli": "^3.1.1",
     "husky": "^4.2.5",
     "tsdx": "^0.14.0",
     "tslib": "^2.0.0",
