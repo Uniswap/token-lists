@@ -33,6 +33,15 @@
       "symbol": "aDAI",
       "decimals": 18
     },
+    
+     {
+      "address": "0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341",
+      "chainId": 1,
+      "name": "Zedxion",
+      "symbol": "Zedxion",
+      "decimals": 18
+    },
+   
     {
       "address": "0x737F98AC8cA59f2C68aD658E3C3d8C8963E40a4c",
       "chainId": 1,
