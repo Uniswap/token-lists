@@ -14,11 +14,14 @@ import invalidVersion1 from './schema/invalidversion.1.tokenlist.json';
 import invalidVersion2 from './schema/invalidversion.2.tokenlist.json';
 import invalidVersion3 from './schema/invalidversion.3.tokenlist.json';
 import invalidDecimals1 from './schema/invaliddecimals.1.tokenlist.json';
+import invalidNumTags from './schema/invalidNumTags.tokenlist.json';
 import invalidDecimals2 from './schema/invaliddecimals.2.tokenlist.json';
 import extensionsValid from './schema/extensions-valid.tokenlist.json';
 import extensionsInvalid from './schema/extensions-invalid.tokenlist.json';
+import addFormats from 'ajv-formats';
 
-const ajv = new Ajv({ allErrors: true, format: 'full' });
+const ajv = new Ajv({ allErrors: true });
+addFormats(ajv);
 const validator = ajv.compile(schema);
 
 describe('schema', () => {
@@ -76,6 +79,10 @@ describe('schema', () => {
   it('invalid decimals', () => {
     checkSchema(invalidDecimals1, false);
     checkSchema(invalidDecimals2, false);
+  });
+
+  it('invalid number of tags on token', () => {
+    checkSchema(invalidNumTags, false);
   });
 
   it('checks version', () => {

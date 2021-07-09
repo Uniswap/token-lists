@@ -1,0 +1,67 @@
+{
+  "name": "My Example List",
+  "keywords": [
+    "abc"
+  ],
+  "tags": {
+    "1": {
+      "name": "tag 1",
+      "description": "blah blah"
+    },
+    "2": {
+      "name": "tag 1",
+      "description": "blah blah"
+    },
+    "3": {
+      "name": "tag 1",
+      "description": "blah blah"
+    },
+    "4": {
+      "name": "tag 1",
+      "description": "blah blah"
+    },
+    "5": {
+      "name": "tag 1",
+      "description": "blah blah"
+    },
+    "6": {
+      "name": "tag 1",
+      "description": "blah blah"
+    },
+    "7": {
+      "name": "tag 1",
+      "description": "blah blah"
+    },
+    "8": {
+      "name": "tag 1",
+      "description": "blah blah"
+    },
+    "9": {
+      "name": "tag 1",
+      "description": "blah blah"
+    },
+    "10": {
+      "name": "tag 1",
+      "description": "blah blah"
+    }
+  },
+  "timestamp": "2018-11-13T20:20:39+00:00",
+  "tokens": [
+    {
+      "name": "name",
+      "address": "0x0000000000000000000000000000000000000000",
+      "chainId": 1,
+      "decimals": 18,
+      "logoURI": "https://test",
+      "symbol": "abc",
+      "tags": [
+        "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"
+      ]
+    }
+  ],
+  "version": {
+    "major": 0,
+    "minor": 0,
+    "patch": 1
+  }
+}

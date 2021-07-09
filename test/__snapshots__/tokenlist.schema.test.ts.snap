@@ -7,217 +7,217 @@ exports[`schema checks extensions 1`] = `null`;
 exports[`schema checks extensions 2`] = `
 Array [
   Object {
-    "dataPath": ".tokens[0].extensions['abc']",
+    "instancePath": "/tokens/0/extensions/abc",
     "keyword": "type",
-    "message": "should be string",
+    "message": "must be string",
     "params": Object {
       "type": "string",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['abc']",
+    "instancePath": "/tokens/0/extensions/abc",
     "keyword": "type",
-    "message": "should be boolean",
+    "message": "must be boolean",
     "params": Object {
       "type": "boolean",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['abc']",
+    "instancePath": "/tokens/0/extensions/abc",
     "keyword": "type",
-    "message": "should be number",
+    "message": "must be number",
     "params": Object {
       "type": "number",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['abc']",
+    "instancePath": "/tokens/0/extensions/abc",
     "keyword": "type",
-    "message": "should be null",
+    "message": "must be null",
     "params": Object {
       "type": "null",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['abc']",
+    "instancePath": "/tokens/0/extensions/abc",
     "keyword": "anyOf",
-    "message": "should match some schema in anyOf",
+    "message": "must match a schema in anyOf",
     "params": Object {},
     "schemaPath": "#/definitions/ExtensionValue/anyOf",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['def']",
+    "instancePath": "/tokens/0/extensions/def",
     "keyword": "type",
-    "message": "should be string",
+    "message": "must be string",
     "params": Object {
       "type": "string",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['def']",
+    "instancePath": "/tokens/0/extensions/def",
     "keyword": "type",
-    "message": "should be boolean",
+    "message": "must be boolean",
     "params": Object {
       "type": "boolean",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['def']",
+    "instancePath": "/tokens/0/extensions/def",
     "keyword": "type",
-    "message": "should be number",
+    "message": "must be number",
     "params": Object {
       "type": "number",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['def']",
+    "instancePath": "/tokens/0/extensions/def",
     "keyword": "type",
-    "message": "should be null",
+    "message": "must be null",
     "params": Object {
       "type": "null",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['def']",
+    "instancePath": "/tokens/0/extensions/def",
     "keyword": "anyOf",
-    "message": "should match some schema in anyOf",
+    "message": "must match a schema in anyOf",
     "params": Object {},
     "schemaPath": "#/definitions/ExtensionValue/anyOf",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "instancePath": "/tokens/0/extensions/isBoolean",
     "keyword": "type",
-    "message": "should be string",
+    "message": "must be string",
     "params": Object {
       "type": "string",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "instancePath": "/tokens/0/extensions/isBoolean",
     "keyword": "type",
-    "message": "should be boolean",
+    "message": "must be boolean",
     "params": Object {
       "type": "boolean",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "instancePath": "/tokens/0/extensions/isBoolean",
     "keyword": "type",
-    "message": "should be number",
+    "message": "must be number",
     "params": Object {
       "type": "number",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "instancePath": "/tokens/0/extensions/isBoolean",
     "keyword": "type",
-    "message": "should be null",
+    "message": "must be null",
     "params": Object {
       "type": "null",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isBoolean']",
+    "instancePath": "/tokens/0/extensions/isBoolean",
     "keyword": "anyOf",
-    "message": "should match some schema in anyOf",
+    "message": "must match a schema in anyOf",
     "params": Object {},
     "schemaPath": "#/definitions/ExtensionValue/anyOf",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isNull']",
+    "instancePath": "/tokens/0/extensions/isNull",
     "keyword": "type",
-    "message": "should be string",
+    "message": "must be string",
     "params": Object {
       "type": "string",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isNull']",
+    "instancePath": "/tokens/0/extensions/isNull",
     "keyword": "type",
-    "message": "should be boolean",
+    "message": "must be boolean",
     "params": Object {
       "type": "boolean",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isNull']",
+    "instancePath": "/tokens/0/extensions/isNull",
     "keyword": "type",
-    "message": "should be number",
+    "message": "must be number",
     "params": Object {
       "type": "number",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isNull']",
+    "instancePath": "/tokens/0/extensions/isNull",
     "keyword": "type",
-    "message": "should be null",
+    "message": "must be null",
     "params": Object {
       "type": "null",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['isNull']",
+    "instancePath": "/tokens/0/extensions/isNull",
     "keyword": "anyOf",
-    "message": "should match some schema in anyOf",
+    "message": "must match a schema in anyOf",
     "params": Object {},
     "schemaPath": "#/definitions/ExtensionValue/anyOf",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['tooLong']",
+    "instancePath": "/tokens/0/extensions/tooLong",
     "keyword": "maxLength",
-    "message": "should NOT be longer than 42 characters",
+    "message": "must NOT have more than 42 characters",
     "params": Object {
       "limit": 42,
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/0/maxLength",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['tooLong']",
+    "instancePath": "/tokens/0/extensions/tooLong",
     "keyword": "type",
-    "message": "should be boolean",
+    "message": "must be boolean",
     "params": Object {
       "type": "boolean",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['tooLong']",
+    "instancePath": "/tokens/0/extensions/tooLong",
     "keyword": "type",
-    "message": "should be number",
+    "message": "must be number",
     "params": Object {
       "type": "number",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['tooLong']",
+    "instancePath": "/tokens/0/extensions/tooLong",
     "keyword": "type",
-    "message": "should be null",
+    "message": "must be null",
     "params": Object {
       "type": "null",
     },
     "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
   },
   Object {
-    "dataPath": ".tokens[0].extensions['tooLong']",
+    "instancePath": "/tokens/0/extensions/tooLong",
     "keyword": "anyOf",
-    "message": "should match some schema in anyOf",
+    "message": "must match a schema in anyOf",
     "params": Object {},
     "schemaPath": "#/definitions/ExtensionValue/anyOf",
   },
@@ -227,9 +227,9 @@ Array [
 exports[`schema checks token address 1`] = `
 Array [
   Object {
-    "dataPath": ".tokens[0].address",
+    "instancePath": "/tokens/0/address",
     "keyword": "pattern",
-    "message": "should match pattern \\"^0x[a-fA-F0-9]{40}$\\"",
+    "message": "must match pattern \\"^0x[a-fA-F0-9]{40}$\\"",
     "params": Object {
       "pattern": "^0x[a-fA-F0-9]{40}$",
     },
@@ -241,12 +241,11 @@ Array [
 exports[`schema checks version 1`] = `
 Array [
   Object {
-    "dataPath": ".version.patch",
+    "instancePath": "/version/patch",
     "keyword": "minimum",
-    "message": "should be >= 0",
+    "message": "must be >= 0",
     "params": Object {
       "comparison": ">=",
-      "exclusive": false,
       "limit": 0,
     },
     "schemaPath": "#/definitions/Version/properties/patch/minimum",
@@ -257,12 +256,11 @@ Array [
 exports[`schema checks version 2`] = `
 Array [
   Object {
-    "dataPath": ".version.minor",
+    "instancePath": "/version/minor",
     "keyword": "minimum",
-    "message": "should be >= 0",
+    "message": "must be >= 0",
     "params": Object {
       "comparison": ">=",
-      "exclusive": false,
       "limit": 0,
     },
     "schemaPath": "#/definitions/Version/properties/minor/minimum",
@@ -273,12 +271,11 @@ Array [
 exports[`schema checks version 3`] = `
 Array [
   Object {
-    "dataPath": ".version.major",
+    "instancePath": "/version/major",
     "keyword": "minimum",
-    "message": "should be >= 0",
+    "message": "must be >= 0",
     "params": Object {
       "comparison": ">=",
-      "exclusive": false,
       "limit": 0,
     },
     "schemaPath": "#/definitions/Version/properties/major/minimum",
@@ -289,9 +286,9 @@ Array [
 exports[`schema empty list fails 1`] = `
 Array [
   Object {
-    "dataPath": ".tokens",
+    "instancePath": "/tokens",
     "keyword": "minItems",
-    "message": "should NOT have fewer than 1 items",
+    "message": "must NOT have fewer than 1 items",
     "params": Object {
       "limit": 1,
     },
@@ -303,9 +300,9 @@ Array [
 exports[`schema fails with 10001 tokens 1`] = `
 Array [
   Object {
-    "dataPath": ".tokens",
+    "instancePath": "/tokens",
     "keyword": "maxItems",
-    "message": "should NOT have more than 10000 items",
+    "message": "must NOT have more than 10000 items",
     "params": Object {
       "limit": 10000,
     },
@@ -317,9 +314,9 @@ Array [
 exports[`schema fails with big names 1`] = `
 Array [
   Object {
-    "dataPath": ".tokens[0].name",
+    "instancePath": "/tokens/0/name",
     "keyword": "maxLength",
-    "message": "should NOT be longer than 40 characters",
+    "message": "must NOT have more than 40 characters",
     "params": Object {
       "limit": 40,
     },
@@ -331,12 +328,11 @@ Array [
 exports[`schema invalid decimals 1`] = `
 Array [
   Object {
-    "dataPath": ".tokens[0].decimals",
+    "instancePath": "/tokens/0/decimals",
     "keyword": "maximum",
-    "message": "should be <= 255",
+    "message": "must be <= 255",
     "params": Object {
       "comparison": "<=",
-      "exclusive": false,
       "limit": 255,
     },
     "schemaPath": "#/properties/decimals/maximum",
@@ -347,12 +343,11 @@ Array [
 exports[`schema invalid decimals 2`] = `
 Array [
   Object {
-    "dataPath": ".tokens[0].decimals",
+    "instancePath": "/tokens/0/decimals",
     "keyword": "minimum",
-    "message": "should be >= 0",
+    "message": "must be >= 0",
     "params": Object {
       "comparison": ">=",
-      "exclusive": false,
       "limit": 0,
     },
     "schemaPath": "#/properties/decimals/minimum",
@@ -363,9 +358,9 @@ Array [
 exports[`schema invalid logo URI 1`] = `
 Array [
   Object {
-    "dataPath": ".tokens[0].logoURI",
+    "instancePath": "/tokens/0/logoURI",
     "keyword": "format",
-    "message": "should match format \\"uri\\"",
+    "message": "must match format \\"uri\\"",
     "params": Object {
       "format": "uri",
     },
@@ -377,9 +372,9 @@ Array [
 exports[`schema invalid logo URI 2`] = `
 Array [
   Object {
-    "dataPath": ".logoURI",
+    "instancePath": "/logoURI",
     "keyword": "format",
-    "message": "should match format \\"uri\\"",
+    "message": "must match format \\"uri\\"",
     "params": Object {
       "format": "uri",
     },
@@ -388,12 +383,26 @@ Array [
 ]
 `;
 
+exports[`schema invalid number of tags on token 1`] = `
+Array [
+  Object {
+    "instancePath": "/tokens/0/tags",
+    "keyword": "maxItems",
+    "message": "must NOT have more than 10 items",
+    "params": Object {
+      "limit": 10,
+    },
+    "schemaPath": "#/properties/tags/maxItems",
+  },
+]
+`;
+
 exports[`schema invalid timestamp 1`] = `
 Array [
   Object {
-    "dataPath": ".timestamp",
+    "instancePath": "/timestamp",
     "keyword": "format",
-    "message": "should match format \\"date-time\\"",
+    "message": "must match format \\"date-time\\"",
     "params": Object {
       "format": "date-time",
     },
@@ -407,36 +416,36 @@ exports[`schema minimum example schema 1`] = `null`;
 exports[`schema requires name, timestamp, version, tokens 1`] = `
 Array [
   Object {
-    "dataPath": "",
+    "instancePath": "",
     "keyword": "required",
-    "message": "should have required property 'name'",
+    "message": "must have required property 'name'",
     "params": Object {
       "missingProperty": "name",
     },
     "schemaPath": "#/required",
   },
   Object {
-    "dataPath": "",
+    "instancePath": "",
     "keyword": "required",
-    "message": "should have required property 'timestamp'",
+    "message": "must have required property 'timestamp'",
     "params": Object {
       "missingProperty": "timestamp",
     },
     "schemaPath": "#/required",
   },
   Object {
-    "dataPath": "",
+    "instancePath": "",
     "keyword": "required",
-    "message": "should have required property 'version'",
+    "message": "must have required property 'version'",
     "params": Object {
       "missingProperty": "version",
     },
     "schemaPath": "#/required",
   },
   Object {
-    "dataPath": "",
+    "instancePath": "",
     "keyword": "required",
-    "message": "should have required property 'tokens'",
+    "message": "must have required property 'tokens'",
     "params": Object {
       "missingProperty": "tokens",
     },
