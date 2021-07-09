@@ -2,8 +2,10 @@ name: Tests
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -18,5 +20,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-      - run: yarn install
-      - run: npm test
+      - run: yarn install --frozen-lockfile
+      - run: yarn test
