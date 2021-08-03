@@ -865,6 +865,19 @@
       "name": "Maker",
       "symbol": "MKR",
       "decimals": 18
-    }
-  ]
-}
+    },
+    {
+      "address": "0xf67932d8c28227c586d971b6b51749d35dc03558",
+      "chainId": 42,
+      "name": "PalGold",
+      "symbol": "PALG",
+      "decimals": 18
+    },
+    {
+      "address": "0xa6850723a39fc6c5ad1c68615c65e7acfad900d3",
+      "chainId": 42,
+      "name": "PlayAndLike",
+      "symbol": "PAL",
+      "decimals": 18
+    },
+    {
