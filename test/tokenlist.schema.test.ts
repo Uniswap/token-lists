@@ -20,6 +20,7 @@ import extensionsValid from './schema/extensions-valid.tokenlist.json';
 import extensionsInvalid from './schema/extensions-invalid.tokenlist.json';
 import extensionsValidObject from './schema/extensions-valid-object.tokenlist.json';
 import extensionsInvalidObjectTooDeep from './schema/extensions-invalid-object-too-deep.tokenlist.json';
+import tokenSymbolWithPeriod from './schema/tokenwithperiodsymbol.tokenlist.json';
 import addFormats from 'ajv-formats';
 
 const ajv = new Ajv({ allErrors: true });
@@ -104,6 +105,10 @@ describe('schema', () => {
 
   it('checks extensions with too much nesting', () => {
     checkSchema(extensionsInvalidObjectTooDeep, false);
+  });
+
+  it('token symbols may contain periods', () => {
+    checkSchema(tokenSymbolWithPeriod, true);
   });
 
   it('allows up to 10k tokens', () => {
