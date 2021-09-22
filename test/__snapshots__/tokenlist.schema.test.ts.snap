@@ -13,7 +13,7 @@ Array [
     "params": Object {
       "type": "string",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/0/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/abc",
@@ -22,7 +22,7 @@ Array [
     "params": Object {
       "type": "boolean",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/1/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/abc",
@@ -31,7 +31,7 @@ Array [
     "params": Object {
       "type": "number",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/2/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/abc",
@@ -40,14 +40,30 @@ Array [
     "params": Object {
       "type": "null",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/3/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/abc",
     "keyword": "anyOf",
     "message": "must match a schema in anyOf",
     "params": Object {},
-    "schemaPath": "#/definitions/ExtensionValue/anyOf",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/abc",
+    "keyword": "type",
+    "message": "must be object",
+    "params": Object {
+      "type": "object",
+    },
+    "schemaPath": "#/anyOf/1/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/abc",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/anyOf",
   },
   Object {
     "instancePath": "/tokens/0/extensions/def",
@@ -56,7 +72,7 @@ Array [
     "params": Object {
       "type": "string",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/0/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/def",
@@ -65,7 +81,7 @@ Array [
     "params": Object {
       "type": "boolean",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/1/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/def",
@@ -74,7 +90,7 @@ Array [
     "params": Object {
       "type": "number",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/2/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/def",
@@ -83,100 +99,30 @@ Array [
     "params": Object {
       "type": "null",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/3/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/def",
     "keyword": "anyOf",
     "message": "must match a schema in anyOf",
     "params": Object {},
-    "schemaPath": "#/definitions/ExtensionValue/anyOf",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf",
   },
   Object {
-    "instancePath": "/tokens/0/extensions/isBoolean",
+    "instancePath": "/tokens/0/extensions/def",
     "keyword": "type",
-    "message": "must be string",
+    "message": "must be object",
     "params": Object {
-      "type": "string",
+      "type": "object",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
+    "schemaPath": "#/anyOf/1/type",
   },
   Object {
-    "instancePath": "/tokens/0/extensions/isBoolean",
-    "keyword": "type",
-    "message": "must be boolean",
-    "params": Object {
-      "type": "boolean",
-    },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
-  },
-  Object {
-    "instancePath": "/tokens/0/extensions/isBoolean",
-    "keyword": "type",
-    "message": "must be number",
-    "params": Object {
-      "type": "number",
-    },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
-  },
-  Object {
-    "instancePath": "/tokens/0/extensions/isBoolean",
-    "keyword": "type",
-    "message": "must be null",
-    "params": Object {
-      "type": "null",
-    },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
-  },
-  Object {
-    "instancePath": "/tokens/0/extensions/isBoolean",
+    "instancePath": "/tokens/0/extensions/def",
     "keyword": "anyOf",
     "message": "must match a schema in anyOf",
     "params": Object {},
-    "schemaPath": "#/definitions/ExtensionValue/anyOf",
-  },
-  Object {
-    "instancePath": "/tokens/0/extensions/isNull",
-    "keyword": "type",
-    "message": "must be string",
-    "params": Object {
-      "type": "string",
-    },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/0/type",
-  },
-  Object {
-    "instancePath": "/tokens/0/extensions/isNull",
-    "keyword": "type",
-    "message": "must be boolean",
-    "params": Object {
-      "type": "boolean",
-    },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
-  },
-  Object {
-    "instancePath": "/tokens/0/extensions/isNull",
-    "keyword": "type",
-    "message": "must be number",
-    "params": Object {
-      "type": "number",
-    },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
-  },
-  Object {
-    "instancePath": "/tokens/0/extensions/isNull",
-    "keyword": "type",
-    "message": "must be null",
-    "params": Object {
-      "type": "null",
-    },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
-  },
-  Object {
-    "instancePath": "/tokens/0/extensions/isNull",
-    "keyword": "anyOf",
-    "message": "must match a schema in anyOf",
-    "params": Object {},
-    "schemaPath": "#/definitions/ExtensionValue/anyOf",
+    "schemaPath": "#/anyOf",
   },
   Object {
     "instancePath": "/tokens/0/extensions/tooLong",
@@ -185,7 +131,7 @@ Array [
     "params": Object {
       "limit": 42,
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/0/maxLength",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/0/maxLength",
   },
   Object {
     "instancePath": "/tokens/0/extensions/tooLong",
@@ -194,7 +140,7 @@ Array [
     "params": Object {
       "type": "boolean",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/1/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/1/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/tooLong",
@@ -203,7 +149,7 @@ Array [
     "params": Object {
       "type": "number",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/2/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/2/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/tooLong",
@@ -212,14 +158,187 @@ Array [
     "params": Object {
       "type": "null",
     },
-    "schemaPath": "#/definitions/ExtensionValue/anyOf/3/type",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/3/type",
   },
   Object {
     "instancePath": "/tokens/0/extensions/tooLong",
     "keyword": "anyOf",
     "message": "must match a schema in anyOf",
     "params": Object {},
-    "schemaPath": "#/definitions/ExtensionValue/anyOf",
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/tooLong",
+    "keyword": "type",
+    "message": "must be object",
+    "params": Object {
+      "type": "object",
+    },
+    "schemaPath": "#/anyOf/1/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/tooLong",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/anyOf",
+  },
+]
+`;
+
+exports[`schema checks extensions with object 1`] = `null`;
+
+exports[`schema checks extensions with too much nesting 1`] = `
+Array [
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject",
+    "keyword": "type",
+    "message": "must be string",
+    "params": Object {
+      "type": "string",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/0/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject",
+    "keyword": "type",
+    "message": "must be boolean",
+    "params": Object {
+      "type": "boolean",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/1/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject",
+    "keyword": "type",
+    "message": "must be number",
+    "params": Object {
+      "type": "number",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/2/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject",
+    "keyword": "type",
+    "message": "must be null",
+    "params": Object {
+      "type": "null",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/3/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1",
+    "keyword": "type",
+    "message": "must be string",
+    "params": Object {
+      "type": "string",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/0/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1",
+    "keyword": "type",
+    "message": "must be boolean",
+    "params": Object {
+      "type": "boolean",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/1/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1",
+    "keyword": "type",
+    "message": "must be number",
+    "params": Object {
+      "type": "number",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/2/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1",
+    "keyword": "type",
+    "message": "must be null",
+    "params": Object {
+      "type": "null",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/3/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1/anotherInvalidObject",
+    "keyword": "type",
+    "message": "must be string",
+    "params": Object {
+      "type": "string",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/0/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1/anotherInvalidObject",
+    "keyword": "type",
+    "message": "must be boolean",
+    "params": Object {
+      "type": "boolean",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/1/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1/anotherInvalidObject",
+    "keyword": "type",
+    "message": "must be number",
+    "params": Object {
+      "type": "number",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/2/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1/anotherInvalidObject",
+    "keyword": "type",
+    "message": "must be null",
+    "params": Object {
+      "type": "null",
+    },
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf/3/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1/anotherInvalidObject",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/definitions/ExtensionPrimitiveValue/anyOf",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1/anotherInvalidObject",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/anyOf",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject/1",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/anyOf",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions/withObject",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/anyOf",
   },
 ]
 `;

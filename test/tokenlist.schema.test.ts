@@ -18,6 +18,8 @@ import invalidNumTags from './schema/invalidNumTags.tokenlist.json';
 import invalidDecimals2 from './schema/invaliddecimals.2.tokenlist.json';
 import extensionsValid from './schema/extensions-valid.tokenlist.json';
 import extensionsInvalid from './schema/extensions-invalid.tokenlist.json';
+import extensionsValidObject from './schema/extensions-valid-object.tokenlist.json';
+import extensionsInvalidObjectTooDeep from './schema/extensions-invalid-object-too-deep.tokenlist.json';
 import addFormats from 'ajv-formats';
 
 const ajv = new Ajv({ allErrors: true });
@@ -94,6 +96,14 @@ describe('schema', () => {
   it('checks extensions', () => {
     checkSchema(extensionsValid, true);
     checkSchema(extensionsInvalid, false);
+  });
+
+  it('checks extensions with object', () => {
+    checkSchema(extensionsValidObject, true);
+  });
+
+  it('checks extensions with too much nesting', () => {
+    checkSchema(extensionsInvalidObjectTooDeep, false);
   });
 
   it('allows up to 10k tokens', () => {
