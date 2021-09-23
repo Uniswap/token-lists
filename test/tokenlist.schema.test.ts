@@ -21,6 +21,7 @@ import extensionsInvalid from './schema/extensions-invalid.tokenlist.json';
 import extensionsValidObject from './schema/extensions-valid-object.tokenlist.json';
 import extensionsInvalidObjectTooDeep from './schema/extensions-invalid-object-too-deep.tokenlist.json';
 import tokenSymbolWithPeriod from './schema/tokenwithperiodsymbol.tokenlist.json';
+import crossChainExtensions from './schema/example-crosschain.tokenlist.json';
 import addFormats from 'ajv-formats';
 
 const ajv = new Ajv({ allErrors: true });
@@ -109,6 +110,10 @@ describe('schema', () => {
 
   it('token symbols may contain periods', () => {
     checkSchema(tokenSymbolWithPeriod, true);
+  });
+
+  it('cross chain extensions example', () => {
+    checkSchema(crossChainExtensions, true);
   });
 
   it('allows up to 10k tokens', () => {

@@ -402,6 +402,8 @@ Array [
 ]
 `;
 
+exports[`schema cross chain extensions example 1`] = `null`;
+
 exports[`schema empty list fails 1`] = `
 Array [
   Object {
