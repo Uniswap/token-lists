@@ -36,6 +36,13 @@
       "symbol": "$TRDL",
       "name": "Strudel Finance",
       "decimals": 18
+    },
+    {
+      "chainId": 1,
+      "address": "0x0000000000000000000000000000000000000001",
+      "decimals": 18,
+      "name": "[brackets]&(parenthesis)",
+      "symbol": "symbol"
     }
   ],
   "version": {
