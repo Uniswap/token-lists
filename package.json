@@ -1,6 +1,10 @@
 {
   "name": "@uniswap/token-lists",
-  "author": "Moody Salem",
+  "author": {
+    "name": "Uniswap Labs",
+    "email": "contact@uniswap.org",
+    "url": "https://uniswap.org"
+  },
   "description": "📚 The Token Lists specification",
   "version": "1.0.0-beta.26",
   "license": "MIT",
