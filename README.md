@@ -28,6 +28,22 @@ This package does not include code for token list validation. You can easily do 
 [ajv](https://ajv.js.org/) to perform the validation against the JSON schema. The schema is exported from the package
 for ease of use.
 
+```typescript
+import Ajv from 'ajv';
+import { schema } from '@uniswap/token-lists'
+
+const ajv = new Ajv({ allErrors: true });
+const validate = ajv.compile(schema);
+
+const response = await fetch('https://bridge.arbitrum.io/token-list-42161.json')
+const listData = await response.json()
+
+const valid = validate(listData)
+if (!valid) {
+  // oh no!
+}
+```
+
 ## Authoring token lists
 
 ### Manual
