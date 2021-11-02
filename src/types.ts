@@ -7,7 +7,13 @@ export interface TokenInfo {
   readonly logoURI?: string;
   readonly tags?: string[];
   readonly extensions?: {
-    readonly [key: string]: string | number | boolean | null;
+    readonly [key: string]:
+      | Record<string, any>
+      | Record<string, any>[]
+      | string
+      | number
+      | boolean
+      | null;
   };
 }
 
