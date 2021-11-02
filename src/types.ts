@@ -1,12 +1,4 @@
-interface Extensions {
-  readonly [key: string]:
-    | Record<string, Extensions>
-    | Record<string, Extensions>[]
-    | string
-    | number
-    | boolean
-    | null;
-}
+type ExtensionValue = string | number | boolean | null;
 
 export interface TokenInfo {
   readonly chainId: number;
@@ -16,7 +8,12 @@ export interface TokenInfo {
   readonly symbol: string;
   readonly logoURI?: string;
   readonly tags?: string[];
-  readonly extensions?: Extensions;
+  readonly extensions?: {
+    readonly [key: string]:
+      | { [key: string]: ExtensionValue }
+      | { [key: string]: ExtensionValue }[]
+      | ExtensionValue;
+  };
 }
 
 export interface Version {
