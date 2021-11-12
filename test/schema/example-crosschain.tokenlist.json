@@ -58,7 +58,7 @@
         "bridgeInfo": {
           "1": {
             "tokenAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-            "originBridgeAddress": "0x5288c571fd7ad117bea99bf60fe0846c4e84f933",
+            "originBridgeAddress": "0x096760F208390250649E3e8763348E783AEF5562",
             "destBridgeAddress": "0xcEe284F754E854890e311e3280b767F80797180d"
           }
         }
