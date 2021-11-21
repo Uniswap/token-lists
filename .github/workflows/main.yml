@@ -10,9 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [ '10', '12', '14' ]
     name: Node ${{ matrix.node }}
     steps:
       - uses: actions/checkout@v2
@@ -23,5 +20,4 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@YetiSwap'
       - run: yarn install --frozen-lockfile
-      - run: yarn test
       - run: yarn publish
