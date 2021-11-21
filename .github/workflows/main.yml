@@ -24,3 +24,4 @@ jobs:
           scope: '@YetiSwap'
       - run: yarn install --frozen-lockfile
       - run: yarn test
+      - run: yarn publish
