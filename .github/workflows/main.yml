@@ -19,7 +19,7 @@ jobs:
           node-version: ${{ matrix.node }}
           registry-url: https://npm.pkg.github.com/
           scope: '@YetiSwap'
-      - run: yarn install --frozen-lockfile
-      - run: yarn publish
+      - run: npm install --frozen-lockfile
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
