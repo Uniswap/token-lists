@@ -13,6 +13,9 @@
   "engines": {
     "node": ">=10"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@yetiswap"
+  },
   "repository": {
     "url": "https://github.com/Uniswap/token-lists",
     "type": "git"
