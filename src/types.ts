@@ -9,10 +9,7 @@ export interface TokenInfo {
   readonly logoURI?: string;
   readonly tags?: string[];
   readonly extensions?: {
-    readonly [key: string]:
-      | { [key: string]: ExtensionValue }
-      | { [key: string]: ExtensionValue }[]
-      | ExtensionValue;
+    readonly [key: string]: { [key: string]: ExtensionValue } | ExtensionValue;
   };
 }
 
