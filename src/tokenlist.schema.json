@@ -74,26 +74,36 @@
       ]
     },
     "ExtensionMap": {
-      "type": "object",
-      "description": "An object containing any arbitrary or vendor-specific token metadata",
-      "maxProperties": 10,
-      "propertyNames": {
-        "$ref": "#/definitions/ExtensionIdentifier"
-      },
-      "additionalProperties": {
-        "$ref": "#/definitions/ExtensionValue"
-      },
-      "examples": [
+      "anyOf": [
         {
-          "color": "#000000",
-          "is_verified_by_me": true
+          "type": "object",
+          "description": "An object containing any arbitrary or vendor-specific token metadata",
+          "maxProperties": 10,
+          "propertyNames": {
+            "$ref": "#/definitions/ExtensionIdentifier"
+          },
+          "additionalProperties": {
+            "$ref": "#/definitions/ExtensionValue"
+          },
+          "examples": [
+            {
+              "color": "#000000",
+              "is_verified_by_me": true
+            },
+            {
+              "x-bridged-addresses-by-chain": {
+                "1": {
+                  "bridgeAddress": "0x4200000000000000000000000000000000000010",
+                  "tokenAddress": "0x4200000000000000000000000000000000000010"
+                }
+              }
+            }
+          ]
         },
         {
-          "x-bridged-addresses-by-chain": {
-            "1": {
-              "bridgeAddress": "0x4200000000000000000000000000000000000010",
-              "tokenAddress": "0x4200000000000000000000000000000000000010"
-            }
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ExtensionMap"
           }
         }
       ]
