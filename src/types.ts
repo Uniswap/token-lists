@@ -9,9 +9,9 @@ export interface TokenInfo {
   readonly tags?: string[];
   readonly extensions?: {
     readonly [ExtensionIdentifier: string]:
-    | { [ExtensionIdentifier: string]: ExtensionValue }
-    | ExtensionValue[]
-    | ExtensionValue;
+      | { [ExtensionIdentifier: string]: ExtensionValue }
+      | ExtensionValue[]
+      | ExtensionValue;
   };
 }
 

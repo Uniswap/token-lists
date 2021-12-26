@@ -183,6 +183,22 @@ Array [
     "params": Object {},
     "schemaPath": "#/anyOf",
   },
+  Object {
+    "instancePath": "/tokens/0/extensions",
+    "keyword": "type",
+    "message": "must be array",
+    "params": Object {
+      "type": "array",
+    },
+    "schemaPath": "#/anyOf/1/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/anyOf",
+  },
 ]
 `;
 
@@ -335,6 +351,22 @@ Array [
   },
   Object {
     "instancePath": "/tokens/0/extensions/withObject",
+    "keyword": "anyOf",
+    "message": "must match a schema in anyOf",
+    "params": Object {},
+    "schemaPath": "#/anyOf",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions",
+    "keyword": "type",
+    "message": "must be array",
+    "params": Object {
+      "type": "array",
+    },
+    "schemaPath": "#/anyOf/1/type",
+  },
+  Object {
+    "instancePath": "/tokens/0/extensions",
     "keyword": "anyOf",
     "message": "must match a schema in anyOf",
     "params": Object {},
