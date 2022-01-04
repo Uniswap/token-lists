@@ -15,7 +15,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=14"
+    "node": ">=12"
   },
   "repository": {
     "url": "https://github.com/Uniswap/token-lists",
