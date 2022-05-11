@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://uniswap.org/tokenlist.schema.json",
-  "title": "Uniswap Token List",
-  "description": "Schema for lists of tokens compatible with the Uniswap Interface",
+  "title": "Central Infinite Token List",
+  "description": "DeFi-Utility Token",
   "definitions": {
     "Version": {
       "type": "object",
@@ -199,12 +199,12 @@
     },
     "TokenInfo": {
       "type": "object",
-      "description": "Metadata for a single token in a token list",
+      "description": "DeFi-Utility Token",
       "additionalProperties": false,
       "properties": {
         "chainId": {
           "type": "integer",
-          "description": "The chain ID of the Ethereum network where this token is deployed",
+          "description": "1",
           "minimum": 1,
           "examples": [
             1,
@@ -213,7 +213,7 @@
         },
         "address": {
           "type": "string",
-          "description": "The checksummed address of the token on the specified chain ID",
+          "description": "0xa4Ff1bfA01d4Bb13f24Cc026BEE40119Baf8fe1C",
           "pattern": "^0x[a-fA-F0-9]{40}$",
           "examples": [
             "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -221,7 +221,7 @@
         },
         "decimals": {
           "type": "integer",
-          "description": "The number of decimals for the token balance",
+          "description": "18",
           "minimum": 0,
           "maximum": 255,
           "examples": [
@@ -230,7 +230,7 @@
         },
         "name": {
           "type": "string",
-          "description": "The name of the token",
+          "description": "Central Infinite",
           "minLength": 1,
           "maxLength": 40,
           "pattern": "^[ \\w.'+\\-%/À-ÖØ-öø-ÿ:&\\[\\]\\(\\)]+$",
@@ -240,7 +240,7 @@
         },
         "symbol": {
           "type": "string",
-          "description": "The symbol for the token; must be alphanumeric",
+          "description": "CENI",
           "pattern": "^[a-zA-Z0-9+\\-%/$.]+$",
           "minLength": 1,
           "maxLength": 20,
@@ -250,7 +250,7 @@
         },
         "logoURI": {
           "type": "string",
-          "description": "A URI to the token logo asset; if not set, interface will attempt to find a logo based on the token address; suggest SVG or PNG of size 64x64",
+          "description": "https://s3.amazonaws.com/roll-token.tryroll.com/CENI/36c4a459-0b17-4121-90bf-7c575cb3e266",
           "format": "uri",
           "examples": [
             "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM"
@@ -258,7 +258,7 @@
         },
         "tags": {
           "type": "array",
-          "description": "An array of tag identifiers associated with the token; tags are defined at the list level",
+          "description": "DeFi",
           "items": {
             "$ref": "#/definitions/TagIdentifier"
           },
@@ -286,7 +286,7 @@
   "properties": {
     "name": {
       "type": "string",
-      "description": "The name of the token list",
+      "description": "Central Infinite Token List",
       "minLength": 1,
       "maxLength": 20,
       "pattern": "^[\\w ]+$",
@@ -313,7 +313,7 @@
     },
     "keywords": {
       "type": "array",
-      "description": "Keywords associated with the contents of the list; may be used in list discoverability",
+      "description": "DeFi",
       "items": {
         "type": "string",
         "description": "A keyword to describe the contents of the list",
@@ -331,7 +331,7 @@
     },
     "tags": {
       "type": "object",
-      "description": "A mapping of tag identifiers to their name and description",
+      "description": "DeFi",
       "propertyNames": {
         "$ref": "#/definitions/TagIdentifier"
       },
@@ -350,7 +350,7 @@
     },
     "logoURI": {
       "type": "string",
-      "description": "A URI for the logo of the token list; prefer SVG or PNG of size 256x256",
+      "description": "https://s3.amazonaws.com/roll-token.tryroll.com/CENI/36c4a459-0b17-4121-90bf-7c575cb3e266",
       "format": "uri",
       "examples": [
         "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM"
