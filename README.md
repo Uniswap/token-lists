@@ -42,13 +42,13 @@ async function validate() {
   addFormats(ajv)
   const validator = ajv.compile(schema);
   const response = await fetch(ARBITRUM_LIST)
-  const data = response.json()
+  const data = await response.json()
   const valid = validator(data)
   if (valid) {
     return valid
   }
   if (validator.errors) {
-    return validator.errors.map(error => {
+    throw validator.errors.map(error => {
       delete error.data
       return error
     })
@@ -56,7 +56,7 @@ async function validate() {
 }
 
 validate()
-  .then(console.log)
+  .then(console.log("Valid List.")
   .catch(console.error)
 
 ```
