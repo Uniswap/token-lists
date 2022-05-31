@@ -56,7 +56,7 @@ async function validate() {
 }
 
 validate()
-  .then(console.log("Valid List.")
+  .then(console.log("Valid List."))
   .catch(console.error)
 
 ```
