@@ -288,7 +288,7 @@
       "type": "string",
       "description": "The name of the token list",
       "minLength": 1,
-      "maxLength": 20,
+      "maxLength": 30,
       "pattern": "^[\\w ]+$",
       "examples": [
         "My Token List"
