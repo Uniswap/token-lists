@@ -1,4 +1,4 @@
-type ExtensionValue = string | number | boolean | null;
+type ExtensionValue = string | number | boolean | null | undefined;
 
 export interface TokenInfo {
   readonly chainId: number;
@@ -9,7 +9,15 @@ export interface TokenInfo {
   readonly logoURI?: string;
   readonly tags?: string[];
   readonly extensions?: {
-    readonly [key: string]: { [key: string]: ExtensionValue } | ExtensionValue;
+    readonly [key: string]:
+      | {
+          [key: string]:
+            | {
+                [key: string]: ExtensionValue;
+              }
+            | ExtensionValue;
+        }
+      | ExtensionValue;
   };
 }
 
