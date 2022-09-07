@@ -43,6 +43,13 @@
       "decimals": 18,
       "name": "[brackets]&(parenthesis)",
       "symbol": "symbol"
+    },
+    {
+      "chainId": 1,
+      "address": "0x76ee13b775331eeae2bc5e3b67f4a44101b27a94",
+      "decimals": 18,
+      "name": "Amatsukami",
+      "symbol": "天津神"
     }
   ],
   "version": {
