@@ -50,6 +50,13 @@
       "decimals": 18,
       "name": "Amatsukami",
       "symbol": "天津神"
+    },
+    {
+      "chainId": 137,
+      "address": "0x841120E51aD43EfE489244728532854A352073aD",
+      "decimals": 6,
+      "name": "Timeless ERC4626-Wrapped",
+      "symbol": "∞-waUSDC-xPYT"
     }
   ],
   "version": {
