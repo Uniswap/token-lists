@@ -43,6 +43,20 @@
       "decimals": 18,
       "name": "[brackets]&(parenthesis)",
       "symbol": "symbol"
+    },
+    {
+      "chainId": 1,
+      "address": "0x76ee13b775331eeae2bc5e3b67f4a44101b27a94",
+      "decimals": 18,
+      "name": "Amatsukami",
+      "symbol": "天津神"
+    },
+    {
+      "chainId": 137,
+      "address": "0x841120E51aD43EfE489244728532854A352073aD",
+      "decimals": 6,
+      "name": "Timeless ERC4626-Wrapped",
+      "symbol": "∞-waUSDC-xPYT"
     }
   ],
   "version": {
