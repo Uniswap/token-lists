@@ -5,6 +5,7 @@ import exampleNameSymbolSpecialCharacters from './schema/example-name-symbol-spe
 import bigExampleList from './schema/bigexample.tokenlist.json';
 import exampleListMinimum from './schema/exampleminimum.tokenlist.json';
 import emptyList from './schema/empty.tokenlist.json';
+import emptyNameSymbol from './schema/empty-name-symbol.tokenlist.json';
 import bigWords from './schema/bigwords.tokenlist.json';
 import invalidTokenAddress from './schema/invalidtokenaddress.tokenlist.json';
 import invalidTimestamp from './schema/invalidtimestamp.tokenlist.json';
@@ -61,6 +62,10 @@ describe('schema', () => {
 
   it('empty list fails', () => {
     checkSchema(emptyList, false);
+  });
+
+  it('works for empty names and symbols', () => {
+    checkSchema(emptyNameSymbol, true);
   });
 
   it('fails with big names', () => {
