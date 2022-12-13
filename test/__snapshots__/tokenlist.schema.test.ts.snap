@@ -579,6 +579,8 @@ exports[`schema token symbols may contain periods 1`] = `null`;
 
 exports[`schema works for big example schema 1`] = `null`;
 
+exports[`schema works for empty names and symbols 1`] = `null`;
+
 exports[`schema works for example schema 1`] = `null`;
 
 exports[`schema works for special characters schema 1`] = `null`;
