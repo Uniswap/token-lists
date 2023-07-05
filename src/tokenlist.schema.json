@@ -325,6 +325,30 @@
       "minItems": 1,
       "maxItems": 10000
     },
+    "tokenMap": {
+      "type": "object",
+      "description": "A mapping of key 'chainId_tokenAddress' to its corresponding token object",
+      "minProperties": 1,
+      "maxProperties": 10000,
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/TokenInfo"
+      },
+      "examples": [
+        {
+          "4_0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984":  {
+            "name": "Uniswap",
+            "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+            "symbol": "UNI",
+            "decimals": 18,
+            "chainId": 4,
+            "logoURI": "ipfs://QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg"
+          }
+        }
+      ]
+    },
     "keywords": {
       "type": "array",
       "description": "Keywords associated with the contents of the list; may be used in list discoverability",
