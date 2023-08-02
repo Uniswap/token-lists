@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`schema allows additional top-level fields 1`] = `null`;
+
 exports[`schema allows up to 10k tokens 1`] = `null`;
 
 exports[`schema checks extensions 1`] = `null`;

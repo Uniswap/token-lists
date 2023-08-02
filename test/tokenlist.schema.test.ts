@@ -136,4 +136,12 @@ describe('schema', () => {
     };
     checkSchema(exampleListWith10kTokensPlusOne, false);
   });
+
+  it('allows additional top-level fields', () => {
+    const exampleListWithUnknownField = {
+      ...exampleList,
+      unknownField: 'foo',
+    };
+    checkSchema(exampleListWithUnknownField, true);
+  });
 });
