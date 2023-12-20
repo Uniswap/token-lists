@@ -1,0 +1,25 @@
+{
+  "name": "My Token List",
+  "timestamp": "2020-06-12T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0xc31C535F4d9A789df0c16D461B4F811543b72FEb",
+      "decimals": 0,
+      "name": "",
+      "symbol": ""
+    },
+    {
+      "chainId": 137,
+      "address": "0xF336f5624D34c3Be82eF3EFc4978bd2397B1524A",
+      "decimals": 0,
+      "name": "",
+      "symbol": ""
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
