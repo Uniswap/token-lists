@@ -1,0 +1,11 @@
+{
+  "name": "AtlasRewards ",
+  "timestamp": "2020-06-12T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x03dd7EEBeb79AEC1602bbD6ef9240331a8721634",
+      "symbol": "ATLAS",
+      "name": "AtlasRewards ",
+      "decimals": 18
+    },
