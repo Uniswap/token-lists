@@ -232,7 +232,7 @@
           "type": "string",
           "description": "The name of the token",
           "minLength": 0,
-          "maxLength": 40,
+          "maxLength": 60,
           "anyOf": [
             {
               "const": ""
