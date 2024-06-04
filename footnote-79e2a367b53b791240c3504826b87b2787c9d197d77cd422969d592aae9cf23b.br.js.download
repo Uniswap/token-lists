@@ -1,0 +1,21 @@
+define("discourse/plugins/footnote/initializers/inline-footnotes",["exports","@popperjs/core","discourse/lib/plugin-api","discourse-common/lib/icon-library"],(function(t,o,e,n){"use strict"
+let i
+function r(t){const e=document.getElementById("footnote-tooltip"),n=e?.dataset.footnoteId,r=t.target,s=r.dataset.footnoteId
+if(i?.destroy(),e?.removeAttribute("data-show"),e?.removeAttribute("data-footnote-id"),!t.target.classList.contains("expand-footnote"))return
+if(t.preventDefault(),t.stopPropagation(),n===s)return
+const d=e.querySelector(".footnote-tooltip-content"),a=r.closest(".cooked").querySelector(s)
+d.innerHTML=a.innerHTML,e.dataset.show="",e.dataset.footnoteId=s,i?.destroy(),i=(0,o.createPopper)(r,e,{modifiers:[{name:"arrow",options:{element:e.querySelector("#arrow")}},{name:"preventOverflow",options:{altAxis:!0,padding:5}},{name:"offset",options:{offset:[0,12]}}]})}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+t.default={name:"inline-footnotes",initialize(t){t.lookup("service:site-settings").display_footnotes_inline&&(document.body.append(function(){const t=document.createElement("template")
+return t.innerHTML='\n    <div id="footnote-tooltip" role="tooltip">\n      <div class="footnote-tooltip-content"></div>\n      <div id="arrow" data-popper-arrow></div>\n    </div>\n  '.trim(),t.content.firstChild}()),window.addEventListener("click",r),(0,e.withPluginApi)("0.8.9",(t=>{t.decorateCookedElement((t=>function(t){const o=t.querySelectorAll("sup.footnote-ref")
+o.forEach((t=>{const o=t.querySelector("a")
+if(!o)return
+const e=document.createElement("a")
+e.classList.add("expand-footnote"),e.innerHTML=(0,n.iconHTML)("ellipsis-h"),e.href="",e.role="button",e.dataset.footnoteId=o.getAttribute("href"),t.after(e)})),o.length&&t.classList.add("inline-footnotes")}(t)),{onlyStream:!0,id:"inline-footnotes"}),t.onPageChange((()=>{i?.destroy()
+const t=document.getElementById("footnote-tooltip")
+t?.removeAttribute("data-show"),t?.removeAttribute("data-footnote-id")}))})))},teardown(){i?.destroy(),window.removeEventListener("click",r),document.getElementById("footnote-tooltip")?.remove()}}})),define("discourse/plugins/footnote/lib/discourse-markdown/footnotes",["exports"],(function(t){"use strict"
+Object.defineProperty(t,"__esModule",{value:!0}),t.setup=function(t){t.registerOptions(((t,o)=>{t.features.footnotes=window.markdownitFootnote&&!!o.enable_markdown_footnotes})),t.allowList(["ol.footnotes-list","hr.footnotes-sep","li.footnote-item","a.footnote-backref","sup.footnote-ref"]),t.allowList({custom(t,o,e){if(("a"===t||"li"===t)&&"id"===o)return!!e.match(/^fn(ref)?\d+$/)}}),window.markdownitFootnote&&t.registerPlugin(window.markdownitFootnote)}}))
+
+//# sourceMappingURL=footnote-3937233e122c9921c2237bea6bd9ee1e9264f3a256fe821c6307161f7976b5cb.map
+//!
+
+;
