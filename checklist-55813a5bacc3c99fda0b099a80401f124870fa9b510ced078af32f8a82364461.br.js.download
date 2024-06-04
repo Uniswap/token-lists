@@ -1,0 +1,37 @@
+define("discourse/plugins/checklist/discourse/initializers/checklist",["exports","discourse/lib/ajax","discourse/lib/plugin-api","discourse-common/lib/icon-library","discourse-i18n"],(function(e,n,t,c,s){"use strict"
+function i(e){return 3===e.nodeType&&e.nodeValue.match(/^\s*$/)}function a(e){e.forEach((e=>{let n=e.parentElement
+"P"===n.nodeName&&n.parentElement.firstElementChild===n&&(n=n.parentElement),"LI"!==n.nodeName||"UL"!==n.parentElement.nodeName||function(e){let n=e.previousSibling
+for(;n;){if(!i(n))return!0
+n=n.previousSibling}return!1}(e)||(n.classList.add("has-checkbox"),e.classList.add("list-item-checkbox"),e.nextSibling||e.insertAdjacentHTML("afterend","&#8203;"))}))}function r(e,t){const i=[...e.getElementsByClassName("chcklst-box")]
+if(a(i),!t)return
+const r=t.widget,o=t.getModel()
+o.can_edit&&i.forEach(((e,t)=>{e.onclick=async e=>{const a=e.currentTarget,l=a.classList
+if(l.contains("permanent")||l.contains("readonly"))return
+const d=l.contains("checked")?"[ ]":"[x]",u=document.createElement("template")
+u.innerHTML=(0,c.iconHTML)("spinner",{class:"fa-spin list-item-checkbox"}),a.insertAdjacentElement("afterend",u.content.firstChild),a.classList.add("hidden"),i.forEach((e=>e.classList.add("readonly")))
+try{const e=await(0,n.ajax)(`/posts/${o.id}`),c=[];[/`[^`\n]*\n?[^`\n]*`/gm,/^```[^]*?^```/gm,/\[code\][^]*?\[\/code\]/gm,/_(?=\S).*?\S_/gm,/~~(?=\S).*?\S~~/gm].forEach((n=>{let t
+for(;null!=(t=n.exec(e.raw));)c.push([t.index,t.index+t[0].length])})),[/([^\[\n]|^)\*\S.+?\S\*(?=[^\]\n]|$)/gm].forEach((n=>{let t
+for(;null!=(t=n.exec(e.raw));)c.push([t.index+1,t.index+t[0].length])}))
+let i=-1,a=!1
+const l=e.raw.replace(/\[( |x)?\]/gi,((n,s,r)=>a||r>0&&"!"===e.raw[r-1]?n:(i+=c.every((e=>e[0]>=r+n.length||r>e[1])),i===t?(a=!0,d):n)))
+await o.save({raw:l,edit_reason:s.default.t("checklist.edit_reason")}),r.attrs.isSaving=!1,r.scheduleRerender()}finally{i.forEach((e=>e.classList.remove("readonly"))),a.classList.remove("hidden"),a.parentElement.querySelector(".fa-spin").remove()}}}))}Object.defineProperty(e,"__esModule",{value:!0}),e.checklistSyntax=r,e.default=void 0
+e.default={name:"checklist",initialize(){(0,t.withPluginApi)("0.1",(e=>function(e){e.container.lookup("service:site-settings").checklist_enabled&&e.decorateCookedElement(r)}(e)))}}})),define("discourse/plugins/checklist/lib/discourse-markdown/checklist",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.setup=function(e){e.registerOptions(((e,n)=>{e.features.checklist=!!n.checklist_enabled})),e.allowList(["span.chcklst-stroked","span.chcklst-box fa fa-square-o fa-fw","span.chcklst-box checked fa fa-check-square-o fa-fw","span.chcklst-box checked permanent fa fa-check-square fa-fw"]),e.registerPlugin((e=>e.core.ruler.push("checklist",s)))}
+const n=/\[( |x)?\]/gi
+function t(e,n,t,c){const s=function(e){switch(e){case"x":return"checked fa fa-check-square-o fa-fw"
+case"X":return"checked permanent fa fa-check-square fa-fw"
+default:return"fa fa-square-o fa-fw"}}(t[1]),i=new c.Token("check_open","span",1)
+i.attrs=[["class",`chcklst-box ${s}`]],e.push(i)
+const a=new c.Token("check_close","span",-1)
+e.push(a)}function c(e,c){let s,i=null,a=0
+for(;s=n.exec(e);){if(s.index>a){i=i||[]
+const n=new c.Token("text","",0)
+n.content=e.slice(a,s.index),i.push(n)}a=s.index+s[0].length,i=i||[],t(i,0,s,c)}if(i&&a<e.length){const n=new c.Token("text","",0)
+n.content=e.slice(a),i.push(n)}return i}function s(e){let n,t,s,i,a,r=e.tokens,o=0
+for(t=0,s=r.length;t<s;t++)if("inline"===r[t].type)for(i=r[t].children,n=i.length-1;n>=0;n--)if(a=i[n],o+=a.nesting,"text"===a.type&&0===o){const s=c(a.content,e)
+s&&(r[t].children=i=e.md.utils.arrayReplaceAt(i,n,s))}}}))
+
+//# sourceMappingURL=checklist-45764254049a8f463817219b05a3858426b01c9d0b1b4e8ba7089dd8fbc22549.map
+//!
+
+;
