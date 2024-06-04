@@ -1,0 +1,26 @@
+define("discourse/plugins/discourse-deprecation-collector/discourse/api-initializers/init-deprecation-collector",["exports","discourse/lib/api"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=(0,t.apiInitializer)("0.8",(e=>{e.container.lookup("service:deprecation-collector")}))})),define("discourse/plugins/discourse-deprecation-collector/discourse/services/deprecation-collector",["exports","@ember/debug","@ember/runloop","@ember/service","discourse/lib/source-identifier","discourse-common/lib/debounce","discourse-common/lib/deprecated","discourse-common/lib/get-url","discourse-common/utils/decorators"],(function(e,t,i,r,o,n,s,c,l){"use strict"
+var a,d,u,p,b
+function h(e,t,i){(function(e,t){if(t.has(e))throw new TypeError("Cannot initialize the same private elements twice on an object")})(e,t),t.set(e,i)}function f(e,t){return e.get(y(e,t))}function y(e,t,i){if("function"==typeof e?e===t:e.has(t))return arguments.length<3?t:i
+throw new TypeError("Private element is not present on this object")}function g(e,t,i,r,o){var n={}
+return Object.keys(r).forEach((function(e){n[e]=r[e]})),n.enumerable=!!n.enumerable,n.configurable=!!n.configurable,("value"in n||n.initializer)&&(n.writable=!0),n=i.slice().reverse().reduce((function(i,r){return r(e,t,i)||i}),n),o&&void 0!==n.initializer&&(n.value=n.initializer?n.initializer.call(o):void 0,n.initializer=void 0),void 0===n.initializer&&(Object.defineProperty(e,t,n),n=null),n}let v
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0,(0,t.registerDeprecationHandler)(((e,t,i)=>(v?.(e,t),i(e,t)))),(0,s.registerDeprecationHandler)(((e,t)=>v?.(e,t)))
+e.default=(u=new WeakMap,p=new WeakMap,b=new WeakMap,a=class extends r.default{constructor(){var e,t,i,r
+super(...arguments),e=this,t="router",r=this,(i=d)&&Object.defineProperty(e,t,{enumerable:i.enumerable,configurable:i.configurable,writable:i.writable,value:i.initializer?i.initializer.call(r):void 0}),h(this,u,new Map),h(this,p,new Map),h(this,b,void 0),v=this.track
+const o=window.deprecationWorkflow?.config?.workflow||{}
+for(const n of o)f(u,this).set(n.matchId,n.handler)
+document.addEventListener("visibilitychange",this.handleVisibilityChanged),this.router.on("routeWillChange",this.debouncedReport)}willDestroy(){v=null,window.removeEventListener("visibilitychange",this.handleVisibilityChanged),this.router.off("routeWillChange",this.debouncedReport),(0,i.cancel)(f(b,this)),super.willDestroy()}handleVisibilityChanged(){"visible"!==document.visibilityState&&this.report()}track(e,t){if("silence"===f(u,this).get(t.id))return
+if("browser-extension"===(0,o.default)()?.type)return
+let i=f(p,this).get(t.id)||0
+i+=1,f(p,this).set(t.id,i)}debouncedReport(){var e,t,i
+e=b,t=this,i=(0,n.default)(this.report,1e4),e.set(y(e,t),i)}report(){if((0,i.cancel)(f(b,this)),0===f(p,this).size)return
+const e=Object.fromEntries(f(p,this).entries())
+f(p,this).clear()
+const t=new FormData
+t.append("data",JSON.stringify(e)),navigator.sendBeacon((0,c.default)("/deprecation-collector/log"),t)}},d=g(a.prototype,"router",[r.inject],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),g(a.prototype,"handleVisibilityChanged",[l.bind],Object.getOwnPropertyDescriptor(a.prototype,"handleVisibilityChanged"),a.prototype),g(a.prototype,"track",[l.bind],Object.getOwnPropertyDescriptor(a.prototype,"track"),a.prototype),g(a.prototype,"debouncedReport",[l.bind],Object.getOwnPropertyDescriptor(a.prototype,"debouncedReport"),a.prototype),g(a.prototype,"report",[l.bind],Object.getOwnPropertyDescriptor(a.prototype,"report"),a.prototype),a)}))
+
+//# sourceMappingURL=discourse-deprecation-collector-01ea95a3a1b3697b9cfa48d6c079e37fbaf703efc9dd7531509ceaf867e42be7.map
+//!
+
+;
