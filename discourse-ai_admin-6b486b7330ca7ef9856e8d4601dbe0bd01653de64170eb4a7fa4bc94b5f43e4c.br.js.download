@@ -1,0 +1,33 @@
+define("discourse/plugins/discourse-ai/discourse/routes/admin-plugins-show-discourse-ai-llms-new",["exports","discourse/routes/discourse"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=s.default.extend({async model(){return this.store.createRecord("ai-llm")},setupController(e,s){this._super(e,s),e.set("allLlms",this.modelFor("adminPlugins.show.discourse-ai-llms"))}})})),define("discourse/plugins/discourse-ai/discourse/routes/admin-plugins-show-discourse-ai-llms-show",["exports","discourse/routes/discourse"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=s.default.extend({async model(e){const s=this.modelFor("adminPlugins.show.discourse-ai-llms"),i=parseInt(e.id,10)
+return s.findBy("id",i)},setupController(e,s){this._super(e,s),e.set("allLlms",this.modelFor("adminPlugins.show.discourse-ai-llms"))}})})),define("discourse/plugins/discourse-ai/discourse/routes/admin-plugins-show-discourse-ai-llms",["exports","discourse/routes/discourse"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+class i extends s.default{model(){return this.store.findAll("ai-llm")}}e.default=i})),define("discourse/plugins/discourse-ai/discourse/routes/admin-plugins-show-discourse-ai-personas-new",["exports","discourse/lib/constants","discourse/routes/discourse"],(function(e,s,i){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=i.default.extend({async model(){const e=this.store.createRecord("ai-persona")
+return e.set("allowed_group_ids",[s.AUTO_GROUPS.trust_level_0.id]),e.set("rag_uploads",[]),e.set("rag_chunk_tokens",374),e.set("rag_chunk_overlap_tokens",10),e.set("rag_conversation_chunks",10),e},setupController(e,s){this._super(e,s),e.set("allPersonas",this.modelFor("adminPlugins.show.discourse-ai-personas"))}})})),define("discourse/plugins/discourse-ai/discourse/routes/admin-plugins-show-discourse-ai-personas-show",["exports","discourse/routes/discourse"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=s.default.extend({async model(e){const s=this.modelFor("adminPlugins.show.discourse-ai-personas"),i=parseInt(e.id,10)
+return s.findBy("id",i)},setupController(e,s){this._super(e,s),e.set("allPersonas",this.modelFor("adminPlugins.show.discourse-ai-personas"))}})})),define("discourse/plugins/discourse-ai/discourse/routes/admin-plugins-show-discourse-ai-personas",["exports","discourse/routes/discourse"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+class i extends s.default{model(){return this.store.findAll("ai-persona")}}e.default=i})),define("discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-llms/index",["exports","@ember/template-factory"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=(0,s.createTemplateFactory)({id:"/hpMWqzQ",block:'[[[8,[39,0],null,[["@llms"],[[30,0,["model"]]]],null]],[],false,["ai-llms-list-editor"]]',moduleName:"discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-llms/index.hbs",isStrictMode:!1})})),define("discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-llms/new",["exports","@ember/template-factory"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=(0,s.createTemplateFactory)({id:"LNPU2H/h",block:'[[[8,[39,0],null,[["@llms","@currentLlm"],[[30,0,["allLlms"]],[30,0,["model"]]]],null]],[],false,["ai-llms-list-editor"]]',moduleName:"discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-llms/new.hbs",isStrictMode:!1})})),define("discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-llms/show",["exports","@ember/template-factory"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=(0,s.createTemplateFactory)({id:"tdQ3gCh/",block:'[[[8,[39,0],null,[["@llms","@currentLlm"],[[30,0,["allLlms"]],[30,0,["model"]]]],null]],[],false,["ai-llms-list-editor"]]',moduleName:"discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-llms/show.hbs",isStrictMode:!1})})),define("discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-personas/index",["exports","@ember/template-factory"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=(0,s.createTemplateFactory)({id:"S3ls7MhI",block:'[[[8,[39,0],null,[["@personas"],[[30,0,["model"]]]],null]],[],false,["ai-persona-list-editor"]]',moduleName:"discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-personas/index.hbs",isStrictMode:!1})})),define("discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-personas/new",["exports","@ember/template-factory"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=(0,s.createTemplateFactory)({id:"uPcey72d",block:'[[[8,[39,0],null,[["@personas","@currentPersona"],[[30,0,["allPersonas"]],[30,0,["model"]]]],null]],[],false,["ai-persona-list-editor"]]',moduleName:"discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-personas/new.hbs",isStrictMode:!1})})),define("discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-personas/show",["exports","@ember/template-factory"],(function(e,s){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
+e.default=(0,s.createTemplateFactory)({id:"vhi53gxi",block:'[[[8,[39,0],null,[["@personas","@currentPersona"],[[30,0,["allPersonas"]],[30,0,["model"]]]],null]],[],false,["ai-persona-list-editor"]]',moduleName:"discourse/plugins/discourse-ai/discourse/templates/admin-plugins/show/discourse-ai-personas/show.hbs",isStrictMode:!1})}))
+
+//# sourceMappingURL=discourse-ai_admin-61753c2f4663d6010dc60ebcd408cb454e123c59d4569d6394a52a92d278fc37.map
+//!
+
+;
