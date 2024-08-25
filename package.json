@@ -1,5 +1,6 @@
 {
   "name": "@uniswap/token-lists",
+  "type": "module",
   "author": {
     "name": "Uniswap Labs",
     "email": "contact@uniswap.org",
@@ -29,11 +30,10 @@
     "lint": "tsdx lint src test",
     "prepublishOnly": "yarn test && yarn build"
   },
-  "publishConfig" : {
+  "publishConfig": {
     "access": "public",
     "provenance": true
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -53,5 +53,10 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.0.0",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@uniswap/token-lists": "^1.0.0-beta.34",
+    "node-fetch": "^3.3.2",
+    "yarn": "^1.22.22"
   }
 }
