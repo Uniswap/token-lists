@@ -12,7 +12,6 @@ jobs:
       name: release
     permissions:
       id-token: write
-      contents: write
     steps:
       - name: Load secret
         uses: 1password/load-secrets-action@581a835fb51b8e7ec56b71cf2ffddd7e68bb25e0
