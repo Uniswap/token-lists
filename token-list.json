@@ -1,0 +1,73 @@
+{
+  "name": "Hardwaretor",
+  "logoURI": "ipfs://QmfMAg7QATrPb3wdYzefkPW8Hb3PYg5PLxGwG5XKgUrYHg",
+  "keywords": [
+    "audited",
+    "verified",
+    "special tokens"
+  ],
+  "tags": {
+    "hardware": {
+      "name": "Hardwaretor Token",
+      "description": "Hardwaretor Native Token"
+    },
+    "nft": {
+      "name": "Hardwaretor NFT",
+      "description": "Hardwaretor NFT Gallery"
+    }
+  },
+  "timestamp": "2024-08-12T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x63eC86fC38A0021FCF4980ADA380FF82c7859788",
+      "symbol": "HAW",
+      "name": "Hardwaretor Token",
+      "decimals": 18,
+      "logoURI": "ipfs://QmfMAg7QATrPb3wdYzefkPW8Hb3PYg5PLxGwG5XKgUrYHg",
+      "tags": [
+        "hardware"
+      ]
+    },
+    {
+      "chainId": 1,
+      "address": "0xF7BEce35f6ae10343F859Bc0196EE418f6300168",
+      "symbol": "HAW",
+      "name": "Hardwaretor NFT",
+      "decimals": 0,
+      "logoURI": "ipfs://QmfMAg7QATrPb3wdYzefkPW8Hb3PYg5PLxGwG5XKgUrYHg",
+      "tags": [
+        "nft"
+      ]
+    }
+  ],
+  "tokenMap": {
+    "1_0x63eC86fC38A0021FCF4980ADA380FF82c7859788": {
+      "chainId": 1,
+      "address": "0x63eC86fC38A0021FCF4980ADA380FF82c7859788",
+      "symbol": "HAW",
+      "name": "Hardwaretor Token",
+      "decimals": 18,
+      "logoURI": "ipfs://QmfMAg7QATrPb3wdYzefkPW8Hb3PYg5PLxGwG5XKgUrYHg",
+      "tags": [
+        "hardware"
+      ]
+    },
+    "1_0xF7BEce35f6ae10343F859Bc0196EE418f6300168":  {
+      "chainId": 1,
+      "address": "0xF7BEce35f6ae10343F859Bc0196EE418f6300168",
+      "symbol": "HAW",
+      "name": "Hardwaretor NFT",
+      "decimals": 8,
+      "logoURI": "ipfs://QmfMAg7QATrPb3wdYzefkPW8Hb3PYg5PLxGwG5XKgUrYHg",
+      "tags": [
+        "nft"
+      ]
+    }
+  }, 
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
