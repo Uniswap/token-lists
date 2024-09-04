@@ -29,6 +29,10 @@
     "lint": "tsdx lint src test",
     "prepublishOnly": "yarn test && yarn build"
   },
+  "publishConfig" : {
+    "access": "public",
+    "provenance": true
+  },
   "peerDependencies": {},
   "husky": {
     "hooks": {
