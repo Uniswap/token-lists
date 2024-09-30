@@ -6,7 +6,7 @@
     "url": "https://uniswap.org"
   },
   "description": "📚 The Token Lists specification",
-  "version": "1.0.0-beta.33",
+  "version": "1.0.0-beta.34",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -28,6 +28,10 @@
     "test": "tsdx test",
     "lint": "tsdx lint src test",
     "prepublishOnly": "yarn test && yarn build"
+  },
+  "publishConfig" : {
+    "access": "public",
+    "provenance": true
   },
   "peerDependencies": {},
   "husky": {

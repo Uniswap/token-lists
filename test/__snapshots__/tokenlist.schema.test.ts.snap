@@ -439,9 +439,9 @@ Array [
   Object {
     "instancePath": "/tokens/0/name",
     "keyword": "maxLength",
-    "message": "must NOT have more than 40 characters",
+    "message": "must NOT have more than 60 characters",
     "params": Object {
-      "limit": 40,
+      "limit": 60,
     },
     "schemaPath": "#/properties/name/maxLength",
   },
