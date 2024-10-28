@@ -1,0 +1,14 @@
+{
+    "title": "Umoja Token List",
+    "description": "Umoja protocol tokens",
+    "tokens": [
+      {
+        "chainId": 42161,
+        "address": "0x16A500Aec6c37F84447ef04E66c57cfC6254cF92",
+        "name": "Umoja Token",
+        "symbol": "UMJA",
+        "decimals": 18,
+        "logoURI": "https://ipfs.io/ipfs/QmWgghLSGxf7jrqQXYSLcUatawnYxyvdVx7uj459aEcFvt"
+      }
+    ]
+  }

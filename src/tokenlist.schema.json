@@ -199,12 +199,12 @@
     },
     "TokenInfo": {
       "type": "object",
-      "description": "Metadata for a single token in a token list",
+      "description": "Umoja Governance Token",
       "additionalProperties": false,
       "properties": {
         "chainId": {
           "type": "integer",
-          "description": "The chain ID of the Ethereum network where this token is deployed",
+          "description": "42161",
           "minimum": 1,
           "examples": [
             1,
@@ -213,7 +213,7 @@
         },
         "address": {
           "type": "string",
-          "description": "The checksummed address of the token on the specified chain ID",
+          "description": "0x16A500Aec6c37F84447ef04E66c57cfC6254cF92",
           "pattern": "^0x[a-fA-F0-9]{40}$",
           "examples": [
             "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -221,7 +221,7 @@
         },
         "decimals": {
           "type": "integer",
-          "description": "The number of decimals for the token balance",
+          "description": "18",
           "minimum": 0,
           "maximum": 255,
           "examples": [
@@ -230,7 +230,7 @@
         },
         "name": {
           "type": "string",
-          "description": "The name of the token",
+          "description": "Umoja Token",
           "minLength": 0,
           "maxLength": 60,
           "anyOf": [
@@ -247,7 +247,7 @@
         },
         "symbol": {
           "type": "string",
-          "description": "The symbol for the token",
+          "description": "UMJA",
           "minLength": 0,
           "maxLength": 20,
           "anyOf": [
@@ -264,7 +264,7 @@
         },
         "logoURI": {
           "type": "string",
-          "description": "A URI to the token logo asset; if not set, interface will attempt to find a logo based on the token address; suggest SVG or PNG of size 64x64",
+          "description": "https://ipfs.io/ipfs/QmWgghLSGxf7jrqQXYSLcUatawnYxyvdVx7uj459aEcFvt",
           "format": "uri",
           "examples": [
             "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM"
@@ -272,7 +272,7 @@
         },
         "tags": {
           "type": "array",
-          "description": "An array of tag identifiers associated with the token; tags are defined at the list level",
+          "description": "DeFi",
           "items": {
             "$ref": "#/definitions/TagIdentifier"
           },
@@ -299,7 +299,7 @@
   "properties": {
     "name": {
       "type": "string",
-      "description": "The name of the token list",
+      "description": "Umoja Token List",
       "minLength": 1,
       "maxLength": 30,
       "pattern": "^[\\w ]+$",
@@ -387,7 +387,7 @@
     },
     "logoURI": {
       "type": "string",
-      "description": "A URI for the logo of the token list; prefer SVG or PNG of size 256x256",
+      "description": "https://ipfs.io/ipfs/QmWgghLSGxf7jrqQXYSLcUatawnYxyvdVx7uj459aEcFvt",
       "format": "uri",
       "examples": [
         "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM"
