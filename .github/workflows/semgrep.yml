@@ -20,3 +20,4 @@ jobs:
     steps:
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744
       - run: semgrep ci
+[![Tests](https://github.com/Uniswap/token-lists/actions/workflows/tests.yaml/badge.svg?branch=dependabot%2Fnpm_and_yarn%2Fbabel%2Ftraverse-7.23.2&event=deployment_status)](https://github.com/Uniswap/token-lists/actions/workflows/tests.yaml)
