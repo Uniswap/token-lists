@@ -1,0 +1,21 @@
+{
+  "name": "My Token List",
+  "timestamp": "2024-12-01T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xf6B8CF27C68F2e0F3d99b5d39e0c6767AceB1220",
+      "decimals": 18,
+      "name": "Morgan GoldDogg Barkley",
+      "symbol": "MGB",
+      "logoURI": "https://mgb.lol/images/hero.gif",
+      "tags": ["memecoin"]
+    }
+  ],
+  "logoURI": "https://mgb.lol/images/hero.gif"
+}
