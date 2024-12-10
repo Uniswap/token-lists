@@ -1,3 +1,5 @@
+type ExtensionValue = string | number | boolean | null | undefined;
+
 export interface TokenInfo {
   readonly chainId: number;
   readonly address: string;
@@ -7,7 +9,15 @@ export interface TokenInfo {
   readonly logoURI?: string;
   readonly tags?: string[];
   readonly extensions?: {
-    readonly [key: string]: string | number | boolean | null;
+    readonly [key: string]:
+      | {
+          [key: string]:
+            | {
+                [key: string]: ExtensionValue;
+              }
+            | ExtensionValue;
+        }
+      | ExtensionValue;
   };
 }
 
@@ -29,6 +39,9 @@ export interface TokenList {
   readonly timestamp: string;
   readonly version: Version;
   readonly tokens: TokenInfo[];
+  readonly tokenMap?: {
+    readonly [key: string]: TokenInfo;
+  };
   readonly keywords?: string[];
   readonly tags?: Tags;
   readonly logoURI?: string;
