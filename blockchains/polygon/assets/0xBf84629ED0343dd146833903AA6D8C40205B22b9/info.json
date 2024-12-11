@@ -1,0 +1,9 @@
+{
+  "name": "ApexCoin",
+  "symbol": "APXC",
+  "decimals": 18,
+  "description": "A decentralized cryptocurrency on the Polygon blockchain.",
+  "contract": "0xBf84629ED0343dd146833903AA6D8C40205B22b9",
+  "chainId": 137,
+  "logoURI": "https://imgur.com/a/apexcoin-RZIcKw8?third_party=1"
+}
