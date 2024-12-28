@@ -401,3 +401,11 @@
     "tokens"
   ]
 }
+{
+  "chainId": 137,
+  "address": "0xd7c8077aE454B81c451F52b01d53DC4A6B23312F",
+  "decimals": 18,
+  "name": "Granada Grounds X(PoS)"
+  "symbol": "GgX"
+  "logoURI": "https://github.com/GranadaGroundsX/Website/blob/main/images/GgX%20Logo%2032x32.png"
+}
