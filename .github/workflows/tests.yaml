@@ -1,5 +1,5 @@
-name: Tests
-on:
+run-name: Tests
+on:[merge_group]
   push:
     branches:
       - main
@@ -21,4 +21,46 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: yarn install --frozen-lockfile
-      - run: yarn test
+      - run: yarn test	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
