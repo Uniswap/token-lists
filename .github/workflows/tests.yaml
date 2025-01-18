@@ -1,4 +1,4 @@
-run-name: Tests
+run-name:
 on:[merge_group]
   push:
     branches:
