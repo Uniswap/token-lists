@@ -1,4 +1,4 @@
-run-name:Tests
+run-name:Tests.github/workflows/tests.yaml
 on:[merge_group]
   push:
     branches:
