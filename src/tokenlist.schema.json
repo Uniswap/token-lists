@@ -267,7 +267,7 @@
           "description": "A URI to the token logo asset; if not set, interface will attempt to find a logo based on the token address; suggest SVG or PNG of size 64x64",
           "format": "uri",
           "examples": [
-            "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM"
+            "https://github.com/sink12345/Token/blob/main/Token.png"
           ]
         },
         "tags": {
@@ -337,7 +337,7 @@
       },
       "examples": [
         {
-          "4_0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984":  {
+          "4_0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984": {
             "name": "Uniswap",
             "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
             "symbol": "UNI",
@@ -390,7 +390,7 @@
       "description": "A URI for the logo of the token list; prefer SVG or PNG of size 256x256",
       "format": "uri",
       "examples": [
-        "ipfs://QmXfzKRvjZz3u5JRgC4v5mGVbm9ahrUiB4DgzHBsnWbTMM"
+        "https://github.com/sink12345/Token/blob/main/Token.png"
       ]
     }
   },
@@ -399,5 +399,15 @@
     "timestamp",
     "version",
     "tokens"
+  ],
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x2358fFc60D2C90c23fd93C0659Abe86516852ECA",
+      "decimals": 16,
+      "name": "Mcoin",
+      "symbol": "MC",
+      "logoURI": "https://github.com/sink12345/Token/blob/main/Token.png"
+    }
   ]
 }
