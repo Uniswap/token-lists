@@ -1,0 +1,21 @@
+{
+  "name": "Giganad Token List",
+  "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreif3ypmy5uborfwmrtohlw24olrovf5dzai4s6pkrjkc7cadwtcggu",
+  "keywords": ["Giganad", "Meme Token"],
+  "timestamp": "2025-02-27T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 10143,
+      "address": "0xb3a20BFBF791738C57a326eE5cA3541dF8e6319a",
+      "name": "Giganad",
+      "symbol": "GIGA",
+      "decimals": 18,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreif3ypmy5uborfwmrtohlw24olrovf5dzai4s6pkrjkc7cadwtcggu"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
