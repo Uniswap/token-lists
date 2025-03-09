@@ -1,1 +1,14 @@
+{
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x708944be066c09b1dfaac8a887582700015cd227",
+      "symbol": "USDT",
+      "name": "MyToken",
+      "decimals": 18,
+      "logoURI": "https://github.com/AsheshT/my-token-list/issues/2",
+      "tags": ["bsc", "defi"]
+    }
+  ]
+}
 
