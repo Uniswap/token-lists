@@ -1,0 +1,29 @@
+{
+  "name": "Project Nomad Token List",
+  "timestamp": "2024-04-05T00:00:00.000Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "",
+  "keywords": [
+    "project nomad",
+    "tea",
+    "p0n",
+    "default",
+    "sepolia"
+  ],
+  "tokens": [
+    {
+      "chainId": 10218,
+      "address": "0x5E5613bAEE77215c6781635e48E7fcc4B3d02790",
+      "name": "Project Nomad",
+      "symbol": "P0N",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/0xGery/asset/323c35b973d8fd4a965d9447f68639bcd8eb7c61/NullxGery/P0N.png",
+      "tags": []
+    }
+  ]
+} 
