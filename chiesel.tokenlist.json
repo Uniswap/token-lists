@@ -1,0 +1,19 @@
+{
+  "name": "Chiesel Token List",
+  "timestamp": "2025-04-12T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x6fC16A107f07c91BfDc0d9F9bD3d88cdb2670460",
+      "name": "Chiesel",
+      "symbol": "CHSL",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/chiesel420/assets/master/blockchains/polygon/assets/0x6fC16A107f07c91BfDc0d9F9bD3d88cdb2670460/logo.png"
+    }
+  ]
+}
