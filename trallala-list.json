@@ -1,0 +1,19 @@
+{
+  "name": "Trallala Token List",
+  "logoURI": "https://raw.githubusercontent.com/Andre-can/token-lists/main/logo.png",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xf3d741256D6eF61E40EFfCA02E302C6117B86739",
+      "symbol": "TRLLA",
+      "name": "TrallalaCoin",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Andre-can/token-lists/main/logo.png"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
