@@ -1,0 +1,19 @@
+{
+  "name": "TrustWDU Token List",
+  "timestamp": "2025-04-20T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x7Fc6C384C99E38ce967D7c536Dd874F121f17dd2",
+      "name": "usdt",
+      "symbol": "usdt",
+      "decimals": 6,
+      "logoURI": "https://www.trustwdu.com/market/logo/tlogo.png"
+    }
+  ]
+}
