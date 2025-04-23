@@ -1,0 +1,21 @@
+{
+  "name": "ENA Token List",
+  "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreialmqp6g2qg6peyukwi7j2ipkxvigf3oodg6qwfbbrq2yajbyp5nu",
+  "keywords": ["ena", "universe", "tcg", "token"],
+  "timestamp": "2025-04-23T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1307,
+      "address": "0x4d465ee0827e073d81A3a024BFdcEaa84CAf410E",
+      "name": "ENA",
+      "symbol": "ENA",
+      "decimals": 18,
+      "logoURI": "ipfs://bafkreialmqp6g2qg6peyukwi7j2ipkxvigf3oodg6qwfbbrq2yajbyp5nu"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
