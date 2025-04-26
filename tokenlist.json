@@ -1,0 +1,19 @@
+{
+  "name": "USDT.z Token List",
+  "timestamp": "2025-04-26T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x71A3d9B3146296Ba357BB9858725305d0aE836C4",
+      "name": "Tether USD.z",
+      "symbol": "USDT.z",
+      "decimals": 6, 
+      "logoURI": "https://тут_будет_ссылка_на_логотип.png"
+    }
+  ]
+}
