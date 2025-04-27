@@ -1,0 +1,49 @@
+{
+  "name": "Super Cat Meow Token List",
+  "timestamp": "2025-04-28T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {
+    "cat-themed": {
+      "name": "Cat Themed",
+      "description": "Tokens related to cat projects."
+    },
+    "memecoin": {
+      "name": "Meme Coin",
+      "description": "Fun and meme-based tokens."
+    }
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x1234567890abcdef1234567890abcdef12345678",
+      "name": "Super Cat Meow",
+      "symbol": "SCM",
+      "decimals": 18,
+      "logoURI": "https://yourdomain.com/logo-scm.png",
+      "tags": ["cat-themed", "memecoin"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xabcdefabcdefabcdefabcdefabcdefabcdefabcd",
+      "name": "Meow Milk",
+      "symbol": "MILK",
+      "decimals": 18,
+      "logoURI": "https://yourdomain.com/logo-milk.png",
+      "tags": ["cat-themed"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xaabbccddeeff00112233445566778899aabbccdd",
+      "name": "Paw Coin",
+      "symbol": "PAW",
+      "decimals": 18,
+      "logoURI": "https://yourdomain.com/logo-paw.png",
+      "tags": ["memecoin"]
+    }
+  ],
+  "keywords": ["scm", "dex", "tokenlist", "cat", "meme"]
+}
