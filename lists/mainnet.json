@@ -23,7 +23,7 @@
       "name": "Super Cat Meow",
       "symbol": "SCM",
       "decimals": 18,
-      "logoURI": "https://yourdomain.com/logo-scm.png",
+      "logoURI": "https://i.imgur.com/L0UXLlD.png",
       "tags": ["cat-themed", "memecoin"]
     },
     {
@@ -32,7 +32,7 @@
       "name": "Meow Milk",
       "symbol": "MILK",
       "decimals": 18,
-      "logoURI": "https://yourdomain.com/logo-milk.png",
+      "logoURI": "https://i.imgur.com/L0UXLlD.png",
       "tags": ["cat-themed"]
     },
     {
@@ -41,7 +41,7 @@
       "name": "Paw Coin",
       "symbol": "PAW",
       "decimals": 18,
-      "logoURI": "https://yourdomain.com/logo-paw.png",
+      "logoURI": "https://i.imgur.com/L0UXLlD.png",
       "tags": ["memecoin"]
     }
   ],
