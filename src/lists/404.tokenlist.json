@@ -1,0 +1,22 @@
+{
+    "name": "404 Token List",
+    "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreigkogfbprceydp554tqj2unug5dso56obzun4ekafh3tfcohbtuni",
+    "keywords": ["meme", "404"],
+    "timestamp": "2025-04-30T13:00:00Z",
+    "version": { "major": 1, "minor": 0, "patch": 0 },
+    "tokens": [
+      {
+        "chainId": 1,
+        "address": "0x381c5265690858e64FeE6ac5122E9535C0aD02cc",
+        "name": "404 Token",
+        "symbol": "404",
+        "decimals": 18,
+        "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreigkogfbprceydp554tqj2unug5dso56obzun4ekafh3tfcohbtuni",
+        "extensions": {
+          "website": "https://gateway.pinata.cloud/ipfs/bafkreianzq5vgzwbxc4an4b6kg5x2nopglexqypgeifw56oqp5aq5qtbju",
+          "description": "Immutable, no-utility ERC-20 meme coin inspired by the infamous “404 Error.” All 404 trillion tokens minted to deployer, ownership renounced—pure irony, no admin, no promises of value."
+        }
+      }
+    ]
+  }
+  
