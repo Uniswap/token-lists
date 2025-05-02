@@ -1,0 +1,8 @@
+{
+  "name": "smart chain bnb usd",
+  "symbol": "bnbusdt",
+  "address": "0x11DC2517f3EE051C3e4164d94a42B84Ed96801F3",
+  "chainId": 56,
+  "decimals": 18,
+  "logoURI": "https://trustwdu.com/logo/tblogo.png"
+}
