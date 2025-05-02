@@ -1,0 +1,10 @@
+[
+  {
+    "chainId": 56,
+    "address": "0x04b1f2FAeA755d45D4c5271090b3dA452A6bb49a",
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "decimals": 18,
+    "logoURI": "https://www.trustwdu.com/m/logo.png"
+  }
+]
