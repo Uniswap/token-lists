@@ -29,11 +29,10 @@
     "lint": "tsdx lint src test",
     "prepublishOnly": "yarn test && yarn build"
   },
-  "publishConfig" : {
+  "publishConfig": {
     "access": "public",
     "provenance": true
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -47,9 +46,10 @@
   },
   "module": "dist/token-lists.esm.js",
   "devDependencies": {
-    "ajv": "^8.6.1",
-    "ajv-formats": "^2.1.0",
+    "ajv": "^8.6.3",
+    "ajv-formats": "^2.1.1",
     "husky": "^4.2.5",
+    "node-fetch": "^3.3.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.0.0",
     "typescript": "^4.3.5"
