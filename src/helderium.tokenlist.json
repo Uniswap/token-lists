@@ -1,0 +1,21 @@
+{
+  "name": "Helderium Token List",
+  "timestamp": "2025-05-03T15:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "logoURI": "https://raw.githubusercontent.com/hplive/token-lists/main/logos/token/0xf54a351c10e66b88d98121574f5926e4bdc0484a.png",
+  "keywords": ["helderium","hld","governance","defi"],
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0xf54a351c10e66b88d98121574f5926e4bdc0484a",
+      "symbol": "HLD",
+      "name": "Helderium",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/hplive/token-lists/main/logos/token/0xf54a351c10e66b88d98121574f5926e4bdc0484a.png"
+    }
+  ]
+}
