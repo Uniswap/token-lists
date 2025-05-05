@@ -1,0 +1,14 @@
+{
+  "name": "My Meme Coin List",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "tokens": [
+    {
+      "chainId": 8453,
+      "address": "0xBd6Eba068609bb7d4CDaE646a8d4147357745b07",
+      "name": "Israel1stCoin",
+      "symbol": "ISRAEL1ST",
+      "decimals": 18,
+      "logoURI": "https://i.imgur.com/a/f5xNsh1"
+    }
+  ]
+}
