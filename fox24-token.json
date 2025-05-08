@@ -2,6 +2,6 @@
   "symbol": "FOX24",
   "name": "Fox24 Token",
   "address": "0xd5eFbE72c11C22FEdf2b6d7368B4202ffFE2d220",
-  "logoURI": "https://raw.githubusercontent.com/rto-gtc/token-lists/main/assets/logo-fox24-base.png",
+  "logoURI": "assets/logo-fox24-base.png",
   "network": "Base"
 }
