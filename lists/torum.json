@@ -1,0 +1,21 @@
+{
+  "name": "Torum Token List",
+  "logoURI": "https://gateway.pinata.cloud/ipfs/<твой CID>",
+  "keywords": ["torum", "defi", "token"],
+  "timestamp": "2025-05-21T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0xcCF2E9E04A5485278D48E79D610a71dEd3d8133F",
+      "name": "Torum Token",
+      "symbol": "XTM",
+      "decimals": 18,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreigw76e6szqyee2ngk4r3xo6pvzojdf5a4p4ucoihekxqzrbxpokxa"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
