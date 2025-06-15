@@ -1,0 +1,22 @@
+{
+  "name": "YODCOIN List",
+  "logoURI": "https://yodcoin.com.br/logo.png",
+  "keywords": ["yodcoin", "bep20", "education"],
+  "timestamp": "2025-06-15T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x02ee4412ff9b3065920db3a782829371a9d77856",
+      "name": "YODCOIN",
+      "symbol": "YOD",
+      "decimals": 8,
+      "logoURI": "https://yodcoin.com.br/logo.png"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
+
