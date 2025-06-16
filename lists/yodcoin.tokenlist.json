@@ -1,22 +1,11 @@
-{
-  "name": "YODCOIN List",
-  "logoURI": "https://yodcoin.com.br/logo.png",
-  "keywords": ["yodcoin", "bep20", "education"],
-  "timestamp": "2025-06-15T00:00:00+00:00",
-  "tokens": [
-    {
-      "chainId": 56,
-      "address": "0x02ee4412ff9b3065920db3a782829371a9d77856",
-      "name": "YODCOIN",
-      "symbol": "YOD",
-      "decimals": 8,
-      "logoURI": "https://yodcoin.com.br/logo.png"
-    }
-  ],
-  "version": {
-    "major": 1,
-    "minor": 0,
-    "patch": 0
-  }
-}
+This PR adds the official Token List for YODCOIN (YOD), a BEP-20 token on Binance Smart Chain.
+
+- ✅ Contract: `0x02ee4412ff9b3065920db3a782829371a9d77856`
+- 🌐 Website: [https://yodcoin2.github.io/YODCOIN/](https://yodcoin2.github.io/YODCOIN/)
+- 📄 TokenList JSON: [https://yodcoin2.github.io/YODCOIN/yodcoin.tokenlist.json](https://yodcoin2.github.io/YODCOIN/yodcoin.tokenlist.json)
+- 🔗 Socials: WhatsApp, Telegram, X, Instagram, Medium, Discord, LinkedIn, GitHub
+- 📈 Listed on: Trust Wallet (PR #32114), DefiLlama (PR #9991)
+
+Compliant with Uniswap TokenList JSON schema.
+
 
