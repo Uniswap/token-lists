@@ -1,0 +1,26 @@
+{
+  "name": "Blackcow Token List",
+  "logoURI": "https://raw.githubusercontent.com/tonykim01/blackcow/main/BKC%20Main.png",
+  "keywords": [
+    "blackcow",
+    "meme",
+    "crypto",
+    "BKC"
+  ],
+  "timestamp": "2025-06-20T20:48:44.818433",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x28a229b144Fa6Cd82D7d0425626Ff2D65dEF9640",
+      "name": "Blackcow Token",
+      "symbol": "BKC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/tonykim01/blackcow/main/BKC%20Main.png"
+    }
+  ]
+}
