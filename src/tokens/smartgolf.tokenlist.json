@@ -1,0 +1,19 @@
+{
+  "name": "SMARTGOLF Token List",
+  "timestamp": "2025-06-29T12:00:00+09:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x26130697f55c8Db6e476364d9D5deee429bB8d8C",
+      "name": "SmartGolf Token",
+      "symbol": "SGi",
+      "decimals": 18,
+      "logoURI": "https://maroon-impressed-owl-271.mypinata.cloud/ipfs/bafkreifbx64kn7jdbsasvuiz7xewypsih54ghl2tnyvt2r77wsuy2rajka"
+    }
+  ]
+}
