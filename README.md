@@ -125,6 +125,11 @@ If hosted on HTTPS, make sure the endpoint is configured to send an access-contr
 An ENS name can be assigned to an IPFS hash via the [contenthash](https://eips.ethereum.org/EIPS/eip-1577) text record.
 This is the preferred way of referencing your list.
 
+## Token Lists
+
+- SmartGolf (SGi)
+  - URL: https://raw.githubusercontent.com/SMARTGOLF/token-lists/main/src/tokens/smartgolf.tokenlist.json
+
 ## Examples
 
 You can find a simple example of a token list in [test/schema/example.tokenlist.json](test/schema/example.tokenlist.json).
