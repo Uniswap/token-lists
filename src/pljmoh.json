@@ -1,0 +1,17 @@
+{
+  "name": "PLJMOH Official Token List",
+  "logoURI": "https://yesoklab.github.io/.well-known/pljmoh.png",
+  "keywords": ["pljmoh", "lee jae myung", "korea", "meme", "politics"],
+  "timestamp": "2025-07-06T00:00:00+09:00",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x2Cb13fB3743315691b90Aa0B960d08BcF64F56F3",
+      "symbol": "PLJMOH",
+      "name": "President Lee Jae-myung of Hope",
+      "decimals": 18,
+      "logoURI": "https://yesoklab.github.io/.well-known/pljmoh.png"
+    }
+  ]
+}
