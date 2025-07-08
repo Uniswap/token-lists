@@ -1,0 +1,53 @@
+name: Validate Token List JSON
+
+on:
+  push:
+    paths:
+      - 'src/cryptonia20.tokenlist.json'
+  pull_request:
+    paths:
+      - 'src/cryptonia20.tokenlist.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate JSON syntax
+        run: |
+          echo "✅ Vérification de la syntaxe JSON"
+          python3 -m json.tool src/cryptonia20.tokenlist.json > /dev/null
+
+      - name: Validate required fields
+        run: |
+          echo "✅ Vérification des champs obligatoires"
+          python3 <<'EOF'
+          import json, sys
+
+          path = 'src/cryptonia20.tokenlist.json'
+
+          with open(path) as f:
+              data = json.load(f)
+
+          # Champs racine requis
+          for field in ["name", "timestamp", "version", "tokens"]:
+              if field not in data:
+                  print(f"❌ Champ manquant: {field}")
+                  sys.exit(1)
+
+          if not isinstance(data["tokens"], list) or len(data["tokens"]) == 0:
+              print("❌ Le tableau 'tokens' doit être une liste non vide.")
+              sys.exit(1)
+
+          # Vérifie le premier token
+          token = data["tokens"][0]
+          for field in ["chainId", "address", "name", "symbol", "decimals"]:
+              if field not in token:
+                  print(f"❌ Champ manquant dans le premier token: {field}")
+                  sys.exit(1)
+
+          print("🎉 JSON valide et tous les champs requis sont présents.")
+          EOF
