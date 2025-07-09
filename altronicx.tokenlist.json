@@ -1,0 +1,19 @@
+{
+  "name": "Altronicx Token List",
+  "timestamp": "2025-07-09T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0xDa477D7Fb0871fEC7DED6ace4459cc281f8a7254",
+      "name": "Altronicx",
+      "symbol": "ATX",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/altronicxcoin/Asset/main/logo.png"
+    }
+  ]
+}
