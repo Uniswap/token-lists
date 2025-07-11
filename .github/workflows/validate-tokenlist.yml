@@ -1,53 +1,41 @@
-name: Validate Token List JSON
+- name: Extended validation
+  run: |
+    python3 <<'EOF'
+    import json, re, sys
 
-on:
-  push:
-    paths:
-      - 'src/cryptonia20.tokenlist.json'
-  pull_request:
-    paths:
-      - 'src/cryptonia20.tokenlist.json'
+    def validate_eth_address(addr):
+        return re.match(r'^0x[a-fA-F0-9]{40}$', addr)
 
-jobs:
-  validate-json:
-    runs-on: ubuntu-latest
+    with open('src/cryptonia20.tokenlist.json') as f:
+        data = json.load(f)
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    # Validation de base (existant)
+    required_root = ["name", "timestamp", "version", "tokens"]
+    required_token = ["chainId", "address", "name", "symbol", "decimals"]
+    
+    for field in required_root:
+        if field not in data:
+            print(f"❌ Root field missing: {field}")
+            sys.exit(1)
 
-      - name: Validate JSON syntax
-        run: |
-          echo "✅ Vérification de la syntaxe JSON"
-          python3 -m json.tool src/cryptonia20.tokenlist.json > /dev/null
+    if not data["tokens"]:
+        print("❌ Empty tokens array")
+        sys.exit(1)
 
-      - name: Validate required fields
-        run: |
-          echo "✅ Vérification des champs obligatoires"
-          python3 <<'EOF'
-          import json, sys
+    # Validation étendue
+    for token in data["tokens"]:
+        for field in required_token:
+            if field not in token:
+                print(f"❌ Token missing field: {field}")
+                sys.exit(1)
+        
+        if not validate_eth_address(token["address"]):
+            print(f"❌ Invalid Ethereum address: {token['address']}")
+            sys.exit(1)
 
-          path = 'src/cryptonia20.tokenlist.json'
+        if not isinstance(token["decimals"], int):
+            print(f"❌ Decimals must be integer for token: {token['symbol']}")
+            sys.exit(1)
 
-          with open(path) as f:
-              data = json.load(f)
-
-          # Champs racine requis
-          for field in ["name", "timestamp", "version", "tokens"]:
-              if field not in data:
-                  print(f"❌ Champ manquant: {field}")
-                  sys.exit(1)
-
-          if not isinstance(data["tokens"], list) or len(data["tokens"]) == 0:
-              print("❌ Le tableau 'tokens' doit être une liste non vide.")
-              sys.exit(1)
-
-          # Vérifie le premier token
-          token = data["tokens"][0]
-          for field in ["chainId", "address", "name", "symbol", "decimals"]:
-              if field not in token:
-                  print(f"❌ Champ manquant dans le premier token: {field}")
-                  sys.exit(1)
-
-          print("🎉 JSON valide et tous les champs requis sont présents.")
-          EOF
+    print("✅ All validations passed")
+    EOF
