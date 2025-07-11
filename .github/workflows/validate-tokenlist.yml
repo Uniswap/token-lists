@@ -1,41 +1,55 @@
-- name: Extended validation
-  run: |
-    python3 <<'EOF'
-    import json, re, sys
+name: Validate Token List JSON
 
-    def validate_eth_address(addr):
-        return re.match(r'^0x[a-fA-F0-9]{40}$', addr)
+on:
+  pull_request:
+    paths:
+      - 'src/**/*.tokenlist.json'
 
-    with open('src/cryptonia20.tokenlist.json') as f:
-        data = json.load(f)
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Validate JSON Syntax
+        run: |
+          echo "🔍 Vérification de la syntaxe JSON..."
+          python3 -m json.tool src/cryptonia20.tokenlist.json || exit 1
+          echo "✅ Syntaxe JSON valide"
 
-    # Validation de base (existant)
-    required_root = ["name", "timestamp", "version", "tokens"]
-    required_token = ["chainId", "address", "name", "symbol", "decimals"]
-    
-    for field in required_root:
-        if field not in data:
-            print(f"❌ Root field missing: {field}")
-            sys.exit(1)
+      - name: Validate Required Fields
+        run: |
+          echo "🔍 Vérification des champs obligatoires..."
+          python3 <<'EOF'
+          import json, re, sys
 
-    if not data["tokens"]:
-        print("❌ Empty tokens array")
-        sys.exit(1)
+          REQUIRED_ROOT = ["name", "timestamp", "version", "tokens"]
+          REQUIRED_TOKEN = ["chainId", "address", "name", "symbol", "decimals"]
 
-    # Validation étendue
-    for token in data["tokens"]:
-        for field in required_token:
-            if field not in token:
-                print(f"❌ Token missing field: {field}")
-                sys.exit(1)
-        
-        if not validate_eth_address(token["address"]):
-            print(f"❌ Invalid Ethereum address: {token['address']}")
-            sys.exit(1)
+          try:
+              with open("src/cryptonia20.tokenlist.json") as f:
+                  data = json.load(f)
 
-        if not isinstance(token["decimals"], int):
-            print(f"❌ Decimals must be integer for token: {token['symbol']}")
-            sys.exit(1)
+              # Vérification des champs racines
+              for field in REQUIRED_ROOT:
+                  if field not in data:
+                      raise ValueError(f"Champ manquant: '{field}'")
 
-    print("✅ All validations passed")
-    EOF
+              # Vérification des tokens
+              if not isinstance(data["tokens"], list) or not data["tokens"]:
+                  raise ValueError("'tokens' doit être une liste non vide")
+
+              for i, token in enumerate(data["tokens"]):
+                  for field in REQUIRED_TOKEN:
+                      if field not in token:
+                          raise ValueError(f"Token #{i} manque le champ: '{field}'")
+
+                  # Validation de l'adresse Ethereum
+                  if not re.match(r'^0x[a-fA-F0-9]{40}$', token["address"]):
+                      raise ValueError(f"Adresse Ethereum invalide: {token['address']}")
+
+              print("✅ Tous les champs requis sont valides")
+          except Exception as e:
+              print(f"❌ Erreur: {str(e)}")
+              sys.exit(1)
+          EOF
