@@ -1,6 +1,6 @@
 {
-  "name": "Duckspace Token List",
-  "logoURI": "https://raw.githubusercontent.com/duckspace1/token-lists/main/logo.png",
+  "name": "KYNCOINS Token List",
+  "logoURI": "https://ipfs.io/ipfs/QmcqZhbBK9n7Uv8HpiPxn3Udcoh3rAxaeXWWhPj9DziKjG",
   "keywords": [
     "duckspace",
     "kyncoins",
@@ -11,10 +11,10 @@
     {
       "chainId": 137,
       "address": "0x80832B3C21A83bE7411a37322d43fF71A7f672e9",
-      "name": "Know Your Name Coin",
+      "name": "Know Your Name",
       "symbol": "KYNCOINS",
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/duckspace1/token-lists/main/src/polygon/0x80832B3C21A83bE7411a37322d43fF71A7f672e9.png"
+      "logoURI": "https://ipfs.io/ipfs/QmcqZhbBK9n7Uv8HpiPxn3Udcoh3rAxaeXWWhPj9DziKjG"
     }
   ],
   "version": {
