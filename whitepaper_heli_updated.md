@@ -1,0 +1,60 @@
+# HelioCoin (HELI) – Whitepaper Overview
+
+## Introduction
+HelioCoin (HELI) is the official decentralized utility token of Helios Universal Group, powering an integrated Web3 ecosystem of streaming (HelioVision+), gaming (Titan Play), original content, NFT rewards, and digital commerce. HELI empowers creators, consumers, and investors by merging real-world value with digital ownership.
+
+## Purpose
+HELI is designed to:
+- Enable token-based rewards for engagement (watching, gaming, sharing)
+- Subsidize HelioVision+ subscriptions
+- Serve as a medium of exchange for exclusive NFTs, merchandise, tickets, and services
+- Drive a sustainable creator economy through decentralized funding
+
+## Network
+- **Blockchain**: Polygon (ERC-20)
+- **Explorer**: [Polygonscan](https://polygonscan.com/address/0x2A0c1070025391ddb789E69392aB3E9256B0F7d0)
+- **DEX Listing**: [QuickSwap](https://quickswap.exchange)
+- **QuickSwap Pool**: [https://dapp.quickswap.exchange/pool/v3/ETH/0x2A0c1070025391ddb789E69392aB3E9256B0F7d0](https://dapp.quickswap.exchange/pool/v3/ETH/0x2A0c1070025391ddb789E69392aB3E9256B0F7d0)
+
+## Ecosystem Utility
+| Platform        | HELI Use Case                            |
+|-----------------|-------------------------------------------|
+| HelioVision+    | Subscription discounts and access        |
+| Titan Games     | In-game rewards, character skins, tokens |
+| NFT Market      | Purchase Genesis NFTs and collectibles   |
+| Heliosphere     | Rewards for interaction and engagement   |
+| PFL (Sports)    | Ticketing, fantasy leagues, merch        |
+
+---
+
+# HelioCoin Tokenomics
+
+## Token Overview
+- **Name**: HelioCoin
+- **Symbol**: HELI
+- **Standard**: ERC-20
+- **Blockchain**: Polygon
+- **Total Supply**: 1,000,000,000 HELI
+
+## Allocation
+
+| Category           | %     | Amount (HELI)      |
+|--------------------|-------|--------------------|
+| Ecosystem Rewards  | 35%   | 350,000,000        |
+| Development Fund   | 20%   | 200,000,000        |
+| Team & Advisors    | 15%   | 150,000,000        |
+| Public Sale        | 10%   | 100,000,000        |
+| Private Sale       | 10%   | 100,000,000        |
+| Liquidity Reserve  | 5%    | 50,000,000         |
+| Partnerships       | 5%    | 50,000,000         |
+
+## Vesting Schedule
+- **Team & Advisors**: 12-month cliff, 24-month linear vest
+- **Private Sale**: 3-month lock, 12-month linear release
+- **Ecosystem**: Gradual release based on community milestones
+
+## Utility
+- Pay for subscriptions
+- Redeem exclusive NFTs
+- Vote on ecosystem decisions (DAO)
+- Access premium games, shows, and events
