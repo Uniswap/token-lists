@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`schema allows additional top-level fields 1`] = `null`;
+
 exports[`schema allows up to 10k tokens 1`] = `null`;
 
 exports[`schema checks extensions 1`] = `null`;
@@ -437,9 +439,9 @@ Array [
   Object {
     "instancePath": "/tokens/0/name",
     "keyword": "maxLength",
-    "message": "must NOT have more than 40 characters",
+    "message": "must NOT have more than 60 characters",
     "params": Object {
-      "limit": 40,
+      "limit": 60,
     },
     "schemaPath": "#/properties/name/maxLength",
   },
@@ -578,6 +580,8 @@ Array [
 exports[`schema token symbols may contain periods 1`] = `null`;
 
 exports[`schema works for big example schema 1`] = `null`;
+
+exports[`schema works for empty names and symbols 1`] = `null`;
 
 exports[`schema works for example schema 1`] = `null`;
 

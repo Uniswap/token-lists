@@ -39,6 +39,9 @@ export interface TokenList {
   readonly timestamp: string;
   readonly version: Version;
   readonly tokens: TokenInfo[];
+  readonly tokenMap?: {
+    readonly [key: string]: TokenInfo;
+  };
   readonly keywords?: string[];
   readonly tags?: Tags;
   readonly logoURI?: string;
