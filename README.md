@@ -1,68 +1,40 @@
-# HelioCoin (HELI)
+# Helios Universal Token Suite
 
-**HelioCoin** is the official utility token of **Helios Universal Group**, powering a multi-platform ecosystem of streaming, gaming, digital collectibles, and creator-driven experiences. Built on the fast and low-cost **Polygon** blockchain, HELI enables real-world rewards, token-gated content, NFT access, and seamless transactions across the Heliosphere.
-
----
-
-## 🔗 Token Details
-
-- **Name:** HelioCoin  
-- **Symbol:** HELI  
-- **Network:** Polygon (POS)  
-- **Contract Address:** `0x2A0c1070025391ddb789E69392aB3E9256B0F7d0`  
-- **Decimals:** 18  
-- **Max Supply:** 1,000,000,000 HELI  
-- **Token Type:** ERC-20 (Polygon)
+Welcome to the official GitHub repository for the Helios Universal Group's dual-token ecosystem:
 
 ---
 
-## 🎯 Key Utilities
+## 🔶 HelioCoin (HELI)
+**HelioCoin** is the core utility token of the Heliosphere — used for streaming, subscriptions, creator payments, and platform-wide access on HelioVision+, Titan Play, and Muse Brand.
 
-- 🔐 Unlock premium content on **HelioVision+**  
-- 🎮 Use across **Titan Play** for digital gaming rewards  
-- 🎬 Redeem for movie tickets, digital perks, and NFTs  
-- 🛍️ Shop real-world goods from **Muse Brand** using HELI  
-- 💰 Trade on **QuickSwap** or supported DEXs  
-- 🛠️ Stake or pair with other tokens (e.g. EbonyCoin)  
+- **Network:** Polygon
+- **Contract:** `0x2A0c1070025391ddb789E69392aB3E9256B0F7d0`
+- [View on Polygonscan](https://polygonscan.com/token/0x2A0c1070025391ddb789E69392aB3E9256B0F7d0)
 
 ---
 
-## 🌐 Ecosystem Integration
+## 🖤 EbonyCoin (EBNY)
+**EbonyCoin** is a culturally-themed token created to power rewards, NFTs, and exclusive commerce within Black-led digital ecosystems. It supports creator rewards, fashion drops, and collectibles on HelioVision+ and Muse Brand.
 
-HelioCoin fuels a broad ecosystem:
-- [HelioVision+](https://tv.heliovisionplus.com): On-demand streaming platform  
-- [Heliosphere](https://heliosphere.heliosvisionplus.com): NFT marketplace & creator hub  
-- **Muse Brand**: Culture-forward merchandise powered by HELI  
-- **Titan Play**: Free-to-play gaming, retro emulation & rewards  
-
----
-
-## 🛣️ Roadmap Highlights
-
-- ✅ Token deployment on Polygon  
-- ✅ QuickSwap DEX integration  
-- 🚀 NFT utility rollout (HelioCoin Genesis Collection)  
-- 📺 Subscription-based reward system for HelioVision+  
-- 🔁 Token pairing with EbonyCoin (EBNY)  
-- 🪙 Governance and staking features (planned)
+- **Network:** Polygon
+- **Contract:** `0xCdc46b56C75977d201989B72B8285F9dFA267B4f`
+- [View on Polygonscan](https://polygonscan.com/token/0xCdc46b56C75977d201989B72B8285F9dFA267B4f)
 
 ---
 
-## 📘 Resources
-
-- 🌐 [Official Website](https://heliosuniversalgroup.com/)  
-- 🔍 [PolygonScan – Contract](https://polygonscan.com/token/0x2A0c1070025391ddb789E69392aB3E9256B0F7d0)  
-- 📈 [DEX Pair on QuickSwap](https://dapp.quickswap.exchange/pool/v3/ETH/0x2a0c1070025391ddb789e69392ab3e9256b0f7d0)  
-- 📰 [Whitepaper](https://heliosuniversalgroup.com/whitepaper.pdf) *(if available)*  
-- 🐦 [Twitter](https://twitter.com/heliovisionplus)  
-- 📺 [YouTube](https://youtube.com/@HelioVisionTV)
+## 📦 Utilities Across the Heliosphere
+- Subscriptions
+- NFT Drops & Access
+- Creator Payouts
+- Merch + Fashion Rewards
+- Gaming & Streaming Economy
 
 ---
 
-## ⚠️ Disclaimer
-
-This token is part of the Helios Universal Group ecosystem. HelioCoin is not intended as a security or investment vehicle. Use it within supported platforms and always do your own research.
+## 🛠️ Developer Notes
+Coming soon: SDKs, APIs, and DApp integration guides.
 
 ---
 
-© 2025 Helios Universal Group. All rights reserved.
+## 📄 License
+MIT License (see LICENSE file)
