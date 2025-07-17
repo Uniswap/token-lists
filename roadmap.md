@@ -1,22 +1,22 @@
-# HelioCoin Roadmap
-
-## Q2 2025
-- ✅ Smart Contract Deployed on Polygon
-- ✅ DEX Listing on QuickSwap (MATIC Pair)
-- ✅ Genesis NFT Drop (1–1000)
-- ✅ HelioCoin Donation Box Integration
+# EbonyCoin Roadmap
 
 ## Q3 2025
-- 🔄 NFT Marketplace Frontend Launch
-- 🔄 Token Listings on CoinMarketCap & CoinGecko
-- 🔄 Whitelist HELI on Uniswap
+- ✅ Smart Contract Deployed on Polygon
+- ✅ Integration with HelioVision+ and Titan Games
+- ✅ Genesis NFT Collection (Afrocentric Exclusive)
+- ✅ DEX Listing (QuickSwap)
 
 ## Q4 2025
-- 📱 Launch Heliosphere Companion Mobile App
-- 🎮 Titan Games NFT & Play-to-Earn Integration
-- 🏟️ HelioCoin Ticketing for Pantheon Football League
+- 🔄 Launch of Ebony Marketplace (NFT + Merch)
+- 🔄 DAO Governance Framework Drafted
+- 🔄 Strategic Airdrop Campaigns
+
+## Q1 2026
+- 📱 Mobile Wallet Integration
+- 🎫 Premium Event Access Passes
+- 🖼️ Creator Grant Program Launch (Black Creators)
 
 ## 2026+
-- 💳 HELI Payment Integration w/ Physical Debit Cards
-- 🗳️ Launch of Helio DAO Governance
-- 📈 Centralized Exchange Listing (Binance, Coinbase, etc.)
+- 🗳️ Full DAO Governance Implementation
+- 💳 Token-Based Debit Card Integration
+- 📈 Listing on Tier-1 Centralized Exchanges
