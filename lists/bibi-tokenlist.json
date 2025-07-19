@@ -1,0 +1,19 @@
+{
+  "name": "BIBI Token List",
+  "timestamp": "2025-07-19T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xfA21cc13462fD156a2d11EB7b5c4812154C6f485",
+      "name": "BIBI",
+      "symbol": "BIBI",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/RacheliRaz/bibi-token-list/main/assets/ethereum/0xfA21cc13462fD156a2d11EB7b5c4812154C6f485/logo.png"
+    }
+  ]
+}
