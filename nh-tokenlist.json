@@ -1,0 +1,20 @@
+{
+  "name": "NH Token List",
+  "timestamp": "2025-07-23T12:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0xC881f2A971e2a11d8EDB3ADdE19DF6eAfb638892",
+      "name": "NH Token",
+      "symbol": "NH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/YourUsername/your-token-list/main/logo.png"
+    }
+  ],
+  "keywords": ["nh", "defi", "token"]
+}
