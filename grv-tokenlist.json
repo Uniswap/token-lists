@@ -1,0 +1,25 @@
+{
+  "name": "RAREGRV Token List",
+  "timestamp": "2025-07-23T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 10,
+      "address": "0x19776a497a8D56E70629e6082702b6A093F666Af",
+      "name": "RAREGRV",
+      "symbol": "GRV",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Hokage-GRV/grv-token-list/main/grv-logo.png",
+      "tags": ["reserve", "defi", "store-of-value", "governance", "investment", "sustainable"],
+      "extensions": {
+        "website": "https://grvnew.wordpress.com/",  
+        "explorer": "https://optimistic.etherscan.io/address/0x19776a497a8D56E70629e6082702b6A093F666Af",
+        "description": "RAREGRV is a decentralized reserve token built on Optimism. It will be connected to GRV, backed by investments in real and digital assets. Governed transparently on-chain, it aims to provide sustainable value through a unique structure of mutual governance and profitable, publicly managed funds."
+      } 
+    }
+  ]
+}
