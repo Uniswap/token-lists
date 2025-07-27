@@ -1,0 +1,66 @@
+name: Validate Token List JSON
+
+on:
+  pull_request:
+    paths:
+      - 'src/**/*.tokenlist.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Validate JSON Syntax
+        run: |
+          echo "🔍 Vérification de la syntaxe JSON..."
+          python3 -m json.tool src/cryptonia20.tokenlist.json || exit 1
+          echo "✅ Syntaxe JSON valide"
+
+      - name: Validate Required Fields
+        run: |
+          echo "🔍 Vérification des champs obligatoires..."
+          python3 <<'EOF'
+          import json, re, sys
+
+          REQUIRED_ROOT = ["name", "timestamp", "version", "tokens"]
+          REQUIRED_TOKEN = ["chainId", "address", "name", "symbol", "decimals", "logoURI"]
+
+          try:
+              with open("src/cryptonia20.tokenlist.json") as f:
+                  data = json.load(f)
+
+              # Vérification des champs racines
+              missing_root = [field for field in REQUIRED_ROOT if field not in data]
+              if missing_root:
+                  raise ValueError(f"Champs manquants: {', '.join(missing_root)}")
+
+              # Vérification des tokens
+              if not isinstance(data["tokens"], list):
+                  raise ValueError("'tokens' doit être une liste")
+              
+              if len(data["tokens"]) == 0:
+                  raise ValueError("La liste 'tokens' ne doit pas être vide")
+
+              for i, token in enumerate(data["tokens"]):
+                  # Champs obligatoires
+                  missing_token = [field for field in REQUIRED_TOKEN if field not in token]
+                  if missing_token:
+                      raise ValueError(f"Token #{i} manque: {', '.join(missing_token)}")
+                  
+                  # Format de l'adresse
+                  if not re.match(r'^0x[a-fA-F0-9]{40}$', token["address"]):
+                      raise ValueError(f"Adresse Ethereum invalide (token #{i}): {token['address']}")
+
+                  # Vérification du logoURI
+                  if not token["logoURI"].startswith(('http://', 'https://')):
+                      raise ValueError(f"logoURI doit être une URL valide (token #{i})")
+
+              print("✅ Toutes les validations sont passées avec succès!")
+          except json.JSONDecodeError as e:
+              print(f"❌ Erreur de syntaxe JSON: {str(e)}")
+              sys.exit(1)
+          except Exception as e:
+              print(f"❌ Erreur de validation: {str(e)}")
+              sys.exit(1)
+          EOF

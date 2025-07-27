@@ -1,0 +1,26 @@
+{
+"name": "Cryptonia Token List",
+"timestamp": "2025-06-25T18:00:00Z",
+"version": {
+"major": 1,
+"minor": 0,
+"patch": 0
+},
+"tags": {},
+"tokens": [
+{
+"chainId": 1,
+"address": "0xFd655eB8fB0296DeeBFdFdc18a05a522186985e1",
+"name": "Cryptonia20",
+"symbol": "CT20",
+"decimals": 18,
+"logoURI": "https://tonsite.com/images/logo-ct20.png",
+"extensions": {
+"website": "https://popo20i.github.io/Cryptonia20/",
+"social": {
+"twitter": "https://twitter.com/20Cryptonia"
+}
+}
+}
+]
+}
