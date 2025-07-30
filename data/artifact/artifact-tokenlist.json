@@ -1,0 +1,21 @@
+{
+  "name": "Artifact Token List",
+  "logoURI": "https://raw.githubusercontent.com/Artifact-Virtual/arcx_token/main/logo/arcx_logo.png",
+  "timestamp": "2025-07-29T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 8453,
+      "address": "0xA4093669DAFbD123E37d52e0939b3aB3C2272f44",
+      "name": "ARCx",
+      "symbol": "ARCx",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Artifact-Virtual/arcx_token/main/logo/arcx_logo.png",
+      "tags": ["funding", "constitutional", "erc20"]
+    }
+  ]
+}
