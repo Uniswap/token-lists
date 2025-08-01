@@ -1,0 +1,73 @@
+# HelioCoin Tokenomics
+
+HelioCoin (HELI) is the official utility token of the Helios Universal Group ecosystem, powering a multi-industry platform that spans streaming, gaming, entertainment, NFTs, sports, and creator rewards. Deployed on the Polygon network, HELI is designed for real-world integration and decentralized ownership across the Heliosphere.
+
+---
+
+## 🔗 Token Information
+
+- **Token Name:** HelioCoin  
+- **Symbol:** HELI  
+- **Blockchain:** Polygon (PoS)  
+- **Contract Address:** `0x2A0c1070025391ddb789E69392aB3E9256B0F7d0`  
+- **Decimals:** 18  
+- **Token Standard:** ERC-20  
+- **Token Generation Date (TGE):** July 11, 2025
+
+---
+
+## 🔢 Token Supply
+
+- **Max Supply:** 1,000,000,000 HELI  
+- **Total Supply:** 1,000,000,000 HELI  
+- **Initial Circulating Supply (as of TGE):** ~20,000,000 HELI  
+- **Burned Tokens:** None (to date)
+
+---
+
+## 🧭 Allocation Breakdown
+
+| Allocation Category     | Percentage | Tokens Allocated | Vesting Details                                      |
+|--------------------------|------------|------------------|------------------------------------------------------|
+| Public Airdrop          | 10%        | 100,000,000      | 100% unlocked at TGE                                |
+| Private Sale            | 15%        | 150,000,000      | 10% at TGE, 2-month cliff, 12-month linear vesting   |
+| Team & Advisors         | 20%        | 200,000,000      | 6-month cliff, 24-month linear quarterly vesting     |
+| Ecosystem & Rewards     | 30%        | 300,000,000      | 1-month cliff, 36-month monthly vesting              |
+| Treasury Reserve        | 25%        | 250,000,000      | 5% at TGE, 3-month cliff, 36-month linear vesting     |
+
+---
+
+## 🛠 Use Cases
+
+HelioCoin fuels the decentralized economy of the Heliosphere and is used for:
+
+- Accessing premium content on HelioVision+
+- Voting on films, series, and show pilots
+- NFT purchases and unlocking creator content
+- In-app and in-game transactions across Titan Play
+- Discounted merch, ticketing, and event access
+- Creator tipping and streaming royalty payments
+- Fantasy sports and fan engagement in the Pantheon Football League (PFL)
+
+---
+
+## 🔒 Wallets & Transparency
+
+- **Top Holder List:** [View on PolygonScan](https://polygonscan.com/token/0x2A0c1070025391ddb789E69392aB3E9256B0F7d0#balances)  
+- **Circulating Wallets:** Community-owned addresses holding unlocked tokens  
+- **Locked/Vested Wallets:** Team & advisor reserves, ecosystem rewards, and treasury
+
+---
+
+## 📈 Future Growth Plans
+
+- Launch staking and farming options for HELI holders
+- Expand DEX and CEX listings
+- Integrate HELI payments across HelioVision, Titan Play, and PFL platforms
+- Launch governance module to enable HELI-based voting on protocol-level decisions
+
+---
+
+For full whitepaper, visit: [HelioCoin Whitepaper](https://github.com/heliocoin/whitepaper.pdf)
+
+> Powered by Helios Universal Group — Building the Future of Decentralized Media.
