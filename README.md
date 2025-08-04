@@ -1,4 +1,4 @@
-# @uniswap/token-lists (beta)
+# @PEPHER/token-lists (beta)
 
 [![Tests](https://github.com/Uniswap/token-lists/workflows/Tests/badge.svg)](https://github.com/Uniswap/token-lists/actions?query=workflow%3ATests)
 [![npm](https://img.shields.io/npm/v/@uniswap/token-lists)](https://unpkg.com/@uniswap/token-lists@latest/)
