@@ -1,0 +1,40 @@
+{
+  "name": "BARIN Token List",
+  "timestamp": "2025-08-08T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {
+    "utility": {
+      "name": "Utility",
+      "description": "Utility tokens for accessing the BARIN ecosystem"
+    }
+  },
+  "logoURI": "https://barinmineraltoken.com/logo.png",
+  "keywords": [
+    "barin",
+    "token",
+    "mineral",
+    "web3"
+  ],
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x559f11777626381e1566fedcf59f454e005316d1",
+      "name": "Barin Mineral Token",
+      "symbol": "BARIN",
+      "decimals": 18,
+      "logoURI": "https://barinmineraltoken.com/logo.png",
+      "tags": [
+        "utility"
+      ],
+      "extensions": {
+        "description": "BARIN is a Web3 infrastructure token designed to integrate digital finance with real-world mineral value chains. It is not backed by physical mines or company shares.",
+        "website": "https://barinmineraltoken.com",
+        "explorer": "https://polygonscan.com/token/0x559f11777626381e1566fedcf59f454e005316d1"
+      }
+    }
+  ]
+}
