@@ -10,7 +10,7 @@
     "description": "Non-transferable token as proof of donation to independent Russian organizations via the NRT platform.",
     "website": "https://newrussiatoken.netlify.app/",
     "documentation": "https://raw.githubusercontent.com/NRT314/assets/main/README.md",
-    "github": "https://github.com/NRT314/donate"
+    "github": "https://github.com/NRT314/donate" 
   }
 }
 
