@@ -1,1 +1,16 @@
+{
+  "chainId": 137,
+  "address": "0xE61FEb2c3278A6094571ce12177767221cA4b661",
+  "name": "NewRussiaToken",
+  "symbol": "NRT",
+  "decimals": 18,
+  "logoURI": "https://raw.githubusercontent.com/NRT314/assets/main/logo.png",
+  "tags": ["soulbound", "donation", "commemorative"],
+  "extensions": {
+    "description": "Non-transferable token as proof of donation to independent Russian organizations via the NRT platform.",
+    "website": "https://newrussiatoken.netlify.app/",
+    "documentation": "https://raw.githubusercontent.com/NRT314/assets/main/README.md",
+    "github": "https://github.com/NRT314/donate"
+  }
+}
 
