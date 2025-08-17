@@ -12,7 +12,7 @@
   "tokens": [
     {
       "chainId": 1, // Mainnet (change for other networks)
-      "address": "YOUR_CONTRACT_ADDRESS_HERE",
+      "address": "0xdE95401613628D8fDCEa9b7357b0B12dD7cEF485",
       "name": "Wrapped BNB (Wormhole)",
       "symbol": "WBNB",
       "decimals": 18,

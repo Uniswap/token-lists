@@ -12,8 +12,8 @@
   "tokens": [
     {
       "chainId": 1, // Mainnet (change for other networks)
-      "address": "YOUR_CONTRACT_ADDRESS_HERE",
-      "name": "Wrapped BNB (Wormhole)",
+      "address": "0xdE95401613628D8fDCEa9b7357b0B12dD7cEF485",
+      "name": "Wrapped BNB2 (Wormhole)",
       "symbol": "WBNB",
       "decimals": 18,
       "logoURI": "https://cyan-sophisticated-mockingbird-33.mypinata.cloud/ipfs/bafkreigbhd3guo7bznbhsdkkzzjrlyyv3swpr33vpsgkgoxzx5v26wvcpm?pinataGatewayToken=DDN9vdbXaKS-moumQZ8sSrnYGZ9TxfhUqCBxRd8waHjUTw5xqN0upk9b4m93g5ki",
