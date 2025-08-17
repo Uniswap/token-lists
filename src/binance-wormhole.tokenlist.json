@@ -1,0 +1,35 @@
+{
+  "name": "Binance Coin Wormhole List",
+  "logoURI": "https://cyan-sophisticated-mockingbird-33.mypinata.cloud/ipfs/bafkreigbhd3guo7bznbhsdkkzzjrlyyv3swpr33vpsgkgoxzx5v26wvcpm?pinataGatewayToken=DDN9vdbXaKS-moumQZ8sSrnYGZ9TxfhUqCBxRd8waHjUTw5xqN0upk9b4m93g5ki",
+  "keywords": ["binance", "wormhole", "wbnb"],
+  "tags": {
+    "stablecoin": {
+      "name": "Stablecoin",
+      "description": "Tokens that are fixed to an external asset"
+    }
+  },
+  "timestamp": "2024-06-01T00:00:00Z",
+  "tokens": [
+    {
+      "chainId": 1, // Mainnet (change for other networks)
+      "address": "0xdE95401613628D8fDCEa9b7357b0B12dD7cEF485",
+      "name": "Wrapped BNB2 (Wormhole)",
+      "symbol": "WBNB",
+      "decimals": 18,
+      "logoURI": "https://cyan-sophisticated-mockingbird-33.mypinata.cloud/ipfs/bafkreigbhd3guo7bznbhsdkkzzjrlyyv3swpr33vpsgkgoxzx5v26wvcpm?pinataGatewayToken=DDN9vdbXaKS-moumQZ8sSrnYGZ9TxfhUqCBxRd8waHjUTw5xqN0upk9b4m93g5ki",
+      "tags": ["wormhole"],
+      "extensions": {
+        "bridgeContract": "0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B",
+        "coingeckoId": "binancecoin",
+        "description": "Binance Coin wrapped through Wormhole bridge",
+        "website": "https://binance.org",
+        "tokenTracker": "Wormhole"
+      }
+    }
+  ],
+  "version": {
+    "major": 2,
+    "minor": 0,
+    "patch": 0
+  }
+}
