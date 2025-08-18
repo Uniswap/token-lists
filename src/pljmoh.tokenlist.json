@@ -1,21 +1,8 @@
-{
-  "name": "PLJMOH Token List",
-  "logoURI": "https://gateway.pinata.cloud/ipfs/bafybeihlicsm6elieuskf7hqdccqompzr3cajnmld64zxu5wkc3pjg23v4",
-  "keywords": ["pljmoh", "polygon", "meme", "korea"],
-  "timestamp": "2025-07-01T12:00:00+09:00",
-  "tokens": [
+},
     {
       "chainId": 137,
-      "address": "0x2Ctb13d23D4E14A730C0E1D10c805D61204E7622",
-      "symbol": "PLJMOH",
-      "name": "President Lee Jae Myung of Hope",
+      "address": "0x55f16708a0c7BcB40F2138f836e87733D0636C8e",
+      "symbol": "LOH",
+      "name": "LOH Token",
       "decimals": 18,
-      "logoURI": "https://gateway.pinata.cloud/ipfs/bafybeihlicsm6elieuskf7hqdccqompzr3cajnmld64zxu5wkc3pjg23v4"
-    }
-  ],
-  "version": {
-    "major": 1,
-    "minor": 0,
-    "patch": 0
-  }
-}
+      "logoURI": "https://ipfs.io/ipfs/bafkreiaj6u34w63larcjtk2o66h5gmwf4jul6fxy7zdwpc5giql6faoppy"
