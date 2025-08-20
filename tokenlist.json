@@ -1,0 +1,14 @@
+{
+  "name": "Mohem",
+  "logoURI": "https://github.com/tejaratpol1402/mohem-token/blob/main/t256.png",
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0xA041a7FD24D59d6E1e5D3c80044264F7eD3D8121",
+      "name": "Mohem",
+      "symbol": "moh",
+      "decimals": 18,
+      "logoURI": "https://github.com/tejaratpol1402/mohem-token/blob/main/t256.png"
+    }
+  ]
+}
