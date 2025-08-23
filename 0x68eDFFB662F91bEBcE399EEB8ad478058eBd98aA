@@ -1,0 +1,22 @@
+{
+  "name": "Perlevescava Token List",
+  "timestamp": "2025-08-22T00:00:00.000Z",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "keywords": ["perlevescava", "perl", "erc20", "defi"],
+  "logoURI": "https://brown-additional-walrus-851.mypinata.cloud/ipfs/bafybeibicbgamataucthslujy6q52fnyptdqc2fmxq5gso55lyv44nnyzu",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x68eDFFB662F91bEBcE399EEB8ad478058eBd98aA",
+      "name": "Perlevescava",
+      "symbol": "PERL",
+      "decimals": 18,
+      "logoURI": "https://brown-additional-walrus-851.mypinata.cloud/ipfs/bafybeibicbgamataucthslujy6q52fnyptdqc2fmxq5gso55lyv44nnyzu",
+      "extensions": {
+        "website": "https://auroracoin.unaux.com/",
+        "github": "https://github.com/ssamelia/Perlevescava-",
+        "twitter": "https://x.com/divinityxamelia"
+      }
+    }
+  ]
+}
