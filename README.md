@@ -128,7 +128,7 @@ This is the preferred way of referencing your list.
 ## Token Lists
 
 - SmartGolf (SGi)
-  - URL: https://raw.githubusercontent.com/SMARTGOLF/token-lists/main/src/tokens/smartgolf.tokenlist.json
+  - URL: https://raw.githubusercontent.com/SMARTGOLF/token-lists/main/src/tokens/SGi.json
 
 ## Examples
 
