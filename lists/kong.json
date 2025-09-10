@@ -1,0 +1,17 @@
+{
+  "name": "CyberKongz Token List",
+  "logoURI": "https://app.cyberkongz.com/kong-logo.png",
+  "keywords": ["KONG", "CyberKongz"],
+  "timestamp": "2025-09-10T15:00:00Z",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x8db036f007841C21B97eFF7dfc2c187241d59BaF",
+      "name": "CyberKongz",
+      "symbol": "KONG",
+      "decimals": 18,
+      "logoURI": "https://app.cyberkongz.com/kong-logo.png"
+    }
+  ]
+}
