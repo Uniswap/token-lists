@@ -401,3 +401,11 @@
     "tokens"
   ]
 }
+{
+  "chainId": 137,
+  "address": "0x619B0fcDcb30a45091745Fb12C9640237bbF27c5",
+  "name": "BALBI",
+  "symbol": "BALBI",
+  "decimals": 18,
+  "logoURI": "https://raw.githubusercontent.com/Balbi-Token/site/4783898021460026e9d6258c00c13b81c22f7d41/logo.png"
+}
