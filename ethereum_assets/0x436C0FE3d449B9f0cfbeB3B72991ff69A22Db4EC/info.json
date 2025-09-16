@@ -1,0 +1,21 @@
+{
+  "name": "FOX24 Token List",
+  "logoURI": "https://fox24coin.com/logo.png",
+  "keywords": ["fox24", "gold", "crypto"],
+  "timestamp": "2025-09-11T12:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x436C0FE3d449B9f0cfbeB3B72991ff69A22Db4EC",
+      "symbol": "FOX24",
+      "name": "Fox24Coin",
+      "decimals": 18,
+      "logoURI": "https://fox24coin.com/logo.png"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
