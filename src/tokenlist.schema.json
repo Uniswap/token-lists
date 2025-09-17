@@ -103,7 +103,7 @@
         {
           "type": "string",
           "minLength": 1,
-          "maxLength": 42,
+          "maxLength": 200,
           "examples": [
             "#00000"
           ]
