@@ -1,0 +1,21 @@
+{
+  "name": "LOH Token List",
+  "logoURI": "https://ipfs.io/ipfs/bafkreiaj6u34w63larcjtk2o66h5gmwf4jul6fxy7zdwpc5giql6faoppy",
+  "keywords": ["polygon", "loh", "clockwork"],
+  "timestamp": "2025-08-25T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x55f16708a0c7BcB40F2138f836e87733D0636C8e",
+      "symbol": "LOH",
+      "name": "LOH Token",
+      "decimals": 18,
+      "logoURI": "https://ipfs.io/ipfs/bafkreiaj6u34w63larcjtk2o66h5gmwf4jul6fxy7zdwpc5giql6faoppy"
+    }
+  ]
+}
