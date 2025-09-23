@@ -1,0 +1,32 @@
+{
+  "name": "Liquidao Token List",
+  "logoURI": "https://www.liquidao.io/logo/liquidao-logo-colour.png",
+  "keywords": ["defi", "yield", "liquidao", "base"],
+  "tags": {
+    "defi": {
+      "name": "DeFi",
+      "description": "Decentralized finance tokens"
+    },
+    "yield": {
+      "name": "Yield Farming",
+      "description": "Tokens related to farming and liquidity pools"
+    }
+  },
+  "timestamp": "2025-09-23T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 8453,
+      "address": "0xeb25717632A1682e7Cd9Cd9B03fB08Bf367Ccf95",
+      "name": "Liquidao",
+      "symbol": "LIQ",
+      "decimals": 18,
+      "logoURI": "https://www.liquidao.io/logo/liquidao-logo-colour.png",
+      "tags": ["defi", "yield"]
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
