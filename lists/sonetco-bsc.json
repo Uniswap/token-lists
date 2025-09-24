@@ -1,0 +1,18 @@
+{
+  "name": "Social Network Coin List",
+  "timestamp": "2025-09-24T00:00:00+00:00",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "logoURI": "https://raw.githubusercontent.com/sonetco/socialnetworkcoin/main/blockchainsbinanceassets0x5dbc4d59ac92845790482ae1cfabf5efdf7ca2e7logo.png.png",
+  "keywords": ["social", "defi"],
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x5dbc4d59ac92845790482ae1cfabf5efdf7ca2e7",
+      "name": "Social Network Coin",
+      "symbol": "SO-NET-CO",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/sonetco/socialnetworkcoin/main/blockchainsbinanceassets0x5dbc4d59ac92845790482ae1cfabf5efdf7ca2e7logo.png.png",
+      "tags": ["social","rewards"]
+    }
+  ]
+}
