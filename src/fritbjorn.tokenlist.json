@@ -1,1 +1,14 @@
-
+	
+name	"Fritbjorn Labs Token List"
+timestamp	"2025-09-24T18:51:00Z"
+version	
+major	1
+minor	0
+patch	0
+tokens	
+0	
+name	"Fritbjorn Labs Utility"
+symbol	"FRIT"
+address	"0x7A71FF754761456DCB1c67D8040454923A4F01f9"
+decimals	18
+logoURI	"https://raw.githubusercontent.com/FritbjornLabs/Fritbjorn-Labs-Utility-FRIT-/refs/heads/main/assets/FRIT/FRIT.png"
