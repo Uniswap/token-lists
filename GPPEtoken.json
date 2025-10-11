@@ -1,0 +1,16 @@
+{
+  "name": "PepeToken List",
+  "timestamp": "2025-10-11T00:00:00+00:00",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x0016f4ef757fe5e37467cd54f8e7d7078558a6",
+      "name": "Pepe",
+      "symbol": "GPPE",
+      "decimals": 18,
+      "logoURI": "https://peach-top-mink-931.mypinata.cloud/ipfs/bafkreiatbtk6t2nd7hmb7sljhtzp2vmwqzryzsewvy7wxdj2xqfy66qwu4",
+      "description": "The original Pepe represents a strong and enduring community built around the iconic Pepe meme. This project celebrates that legacy as a symbol of good luck and unity."
+    }
+  ]
+}
