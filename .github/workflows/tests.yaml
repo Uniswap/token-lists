@@ -15,9 +15,11 @@ jobs:
         node: [ '10', '12', '14' ]
     name: Node ${{ matrix.node }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: bullfrogsec/bullfrog@1831f79cce8ad602eef14d2163873f27081ebfb3 # v0.8.4
+
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       - name: Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@f1f314fca9dfce2769ece7d933488f076716723e # v1
         with:
           node-version: ${{ matrix.node }}
       - run: yarn install --frozen-lockfile
