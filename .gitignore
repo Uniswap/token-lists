@@ -1,3 +1,9 @@
 .idea/
 dist/
 node_modules/
+
+# Yarn cache and install state (Yarn Berry)
+.yarn/cache
+.yarn/install-state.gz
+.yarn/build-state.yml
+.yarn/unplugged
