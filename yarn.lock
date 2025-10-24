@@ -1921,6 +1921,7 @@ __metadata:
     ajv: "npm:^8.6.1"
     ajv-formats: "npm:^2.1.0"
     babel-eslint: "npm:^10.1.0"
+    eslint: "npm:^6.8.0"
     eslint-config-react-app: "npm:^5.2.1"
     eslint-plugin-flowtype: "npm:^4.6.0"
     eslint-plugin-import: "npm:^2.20.1"
@@ -4108,7 +4109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^6.1.0":
+"eslint@npm:^6.1.0, eslint@npm:^6.8.0":
   version: 6.8.0
   resolution: "eslint@npm:6.8.0"
   dependencies:
