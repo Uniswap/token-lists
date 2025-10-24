@@ -25,6 +25,12 @@ jobs:
           cache: yarn
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
+  
+      - name: Enable Corepack
+        run: corepack enable
+        
+      - name: Install Yarn
+        run: corepack prepare yarn@stable --activate
 
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache
@@ -35,4 +41,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn npm publish
+        run: yarn publish
