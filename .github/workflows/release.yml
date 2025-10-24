@@ -28,11 +28,14 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
         
-      - name: Install Yarn
-        run: corepack prepare yarn@stable --activate
+      - name: Setup Yarn cache
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
+        with:
+          node-version: 20
+          cache: yarn
 
       - name: Install dependencies
-        run: yarn install --immutable --immutable-cache
+        run: yarn install --immutable
 
       - name: Install npm
         run: npm install -g npm@latest
