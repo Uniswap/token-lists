@@ -23,6 +23,7 @@ import extensionsValidObject from './schema/extensions-valid-object.tokenlist.js
 import extensionsInvalidObjectTooDeep from './schema/extensions-invalid-object-too-deep.tokenlist.json';
 import tokenSymbolWithPeriod from './schema/tokenwithperiodsymbol.tokenlist.json';
 import crossChainExtensions from './schema/example-crosschain.tokenlist.json';
+import solanaAddresses from './schema/solana-addresses.tokenlist.json';
 import addFormats from 'ajv-formats';
 
 const ajv = new Ajv({ allErrors: true });
@@ -119,6 +120,10 @@ describe('schema', () => {
 
   it('cross chain extensions example', () => {
     checkSchema(crossChainExtensions, true);
+  });
+
+  it('accepts Solana addresses', () => {
+    checkSchema(solanaAddresses, true);
   });
 
   it('allows up to 10k tokens', () => {

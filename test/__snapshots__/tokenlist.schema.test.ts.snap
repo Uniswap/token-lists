@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`schema accepts Solana addresses 1`] = `null`;
+
 exports[`schema allows additional top-level fields 1`] = `null`;
 
 exports[`schema allows up to 10k tokens 1`] = `null`;
@@ -350,9 +352,9 @@ Array [
   Object {
     "instancePath": "/tokens/0/address",
     "keyword": "pattern",
-    "message": "must match pattern \\"^0x[a-fA-F0-9]{40}$\\"",
+    "message": "must match pattern \\"^(0x[a-fA-F0-9]{40}|[1-9A-HJ-NP-Za-km-z]{32,44})$\\"",
     "params": Object {
-      "pattern": "^0x[a-fA-F0-9]{40}$",
+      "pattern": "^(0x[a-fA-F0-9]{40}|[1-9A-HJ-NP-Za-km-z]{32,44})$",
     },
     "schemaPath": "#/properties/address/pattern",
   },
