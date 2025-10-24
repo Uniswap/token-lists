@@ -2,9 +2,7 @@ name: Release
 on:
   # manual trigger
   workflow_dispatch:
-  pull_request:
-    branches:
-      - main
+
 jobs:
   deploy:
     name: release
