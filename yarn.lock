@@ -1921,6 +1921,7 @@ __metadata:
     ajv: "npm:^8.6.1"
     ajv-formats: "npm:^2.1.0"
     babel-eslint: "npm:^10.1.0"
+    eslint: "npm:^6.8.0"
     eslint-config-react-app: "npm:^5.2.1"
     eslint-plugin-flowtype: "npm:^4.6.0"
     eslint-plugin-import: "npm:^2.20.1"
@@ -4108,7 +4109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^6.1.0":
+"eslint@npm:^6.1.0, eslint@npm:^6.8.0":
   version: 6.8.0
   resolution: "eslint@npm:6.8.0"
   dependencies:
@@ -10021,16 +10022,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^3.7.3":
-  version: 3.9.10
-  resolution: "typescript@npm:3.9.10"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 10c0/863cc06070fa18a0f9c6a83265fb4922a8b51bf6f2c6760fb0b73865305ce617ea4bc6477381f9f4b7c3a8cb4a455b054f5469e6e41307733fe6a2bd9aae82f8
-  languageName: node
-  linkType: hard
-
 "typescript@npm:^4.3.5":
   version: 4.4.4
   resolution: "typescript@npm:4.4.4"
@@ -10038,16 +10029,6 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10c0/7cd160bbfdf99404238c296db0d56352c7e1d57e367f02640ca36f254f3fa47f74bfc76615e0010c2688a443d9e7403e2d26c79d98ab450d924b17c950732486
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@npm%3A^3.7.3#optional!builtin<compat/typescript>":
-  version: 3.9.10
-  resolution: "typescript@patch:typescript@npm%3A3.9.10#optional!builtin<compat/typescript>::version=3.9.10&hash=3bd3d3"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 10c0/9041fb3886e7d6a560f985227b8c941d17a750f2edccb5f9b3a15a2480574654d9be803ad4a14aabcc2f2553c4d272a25fd698a7c42692f03f66b009fb46883c
   languageName: node
   linkType: hard
 
