@@ -1,0 +1,20 @@
+{
+  "name": "LIMITLESS RISE Token List",
+  "logoURI": "https://raw.githubusercontent.com/Maverick-L-369/LIMITLESS-RISE-TokenList/main/logo.png",
+  "keywords": ["meme", "scarcity", "polygon", "viral"],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x4df3c7de6acb90796be5c36eaf9755a7fd252168",
+      "name": "LIMITLESS RISE",
+      "symbol": "LMR",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Maverick-L-369/LIMITLESS-RISE-TokenList/main/logo.png"
+    }
+  ]
+}
