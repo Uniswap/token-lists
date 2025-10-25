@@ -1,0 +1,28 @@
+{
+  "name": "AlienLock Token List",
+  "logoURI": "https://alienlock.xyz/alienlock-icon.png",
+  "keywords": ["alienlock", "web3", "token", "utility"],
+  "tags": {
+    "utility": {
+      "name": "Utility",
+      "description": "AlienLock ecosystem utility token"
+    }
+  },
+  "timestamp": "2025-07-28T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0xedacD21CdEf01A11984D623803E596f02269F785",
+      "name": "AlienLock",
+      "symbol": "ANL",
+      "decimals": 18,
+      "logoURI": "https://alienlock.xyz/alienlock-icon.png",
+      "tags": ["utility"]
+    }
+  ]
+}
