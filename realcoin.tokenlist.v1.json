@@ -1,0 +1,20 @@
+{
+  "name": "REALCoin Official List",
+  "logoURI": "https://raw.githubusercontent.com/REALCoin1/assets-polygon-0xBA9b54E69A66BC56F914Fc4E11d48F85bbae6768-logo/main/logo.png",
+  "timestamp": "2025-09-16T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0xBA9b54E69A66BC56F914Fc4E11d48F85bbae6768",
+      "name": "REALCoin",
+      "symbol": "RealC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/REALCoin1/assets-polygon-0xBA9b54E69A66BC56F914Fc4E11d48F85bbae6768-logo/main/logo.png"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
