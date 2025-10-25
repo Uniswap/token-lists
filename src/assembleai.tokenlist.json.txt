@@ -1,0 +1,25 @@
+{
+  "name": "Assemble AI Token List",
+  "logoURI": "https://raw.githubusercontent.com/AssembleAI-crypto/assemble-tokenlist/main/logo.png",
+  "keywords": ["ASM", "AssembleAI", "Assemble AI", "Assemble protocol", "AssembleProtocol"],
+  "timestamp": "2025-06-26T15:00:00Z",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x2565ae0385659badcada1031db704442e1b69982",
+      "name": "ASSEMBLE",
+      "symbol": "ASM",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/AssembleAI-crypto/assemble-tokenlist/main/logo.png"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x3b53604113B5677291BFc0bc255379E7a796559b",
+      "name": "ASSEMBLE",
+      "symbol": "ASM",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/AssembleAI-crypto/assemble-tokenlist/main/logo.png"
+    }
+  ]
+}
