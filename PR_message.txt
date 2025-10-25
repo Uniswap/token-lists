@@ -1,0 +1,17 @@
+## 📦 Add LORE Protocol ($LORE) Token to Base Token List
+
+This PR adds metadata and logo support for the $LORE token on the Base network:
+
+- **Name**: LORE Protocol
+- **Symbol**: LORE
+- **Decimals**: 18
+- **Network**: Base (chainId: 8453)
+- **Contract Address**: `0x7B50d0e97c9362FF004655d46FD2004fcFB9CBb2`
+- **Logo**: Provided in `/assets/blockchains/base/assets/...`
+
+### Links:
+- Website: [https://x.com/loreprotocoleth](https://x.com/loreprotocoleth)
+- Telegram: [https://t.me/LOREProtocolET](https://t.me/LOREProtocolET)
+- Chart: [https://dexscreener.com/base/0x7B50d0e97c9362FF004655d46FD2004fcFB9CBb2](https://dexscreener.com/base/0x7B50d0e97c9362FF004655d46FD2004fcFB9CBb2)
+
+This listing improves token visibility and enables better UX across DeFi platforms and interfaces using the Uniswap token registry.
