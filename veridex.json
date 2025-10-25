@@ -1,0 +1,10 @@
+{
+  "name": "Veridex",
+  "symbol": "VDX",
+  "address": "0x0c45184F127A5105D195062a57C40422f469f6d5",
+  "chainId": 56,
+  "decimals": 18,
+  "logoURI": "https://raw.githubusercontent.com/veridexcrypto-stack/veridex-assets/refs/heads/main/veridex_assets/blockchains/smartchain/assets/0x0c45184F127A5105D195062a57C40422f469f6d5/logo.png",
+  "website": "https://veridexcrypto.com",
+  "description": "Veridex (VDX) is a Web3 reputation and governance token built on BNB Smart Chain, powering decentralized trust, scoring, and DAO features."
+}
