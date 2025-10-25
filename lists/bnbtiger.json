@@ -1,0 +1,21 @@
+{
+  "name": "BNBTiger Token List",
+  "logoURI": "https://raw.githubusercontent.com/jumaibrahimk6-lang/assets/main/blockchains/smartchain/assets/0xAc68475a88DA0fbAdB73fBF4Cc157EA137dbdC2D/BNBTiger-32x32.svg",
+  "keywords": ["bsc", "bnb", "meme", "tiger"],
+  "timestamp": "2025-09-01T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0xAc68475a88DA0fbAdB73fBF4Cc157EA137dbdC2D",
+      "name": "Bnb Tiger Inu",
+      "symbol": "BNBTiger",
+      "decimals": 3,
+      "logoURI": "https://raw.githubusercontent.com/jumaibrahimk6-lang/assets/main/blockchains/smartchain/assets/0xAc68475a88DA0fbAdB73fBF4Cc157EA137dbdC2D/BNBTiger-32x32.svg"
+    }
+  ]
+}
