@@ -1,0 +1,19 @@
+{
+  "name": "JOKER Token List",
+  "timestamp": "2025-07-16T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 57073,
+      "address": "0xA085E80814D3A208d96E495889BE7B7688629c69",
+      "name": "JOKER",
+      "symbol": "JOKER",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/JOKERxInk/joker-token-list/main/JOKER_512x512.png"
+    }
+  ]
+}
