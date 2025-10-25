@@ -1,0 +1,19 @@
+{
+    "name": "My Token List",
+    "logoURI": "https://raw.githubusercontent.com/boss2514525/token-lists/main/images/usdt-logo.png",
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "tokens": [
+        {
+            "chainId": 1,
+            "address": "0x5e9381Bd369AF3067c12D0baa0A092776c9f70a8",
+            "name": "Tether USDt",
+            "symbol": "USDT",
+            "decimals": 6,
+            "logoURI": "https://raw.githubusercontent.com/boss2514525/token-lists/main/images/usdt-logo.png"
+        }
+    ]
+}
