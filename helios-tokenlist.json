@@ -1,0 +1,29 @@
+{
+  "name": "Helios Universal Token List",
+  "logoURI": "https://heliosphere.heliosvisionplus.com/wp-content/uploads/2025/07/Heli-Coin-25.png",
+  "keywords": ["heliocoin", "ebonycoin", "heliosphere", "helios", "nft", "crypto"],
+  "timestamp": "2025-07-17T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x2A0c1070025391ddb789E69392aB3E9256B0F7d0",
+      "name": "HelioCoin",
+      "symbol": "HELI",
+      "decimals": 18,
+      "logoURI": "https://heliosphere.heliosvisionplus.com/wp-content/uploads/2025/07/Heli-Coin-25.png"
+    },
+    {
+      "chainId": 137,
+      "address": "0xCdc46b56C75977d201989B72B8285F9dFA267B4f",
+      "name": "EbonyCoin",
+      "symbol": "EBNY",
+      "decimals": 18,
+      "logoURI": "https://indigo-rainy-wildfowl-216.mypinata.cloud/ipfs/bafybeidhdriymxsqwkb2fgqbzlhzunc7rxjixo4uk7d2ckegty5w6veyq4"
+    }
+  ]
+}
