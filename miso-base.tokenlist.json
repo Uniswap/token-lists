@@ -1,0 +1,15 @@
+{
+  "name": "MISO Token List",
+  "timestamp": "2025-07-26T00:00:00+00:00",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "tokens": [
+    {
+      "chainId": 8453,
+      "address": "0x633665733F9C7cda9E0433604DC94c06f10356dF",
+      "name": "MISO",
+      "symbol": "MISO",
+      "decimals": 16,
+      "logoURI": "https://i.imgur.com/DTaeaXj.png"
+    }
+  ]
+}
