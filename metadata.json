@@ -1,0 +1,24 @@
+{
+  "name": "NH Token Security Manager",
+  "symbol": "NH",
+  "description": "The NH Token Security Manager is a fully verified smart contract on Polygon Mainnet (https://polygonscan.com/address/0xf930cf4150f7cb1108b30df610f07188fd794398) providing advanced security features: Anti-Money Laundering (AML) protection, TimeLock (24-hour delay for sensitive operations), Anti-bot protection, withdrawal rate limits, and fully verified source code.",
+  "logoURI": "https://logo.png",
+  "external_url": "https://polygonscan.com/address/0xf930cf4150f7cb1108b30df610f07188fd794398",
+  "license": "MIT",
+  "chainId": 137,
+  "decimals": 18,
+  "address": "0xf930cf4150f7cb1108b30df610f07188fd794398",
+  "properties": {
+    "Features": [
+      "Anti-Money Laundering (AML)",
+      "24h Timelock on sensitive operations",
+      "Anti-bot Transaction Protection",
+      "Withdrawal and Sell Rate Limits",
+      "Verified Source Code on Polygonscan"
+    ],
+    "Network": "Polygon Mainnet",
+    "Contract Verification": "https://polygonscan.com/address/0xf930cf4150f7cb1108b30df610f07188fd794398#code",
+    "Author": "Nishant Thaker",
+    "License": "MIT"
+  }
+}

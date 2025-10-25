@@ -1,0 +1,11 @@
+{
+  "name": "NH Token",
+  "symbol": "NH",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "NH is a sustainable trade token backed by wBTC liquidity.",
+  "website": "https://nh15251.blogspot.com/",
+  "explorer": "https://polygonscan.com/token/0xF930Cf4150F7cb1108B30Df610f07188Fd794398",
+  "status": "active",
+  "id": "0xF930Cf4150F7cb1108B30Df610f07188Fd794398"
+}
