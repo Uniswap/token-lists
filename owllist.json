@@ -1,0 +1,21 @@
+{
+  "name": "Macsimotivus Token List",
+  "logoURI": "https://macsimotivus.com/logo_OWLCOIN.svg",
+  "keywords": ["owl", "owlcoin", "macsimotivus", "ethereum"],
+  "timestamp": "2025-10-27T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x0290F97f23A43A9E4b4123255C0bA98Ae8B5bB1C4",
+      "name": "OWL Coin",
+      "symbol": "OWL",
+      "decimals": 18,
+      "logoURI": "https://macsimotivus.com/logo_OWLCOIN.svg"
+    }
+  ]
+}
