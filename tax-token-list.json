@@ -1,0 +1,23 @@
+{
+  "name": "TAX Token List",
+  "logoURI": "https://raw.githubusercontent.com/zaur238/token-lists/main/logo.png",
+  "keywords": ["tax", "finance"],
+  "timestamp": "2025-12-21T00:00:00Z",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x9CF9451aD6BAA8449D8665679011d96619B50A24",
+      "name": "TAX Finance",
+      "symbol": "TAX",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/zaur238/token-lists/main/logo.png",
+      "tags": ["erc-20"],
+      "extensions": {
+        "maxSupply": "120690000",
+        "totalSupply": "120690000",
+        "circulatingSupply": "120690000"
+      }
+    }
+  ],
+  "version": { "major": 1, "minor": 0, "patch": 1 }
+}
