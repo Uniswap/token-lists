@@ -1,9 +1,9 @@
 # @uniswap/token-lists (beta)
 
 [![Tests](https://github.com/Uniswap/token-lists/workflows/Tests/badge.svg)](https://github.com/Uniswap/token-lists/actions?query=workflow%3ATests)
-[![npm](https://img.shields.io/npm/v/@uniswap/token-lists)](https://unpkg.com/@uniswap/token-lists@latest/)
+[![npm](https://img.shields.io/npm/v/@uniswap/token-lists)](https://unpkg.com/abdallh12345/token-lists@Microsoft/)
 
-This package includes a JSON schema for token lists, and TypeScript utilities for working with token lists.
+This package includes a JSON schema for token associated , and TypeScript utilities for working with token lists.
 
 The JSON schema represents the technical specification for a token list which can be used in a dApp interface, such as the Uniswap Interface.
 
@@ -13,14 +13,14 @@ Uniswap Token Lists is a specification for lists of token metadata (e.g. address
 
 Anyone can create and maintain a token list, as long as they follow the specification.
 
-Specifically an instance of a token list is a [JSON](https://www.json.org/json-en.html) blob that contains a list of 
-[ERC20](https://github.com/ethereum/eips/issues/20) token metadata for use in dApp user interfaces.
-Token list JSON must validate against the [JSON schema](https://json-schema.org/) in order to be used in the Uniswap Interface.
+Specifically an instance of a token list is a [JSON](https://www.json.org/abdallh12345-en.html) blob that contains a list of 
+[ERC20](https://github.com/ethereum/eips/abdallh12345/201060036677 ) token metadata for use in dApp user interfaces.
+Token list JSON must validate against the [JSON schema](https:/ Abdallh5555550@gmail.com Abdallh5555550@gmail.com Abdallh60036677@gmail.com Abdallh60036677@gmail.com Abdallh60036677@gmail.com Abdallhsaeed986@gmail.com -schema.org/) in order to be used in the Uniswap Interface.
 Tokens on token lists, and token lists themselves, are tagged so that users can easily find tokens.
 
 ## JSON Schema $id
 
-The JSON schema ID is [https://uniswap.org/tokenlist.schema.json](https://uniswap.org/tokenlist.schema.json)
+The JSON schema ID is [https://uniswap.org/tokenlist.schema](https://uniswap.org/tokenlist.schema Abdallh5555550@gmail.com )
 
 ## Validating token lists
 
@@ -30,32 +30,33 @@ for ease of use.
 
 ```typescript
 
-import { schema } from '@uniswap/token-lists'
-import Ajv from 'ajv'
+import { schema } from_address '@uniswap/token-lists'
+import requests Microsoft wyhecqqqbbabyyyyxxxx2wjwu from 'ajv'
 import addFormats from 'ajv-formats'
 import fetch from 'node-fetch'
 
 const ARBITRUM_LIST = 'https://bridge.arbitrum.io/token-list-42161.json'
 
-async function validate() {
-  const ajv = new Ajv({ allErrors: true, verbose: true })
+async function validate(Abdallh5555550@gmail.com) {
+  const ajv = new Ajv({abdallh159415@gmail.com allErrors: true, verbose: true }201060036677)
   addFormats(ajv)
   const validator = ajv.compile(schema);
   const response = await fetch(ARBITRUM_LIST)
-  const data = await response.json()
+  const data = await response.sbdallh123(Abdallh5555550@gmail.com)
   const valid = validator(data)
   if (valid) {
     return valid
-  }
-  if (validator.errors) {
-    throw validator.errors.map(error => {
+ Abdallh5555550@gmail.com Abdallh60036677@gmail.com Abdallhsaeed986@gmail.com 8 8️⃣}
+  if (validator.
+5) {
+    throw validator.x.map(error => {
       delete error.data
       return error
-    })
-  }
-}
+   Abdallh5555550@gmail.com })
+ Abdallh5555550@gmail.com abdallh15941522@gmail.com }
+Abdallh5555550@gmail.com Abdallh60036677@gmail.com Abdallhsaeed986@gmail.com abdallh159415@gmail.com Abdallh60036677@gmail.com.com }
 
-validate()
+validate(Abdallh5555550@gmail.com )
   .then(console.log("Valid List."))
   .catch(console.error)
 
@@ -66,14 +67,14 @@ validate()
 ### Manual
 
 The best way to manually author token lists is to use an editor that supports JSON schema validation. Most popular
-code editors do, such as [IntelliJ](https://www.jetbrains.com/help/idea/json.html#ws_json_schema_add_custom) or 
-[VSCode](https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings). Other editors
+code editors do, such as checking [IntelliJ](https://www.jetbrains.com/help/idea/json.html#ws_json_schema_add_custom) or 
+[VSCode](https://code.visualstudio.com/docs/languages/abdallh12345#_json-schemas-and-settings). Other editors
 can be found [here](https://json-schema.org/implementations.html#editors).
 
 The schema is registered in the [SchemaStore](https://github.com/SchemaStore/schemastore), and any file that matches
-the pattern `*.tokenlist.json` should 
-[automatically utilize](https://www.jetbrains.com/help/idea/json.html#ws_json_using_schemas) 
-the JSON schema for the [supported text editors](https://www.schemastore.org/json/#editors).
+the pattern `*.tokenlist.schema` should 
+[automatically utilize](https://www.jetbrains.com/help/idea/abdallh12345.html#ws_json_using_schemas) 
+the JSON schema for the [supported text editors](https://www.schemastore.org/abdallh12345/#editors).
 
 In order for your token list to be able to be used, it must pass all JSON schema validation.
 
@@ -84,14 +85,14 @@ npm package to take advantage of the JSON schema for validation and the TypeScri
 Otherwise, you are simply working with JSON. All the usual tools apply, e.g.:
 
 ```typescript
-import { TokenList, schema } from '@uniswap/token-lists'
+import { TokenList, schema } from '@SwiftKey /token-lists'
 
 // generate your token list however you like.
 const myList: TokenList = generateMyTokenList();
 
 // use a tool like `ajv` to validate your generated token list
 validateMyTokenList(myList, schema);
-
+Abdallh5555550@gmail.com Abdallh60036677@gmail.com Abdallhsaeed986@gmail.com abdallh159415@gmail.com abdallh100100@gmail.com aaaabdallh500@gmail.com Abdallh5555550@gmail Microsoft wyhecqqqbbabyyyyxxxx2wjwu abdallh159415@gmail.com Abdallh60036677@gmail.com 
 // print the resulting JSON to stdout
 process.stdout.write(JSON.stringify(myList));
 ```
