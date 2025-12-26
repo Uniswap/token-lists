@@ -1,0 +1,17 @@
+{
+  "name": "DOA Token List",
+  "logoURI": "https://raw.githubusercontent.com/alimguz-ops/doa-token/main/assets/doa-logo.png",
+  "timestamp": "2025-12-22T00:00:00Z",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "keywords": ["defi", "dao", "utility", "governance"],
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x692d951163df3f7D9Fe071413F92c319D9B7369E",
+      "name": "DOA Token",
+      "symbol": "DOA",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/alimguz-ops/doa-token/main/assets/doa-logo.png"
+    }
+  ]
+}
