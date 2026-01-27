@@ -7,7 +7,7 @@
     "patch": 0
   },
   "keywords": ["usdt", "meme", "community", "arbitrum"],
-  "logoURI": "https://raw.githubusercontent.com/recoverymailsmails-hub/USDT.t/main/825.png",
+  "logoURI": "https://raw.githubusercontent.com/recoverymailsmails-hub/USDT.t/main/logo.png",
   "schemaVersion": 1,
   "tokens": [
     {
@@ -16,7 +16,7 @@
       "name": "USDT.t",
       "symbol": "USDT.t",
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/recoverymailsmails-hub/USDT.t/main/825.png"
+      "logoURI": "https://raw.githubusercontent.com/recoverymailsmails-hub/USDT.t/main/logo.png"
     }
   ]
 }
