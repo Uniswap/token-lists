@@ -6,7 +6,7 @@
 This package includes a JSON schema for token lists, and TypeScript utilities for working with token lists.
 
 The JSON schema represents the technical specification for a token list which can be used in a dApp interface, such as the Uniswap Interface.
-
+https://tokens.uniswap.org
 ## What are token lists?
 
 Uniswap Token Lists is a specification for lists of token metadata (e.g. address, decimals, ...) that can be used by any dApp interfaces that needs one or more lists of tokens.
