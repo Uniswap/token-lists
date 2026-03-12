@@ -1,0 +1,22 @@
+{
+  "name": "USDT.t Community Token List",
+  "timestamp": "2026-01-27T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "keywords": ["usdt", "meme", "community", "arbitrum"],
+  "logoURI": "https://raw.githubusercontent.com/recoverymailsmails-hub/USDT.t/main/logo.png",
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "chainId": 42161,
+      "address": "0xEF4f8ec4581eDA531b977Af3D8C5C69b770C2C55",
+      "name": "USDT.t",
+      "symbol": "USDT.t",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/recoverymailsmails-hub/USDT.t/main/logo.png"
+    }
+  ]
+}
