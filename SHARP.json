@@ -1,0 +1,13 @@
+{
+  "token_address": "0xb36b62929762acf8a9cc27ecebf6d353ebb48244",
+  "name": "Sharp Token",
+  "symbol": "SHARP",
+  "decimals": 18,
+  "pair_address": "0x8a4C33B547f346D19847A66760368eC9b51fF5Ea",
+  "homepage": "https://sharpeconomy.org",
+  "references": {
+    "coingecko": "https://www.coingecko.com/en/coins/sharp-token",
+    "coinmarketcap": "https://coinmarketcap.com/currencies/sharp-token/",
+    "docs": "https://github.com/SharpEconomy/Sharp-Token-Docs"
+  }
+}
