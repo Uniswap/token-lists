@@ -1,0 +1,32 @@
+{
+  "name": "GoldenArmor Studio Tokens",
+  "logoURI": "https://raw.githubusercontent.com/Golden-Armor-Studios/GoldenArmorStudioCoin/main/docs/assets/gasc-logo.png",
+  "keywords": [
+    "goldenarmor",
+    "gaming",
+    "gascoin"
+  ],
+  "timestamp": "2025-11-19T00:20:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xfdfca393Ebf5D6E389d5D3A679504a3182deBED9",
+      "name": "GoldenArmorStudioCoin",
+      "symbol": "GASC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Golden-Armor-Studios/GoldenArmorStudioCoin/main/docs/assets/gasc-logo.png",
+      "tags": ["utility", "gaming"],
+      "extensions": {
+        "website": "https://goldenarmorstudio.art/",
+        "github": "https://github.com/Golden-Armor-Studios/GoldenArmorStudioCoin",
+        "organization": "https://github.com/Golden-Armor-Studios",
+        "discord": "https://discord.gg/goldenarmorstudio"
+      }
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
