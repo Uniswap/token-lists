@@ -1,0 +1,12 @@
+{
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x694F7215818DCdf46534d5F4DFA49fAcE13bCf6a",
+      "symbol": "XFED",
+      "name": "#EndTheFed",
+      "decimals": 18,
+      "logoURI": "https://maroon-rear-hedgehog-158.mypinata.cloud/ipfs/bafkreihnxfqldg6vb2hnd55l4ri2kmqtnrzkck356legqbtbnuj2p5rzrq"
+    }
+  ]
+}
