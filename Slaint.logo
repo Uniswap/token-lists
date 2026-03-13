@@ -1,0 +1,20 @@
+{
+  "name": "SlainT",
+  "logoURI": "https://yourdomain.com/logo.png",
+  "keywords": ["SLN", "SlainT", "Crypto", "BSC"],
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x5c047Dbf4D8C70d245732B9fda4653635EBa1858",
+      "name": "SlainT",
+      "symbol": "SLN",
+      "decimals": 18,
+      "logoURI": "https://yourdomain.com/logo.png"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
