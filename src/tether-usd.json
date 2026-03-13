@@ -1,0 +1,14 @@
+{
+  "name": "Tether USD",
+  "logoURI": "https://github.com/thaiwork1029/token-lists/blob/main/logo.png?raw=true",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x3dc2b718bf1c50982546146376d6ee08efb69dfe",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://github.com/thaiwork1029/token-lists/blob/main/logo.png?raw=true"
+    }
+  ]
+}
