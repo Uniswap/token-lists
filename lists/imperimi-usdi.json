@@ -1,0 +1,19 @@
+{
+  "name": "Imperimi Token List",
+  "timestamp": "2024-05-02T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 8453,
+      "address": "0xc4Be3d8Ce8ed547eDc75C32300B6b0A0f8648A89",
+      "name": "USDi by Imperimi",
+      "symbol": "USDi",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Imperimi/usdi-tokenlist/main/usdi.png"
+    }
+  ]
+}
