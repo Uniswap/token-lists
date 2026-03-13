@@ -865,6 +865,14 @@
       "name": "Maker",
       "symbol": "MKR",
       "decimals": 18
+    },  
+    {
+      "chainId": 1,
+      "address": "0x2c36d4F12b3FA18632BE3137F8A54A5bfbf9dBd0",
+      "name": "BlackSmithEther",
+      "symbol": "BSE",
+      "decimals": 18,
+      "logoURI": "https://ipfs.io/ipfs/QmeRbUBHbnHXbhsUxZFRpS2FWRrQSSJebpk3RuuTgxBr8w"
     }
   ]
 }
