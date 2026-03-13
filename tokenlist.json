@@ -1,0 +1,79 @@
+chain id hepsi 56 
+
+{
+  "timestamp": "2025-03-17T12:00:00Z",
+  "name": "Custom Token List",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "keywords": ["crypto", "DeFi", "stablecoin", "governance"],
+  "tokens": [
+    {
+      "name": "Tether USDT",
+      "symbol": "USDTt",
+      "address": "0xc95077d1D76ba0E920554C2CeF6713F4d818571c",
+      "chainId": 56,
+      "decimals": 10,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreibla32inrakmg5aiarljzlp6ioa6w4kfyiaizp3lmobxgjhvzbxxa",
+      "tags": ["stablecoin", "payment"]
+    },
+    {
+      "name": "Tetther USDT",
+      "symbol": "USDT",
+      "address": "0x1aD6903f0FD01c5103E07D15B9D0B8dE7bc48e44",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreiaprnw3mdinubt3nhomjtgcssmi3ncywjtavn5tk6n3fiaj6j5fam",
+      "tags": ["stablecoin", "defi"]
+    },
+    {
+      "name": "Tetheer USDT",
+      "symbol": "USDT",
+      "address": "0xED880BdEC53b5b0c7ca0301Ac5ac858C795e457f",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreifa26um2ml7cbb7uitx3ymmcjjk2gxwyx4unlev4zxdtezeysk6wa",
+      "tags": ["defi", "finance"]
+    },
+    {
+      "name": "TethrerUSDTWrapper",
+      "symbol": "USDTW",
+      "address": "0x02F461f5Ee285E954beBE87F29f4633F41db1c97",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreifpq7z4ty7obk3yhn53eb5dmiyeqcwxqx6b3l7gu2xgyrcwhgqx6e",
+      "tags": ["utility", "smart-contract"]
+    },
+    {
+      "name": "Tetther USD",
+      "symbol": "USDT",
+      "address": "0x6E50Bb913349A43Aad2B79fc91F04D60eCC9b5Cd",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreid2ttxvsqskyi7e35fhs5w3jtsnunarrxhdvagzm7y2jou5tac2nm",
+      "tags": ["stablecoin", "payment"]
+    },
+    {
+      "name": "Tethrer USDT",
+      "symbol": "USDT~",
+      "address": "0x2BDd2c7B20E93fcF986E9EB626f18737B7a5fdF5",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreien4vaaticrxfrhzgaofehks7ebuhnghzb5fxjfowie5cpmlyig7e",
+      "tags": ["governance", "defi"]
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "0x1023fEf203E30671CEA3197b329Ba464211e565A",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreic7afbsqxxmimo2nkjoflgeemruccekixxnzcefylavdgrz7jfxrq",
+      "tags": ["stablecoin", "finance"]
+    }
+  ]
+}
+
+
