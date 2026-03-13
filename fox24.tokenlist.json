@@ -1,0 +1,28 @@
+﻿{
+    "logoURI":  "https://raw.githubusercontent.com/rto-gtc/assets/main/ethereum_assets/0x436C0FE3d449B9f0cfbeB3B72991ff69A22Db4EC/logo.png",
+    "name":  "Fox24 Token List",
+    "timestamp":  "2025-09-20T18:38:58+02:00",
+    "tokens":  [
+                   {
+                       "symbol":  "FOX24",
+                       "description":  "Official Fox24 Token",
+                       "website":  "https://fox24coin.com",
+                       "decimals":  18,
+                       "logoURI":  "https://raw.githubusercontent.com/rto-gtc/assets/main/ethereum_assets/0x436C0FE3d449B9f0cfbeB3B72991ff69A22Db4EC/logo.png",
+                       "name":  "Fox24Coin",
+                       "address":  "0x436C0FE3d449B9f0cfbeB3B72991ff69A22Db4EC",
+                       "chainId":  1,
+                       "explorer":  "https://etherscan.io/token/0x436C0FE3d449B9f0cfbeB3B72991ff69A22Db4EC"
+                   }
+               ],
+    "keywords":  [
+                     "fox24",
+                     "gold",
+                     "erc20"
+                 ],
+    "version":  {
+                    "minor":  0,
+                    "patch":  0,
+                    "major":  1
+                }
+}
