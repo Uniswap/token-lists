@@ -1,0 +1,17 @@
+{
+  "name": "Aurora UNIVERSE List",
+  "logoURI": "https://brown-additional-walrus-851.mypinata.cloud/ipfs/bafybeici3dfrn5dscijhjnmgkqaomnw5qnilx2qyrn4ggbhmr52ydgltiu",
+  "keywords": ["aurora", "AUR"],
+  "timestamp": "2025-08-23T07:00:00-06:00",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x4D850B46F71f50B6FfF21aa8fE46a6136403E6bd",
+      "name": "Aurora",
+      "symbol": "AUR",
+      "decimals": 18,
+      "logoURI": "https://brown-additional-walrus-851.mypinata.cloud/ipfs/bafybeici3dfrn5dscijhjnmgkqaomnw5qnilx2qyrn4ggbhmr52ydgltiu"
+    }
+  ]
+}
