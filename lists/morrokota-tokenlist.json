@@ -1,0 +1,21 @@
+{
+  "name": "MorroKota Token List",
+  "timestamp": "2025-05-07T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "name": "MorroKota",
+      "symbol": "MKT",
+      "address": "0xC5C817d007c0d1aAAB4704aD48A8C07b09A61aD5",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/alejhhazelk/morrokota-assets/main/assets/morrokota/Logo-MKT256x256.png",
+      "website": "https://morrokota.com",
+      "tags": ["community", "utility-token"]
+    }
+  ]
+}
