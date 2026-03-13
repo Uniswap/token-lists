@@ -70,4 +70,15 @@
     "minor": 0,
     "patch": 0
   }
-}
+},
+"tokenMap": {
+  ...
+  "0x94966B292DD32cD3fb82A83e60a56cEB3322D8FE": {
+    "chainId": 137,
+    "address": "0x94966B292DD32cD3fb82A83e60a56cEB3322D8FE",
+    "symbol": "MRT",
+    "name": "Maritime",
+    "decimals": 18,
+    "logoURI": "https://github.com/emirmndc/maritime-token/blob/main/maritime.png?raw=true",
+    "tags": ["maritime"]
+  },
