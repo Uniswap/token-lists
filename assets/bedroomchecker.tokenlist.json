@@ -1,0 +1,22 @@
+{
+  "name": "BedroomChecker Token List",
+  "logoURI": "https://raw.githubusercontent.com/cheaphotelly/token-lists/main/assets/bct.png",
+  "keywords": ["bedroomchecker", "travel", "token"],
+  "timestamp": "2025-06-09T00:00:00Z",
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0xb028e5E76B9E350ee729D5d2f6474536545dBe58",
+      "symbol": "BCT",
+      "name": "BedroomCheckerToken",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/cheaphotelly/token-lists/main/assets/bct.png"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
+
