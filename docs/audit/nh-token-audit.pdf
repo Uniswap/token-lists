@@ -1,0 +1,51 @@
+NH Token contract on Polygone
+## 📄 Extended Description: NH Token  
+**Contract Address**: `0xf930cf4150f7cb1108b30df610f07188fd794398`  
+**Network**: Polygon Mainnet (Chain ID: 137)  
+**Token Type**: ERC-20  
+**Decimals**: 18  
+**Total Supply**: 14,000,000 NH (Immutable)  
+**Deployed**: August 2025  
+**Verified**: ✅ Source code verified on PolygonScan  
+**Aggregator Status**: Metadata and logo submitted via PR [#761](https://github.com/0xPolygon/polygon-token-list/pull/761) to Polygon Token List
+
+---
+
+### 🔹 Project Overview
+NH Token is a decentralized, compliance-ready asset designed for **Web3 commerce**, **institutional trust**, and **aggregator visibility**. Built on Polygon, it powers frictionless transactions, automated liquidity generation, and transparent metadata deployment — all without burn, tax, or honeypot logic.
+
+---
+
+### 🔹 Key Features
+- **Immutable Supply**: Hardcoded 14M NH; no mint/burn after deployment
+- **0.5% Trade Fee**: Auto-added to liquidity pool; no hidden tax
+- **Verified Metadata**: Logo, info.json, and mapped.json published via GitHub Pages
+- **CI/CD Automation**: Self-hosted runner handles metadata updates and audit publishing
+- **Aggregator-Ready**: Structured for CoinGecko, TrustWallet, and De.Fi indexing
+
+---
+
+### 🔹 Security & Audit Commentary
+- ✅ No honeypot flags (confirmed via ApeSpace & De.Fi)
+- ✅ Ownership retained for compliance; renouncement planned post-listing
+- ✅ No proxy, blacklist, or anti-whale logic
+- ✅ Transfer functions unrestricted and gas-optimized
+- 📝 Self-audit published with commentary on all flagged risks
+
+Audit PDF:  
+[📄 NH Token Audit Report](https://nishantthakkeer.github.io/nh-token-assets/docs/audit/nh-token-audit.pdf)
+
+---
+
+### 🔹 Use Cases
+- **Web3 Payments**: Integrated with CoinPayments, NOWPayments, and Telegram checkout bots
+- **DeFi Utility**: Supports staking, NFT commerce, and plugin-based e-commerce logic
+- **Cross-Border Compliance**: KYC-ready for Switzerland and India
+
+---
+
+### 🔹 Roadmap Highlights
+- 🛍️ Partner with Swiss merchants for NH-based checkout
+- 🔄 Enable NH→CHF bridge via Mt. Pelerin & Uniswap
+- 📦 Launch Telegram bot for NH-powered e-commerce
+- 📈 Submit to CoinGecko, TrustWallet, and De.Fi for full indexin
