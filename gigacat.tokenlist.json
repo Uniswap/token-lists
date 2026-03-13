@@ -1,0 +1,19 @@
+{
+  "name": "Gigacat Token List",
+  "timestamp": "2025-09-11T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x195ff12b7d5D515663B41c37a76977A843CaA7BA",
+      "symbol": "GIC",
+      "name": "Gigacat",
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/QvtWcGJX/Wechat-IMG829.jpg"
+    }
+  ]
+}
