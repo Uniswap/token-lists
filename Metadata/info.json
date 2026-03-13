@@ -1,0 +1,9 @@
+{
+  "name": "NH Token",
+  "symbol": "NH",
+  "type": "ERC20",
+  "decimals": 18,
+  "chainId": 137,
+  "address": "0xf930cf4150f7cb1108b30df610f07188fd794398",
+  "logoURI": "https://nishant939.github.io/nh-token/metadata/logo.png"
+}
