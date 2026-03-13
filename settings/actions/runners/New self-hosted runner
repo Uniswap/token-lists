@@ -1,0 +1,11 @@
+
+mkdir actions-runner && cd actions-runner
+
+# Download the runner
+curl -o actions-runner-linux-x64-2.308.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.308.0/actions-runner-linux-x64-2.308.0.tar.gz
+
+# Extract it
+tar xzf ./actions-runner-linux-x64-2.308.0.tar.gz
+
+# Configure it
+./config.sh --url https://github.com/Nishantthakkeer/token-lists --token YOUR_TOKEN_HERE --labels ubuntu-20.04,self-hosted
