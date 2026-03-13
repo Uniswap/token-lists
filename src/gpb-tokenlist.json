@@ -1,0 +1,19 @@
+{
+  "name": "GPB Token List",
+  "timestamp": "2026-03-09T04:25:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 42161,
+      "address": "0xaC3F5F76c1c7dFc040055Aa0Eb95006E31e50aD5",
+      "name": "GPB",
+      "symbol": "GPB",
+      "decimals": 18,
+      "logoURI": "https://GALAXYPUBLICBLOCKCHAINS.github.io/GPB-arb/assets/logo-32.png"
+    }
+  ]
+}
