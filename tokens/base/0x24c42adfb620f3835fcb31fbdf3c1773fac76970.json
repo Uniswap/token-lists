@@ -1,0 +1,12 @@
+{
+  "name": "FX1 Hubs",
+  "symbol": "FX1_HUBS",
+  "description": "FX1 Hubs is a creator economy token for NFT builders and onchain innovators. Built on Base to empower Web3 fashion, art, and socialFi creators.",
+  "decimals": 18,
+  "chainId": 8453,
+  "address": "0x24c42adfb620f3835fcb31fbdf3c1773fac76970",
+  "logoURI": "https://raw.githubusercontent.com/yourusername/aerodrome-assets/main/tokens/base/0x24c42adfb620f3835fcb31fbdf3c1773fac76970/0x24c42adfb620f3835fcb31fbdf3c1773fac76970.png",
+  "website": "https://fx1hubs.short.gy",
+  "twitter": "https://x.com/fx1_hubs",
+  "tags": ["CreatorCoin", "Base", "Web3", "NFT"]
+}
