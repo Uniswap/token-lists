@@ -1,4 +1,16 @@
 {
+  "chainId": 8453,
+  "address": "0xE6277F42E8fb3A03133A7A27C8e5B59858B6d9bA",
+  "name": "RINGS",
+  "symbol": "RIG",
+  "decimals": 18,
+  "logoURI": "https://rings33.pages.dev/logo-ringstoken.png",
+  "tags": [
+    "erc20"
+  ]
+}
+
+{
   "name": "My Token List",
   "logoURI": "ipfs://QmUSNbwUxUYNMvMksKypkgWs8unSm8dX2GjCPBVGZ7GGMr",
   "keywords": [
