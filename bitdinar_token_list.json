@@ -1,0 +1,19 @@
+{
+    "name": "BitDinar Token List",
+    "timestamp": "2025-01-06T00:00:00+00:00",
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "tokens": [
+        {
+            "chainId": 1,
+            "address": "0x76ddbe87afa727ec1946f20dd7beea3c12581c36",
+            "symbol": "BTD",
+            "name": "BitDinar",
+            "decimals": 4,
+            "logoURI": "https://raw.githubusercontent.com/amod92/BitDinar-assets/main/compressed_logo%20(1).png"
+        }
+    ]
+}
