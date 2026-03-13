@@ -1,0 +1,21 @@
+{
+  "name": "TESTON Token List",
+  "logoURI": "https://raw.githubusercontent.com/Testontoken/teston-tokenlist/main/logo.png",
+  "keywords": ["testosterone", "health", "men", "energy"],
+  "timestamp": "2025-07-03T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 8453,
+      "address": "0x3b5e1A8Bc9006FECD9036D062975BF8e043fd55e",
+      "name": "TESTON",
+      "symbol": "TESTON",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Testontoken/teston-tokenlist/main/logo.png"
+    }
+  ]
+}
