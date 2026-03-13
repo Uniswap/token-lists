@@ -1,0 +1,28 @@
+{
+  "name": "KGEN Token List",
+  "timestamp": "2025-09-25T05:15:00Z",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "logoURI": "https://prod-image-bucket.kgen.io/assets/rkgen-tge-logo.png",
+  "keywords": ["kgen", "bep20", "bsc"],
+  "tags": {
+    "official": {
+      "name": "Official",
+      "description": "KGeN is building the verified distribution protocol for AI, Gaming, DeFi and consumer apps. It's built on real users and built to accelrate growth for apps"
+    },
+    "utility": {
+      "name": "Utility",
+      "description": "KGeN is building the verified distribution protocol for AI, Gaming, DeFi and consumer apps. It's built on real users and built to accelrate growth for apps"
+    }
+  },
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0xF3d5b4c34Ed623478cc5141861776E6cf7AE3A1E",
+      "decimals": 8,
+      "name": "KGEN",
+      "symbol": "KGEN",
+      "logoURI": "https://prod-image-bucket.kgen.io/assets/rkgen-tge-logo.png",
+      "tags": ["official", "utility"]
+    }
+  ]
+}
