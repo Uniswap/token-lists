@@ -1,0 +1,17 @@
+{
+    "name": "Pio Gold Coin",
+    "symbol": "PGC",
+    "type": "ERC20",
+    "decimals": 18,
+    "description": "Pio Gold Coin (PGC) is the utility token of the Piogoldcoin ecosystem.",
+    "website": "https://piogoldcoin.com",
+    "explorer": "https://etherscan.io/token/0xD2F85584882e9EC65AB0EeA480a07a1e910531b",
+    "status": "active",
+    "id": "0xD2F85584882e9EC65AB0EeA480a07a1e910531b",
+    "logoURI": "https://github.com/malek7374/piogoldcoin/blob/main/logo.png",
+    "links": [
+        {"name": "twitter", "url": "https://x.com/piogoldcoin"},
+        {"name": "telegram", "url": "https://t.me/piogoldcoin_PGC"}
+    ],
+    "tags": ["defi", "blockchain", "utility", "charity"]
+}
