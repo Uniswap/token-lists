@@ -1,7 +1,0 @@
-{
-  "name": "Tether USD",
-  "symbol": "USDT",
-  "chainId": 1,
-  "decimals": 6,
-  "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreigimdg2b6hgmgnypucvnxu4a4wsvj724z7ggjpfnnpamaabhqd3ce"
-}
