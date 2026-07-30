@@ -62,6 +62,21 @@ describe('#diffTokenLists', () => {
       },
     });
   });
+
+  it('change tags length', () => {
+    expect(
+      diffTokenLists([tokenB, tokenA], [{ ...tokenA, tags: ['hello'] }])
+    ).toEqual({
+      added: [],
+      removed: [tokenB],
+      changed: {
+        1: {
+          '0x0a': ['tags'],
+        },
+      },
+    });
+  });
+
   it('remove tags', () => {
     expect(
       diffTokenLists([tokenB, tokenA], [{ ...tokenA, tags: undefined }])
