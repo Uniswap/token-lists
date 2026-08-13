@@ -1,0 +1,13 @@
+{
+  "name": "Tether USD",
+  "symbol": "USDT",
+  "decimals": 6,
+  "status": "active",
+  "id": "TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh",
+  "type": "TRC20",
+  "logo": "https://ipfs.io/ipfs/QmXoypizSdqS3mP7SjPzU9hM8L1L6S5K7X7C6K3X/logo.png",
+  "explorer": "https://tronscan.io/#/token20/TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh",
+  "website": "https://tether.to",
+  "links": [],
+  "tags": []
+}
