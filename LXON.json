@@ -1,0 +1,17 @@
+{
+  "name": "LXON",
+  "symbol": "LXON",
+  "description": "LXON Settlement Asset",
+  "website": "https://www.lxon.in",
+  "chainId": 724,
+  "tokens": [{
+    "address": "0xAbB6281e51e81c513c7F50D3B1c378CF6a30890c",
+    "name": "LXON Settlement Asset",
+    "symbol": "LXON",
+    "decimals": 6,
+    "extensions": {
+      "logo": "https://www.lxon.in/assets/lxon-logo.png"
+    }
+  }],
+  "yourContractAddress": "0xAbB6281e51e81c513c7F50D3B1c378CF6a30890c"
+}
