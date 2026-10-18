@@ -118,6 +118,17 @@ describe('schema', () => {
     checkSchema(tokenSymbolWithPeriod, true);
   });
 
+  it('token symbols may contain spaces and parentheses', () => {
+    const pancakeSwapLikeList = {
+      ...exampleList,
+      tokens: [
+        { ...exampleList.tokens[0], symbol: '8PAY v2' },
+        { ...exampleList.tokens[0], symbol: 'PROS (old)', address: '0x0000000000000000000000000000000000000002' },
+      ],
+    };
+    checkSchema(pancakeSwapLikeList, true);
+  });
+
   it('cross chain extensions example', () => {
     checkSchema(crossChainExtensions, true);
   });
