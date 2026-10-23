@@ -1,0 +1,19 @@
+{
+  "name": "LifeCoin Token List",
+  "timestamp": "2025-06-13T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x441C24F018E2Ad266b96f264AF98650c990EA4b1",
+      "name": "LifeCoin",
+      "symbol": "LFC",
+      "decimals": 18,
+      "logoURI": "http://databox.longevitydiary.com/lfc-logo.png"
+    }
+  ]
+}
