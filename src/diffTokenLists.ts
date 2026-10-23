@@ -16,7 +16,7 @@ function compareTokenInfoProperty(a: unknown, b: unknown): boolean {
   if (a === b) return true;
   if (typeof a !== typeof b) return false;
   if (Array.isArray(a) && Array.isArray(b)) {
-    return a.every((el, i) => b[i] === el);
+    return a.length === b.length && a.every((el, i) => b[i] === el);
   }
   return false;
 }
