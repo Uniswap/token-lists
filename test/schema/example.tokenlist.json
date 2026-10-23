@@ -16,7 +16,7 @@
       "description": "Tokens that earn interest on compound.finance"
     }
   },
-  "timestamp": "2020-06-12T00:00:00+00:00",
+  "timestamp": "2026-04-23T00:33:53+00:00",
   "tokens": [
     {
       "chainId": 1,
@@ -39,6 +39,14 @@
       "tags": [
         "compound"
       ]
+    },
+    {
+      "chainId": 8453,
+      "address": "0x8f6286e5ad1ee2a89c31f080ad0db4902a84dade",
+      "symbol": "BASE",
+      "name": "Base",
+      "decimals": 18,
+      "logoURI": "https://cdn.brandfetch.io/id6XsSOVVS/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
     }
   ],
   "tokenMap": {
@@ -53,7 +61,7 @@
         "stablecoin"
       ]
     },
-    "1_0x39AA39c021dfbaE8faC545936693aC917d5E7563":  {
+    "1_0x39AA39c021dfbaE8faC545936693aC917d5E7563": {
       "chainId": 1,
       "address": "0x39AA39c021dfbaE8faC545936693aC917d5E7563",
       "symbol": "cUSDC",
@@ -63,11 +71,19 @@
       "tags": [
         "compound"
       ]
+    },
+    "8453_0x8f6286e5ad1ee2a89c31f080ad0db4902a84dade": {
+      "chainId": 8453,
+      "address": "0x8f6286e5ad1ee2a89c31f080ad0db4902a84dade",
+      "symbol": "BASE",
+      "name": "Base",
+      "decimals": 18,
+      "logoURI": "https://cdn.brandfetch.io/id6XsSOVVS/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
     }
-  }, 
+  },
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 0
+    "patch": 1
   }
 }

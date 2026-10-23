@@ -1,10 +1,10 @@
 {
   "name": "Example List",
-  "timestamp": "2020-06-15T12:00:00+00:00",
+  "timestamp": "2026-04-23T00:34:03+00:00",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 0
+    "patch": 1
   },
   "keywords": [
     "uniswap",
@@ -865,6 +865,14 @@
       "name": "Maker",
       "symbol": "MKR",
       "decimals": 18
+    },
+    {
+      "chainId": 8453,
+      "address": "0x8f6286e5ad1ee2a89c31f080ad0db4902a84dade",
+      "symbol": "BASE",
+      "name": "Base",
+      "decimals": 18,
+      "logoURI": "https://cdn.brandfetch.io/id6XsSOVVS/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B"
     }
   ]
 }
