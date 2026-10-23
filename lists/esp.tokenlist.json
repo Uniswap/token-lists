@@ -1,0 +1,29 @@
+{
+  "name": "ESP Token List",
+  "logoURI": "https://salmon-brilliant-sole-520.mypinata.cloud/ipfs/bafkreiduu7zywwwcyqfgkp2a4bb43jikbpxowfxxujns2h5vvsnto6qxz4",
+  "keywords": ["ESP", "espresso"],
+  "timestamp": "2026-02-10T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x031De51F3E8016514Bd0963d0B2AB825A591Db9A",
+      "symbol": "ESP",
+      "name": "Espresso",
+      "decimals": 18,
+      "logoURI": "https://salmon-brilliant-sole-520.mypinata.cloud/ipfs/bafkreiduu7zywwwcyqfgkp2a4bb43jikbpxowfxxujns2h5vvsnto6qxz4"
+    },
+    {
+      "chainId": 42161,
+      "address": "0x3b8db18e69d6686Ad9371A423aFe3Dd1065C94f1",
+      "symbol": "ESP",
+      "name": "Espresso",
+      "decimals": 18,
+      "logoURI": "https://salmon-brilliant-sole-520.mypinata.cloud/ipfs/bafkreiduu7zywwwcyqfgkp2a4bb43jikbpxowfxxujns2h5vvsnto6qxz4"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
