@@ -1,0 +1,28 @@
+{
+  "name": "ExchangeStoz Token List",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "timestamp": "2025-11-27T12:00:00.000Z",
+  "logoURI": "https://amethyst-tropical-hummingbird-414.mypinata.cloud/ipfs/bafkreie72dklbbqnhb7bn7regta3peagrs2bem42vpmy7q5rvzwvaqwqrm/logo.png",
+  "keywords": [
+    "exchange",
+    "dao",
+    "governance",
+    "stoz",
+    "exchangeStoz"
+  ],
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xb74dCc3ee89a19741dCdeafF3F687Fd708c8c580",
+      "name": "ExchangeStozDAO",
+      "symbol": "STOZ",
+      "decimals": 18,
+      "logoURI": "https://amethyst-tropical-hummingbird-414.mypinata.cloud/ipfs/bafkreie72dklbbqnhb7bn7regta3peagrs2bem42vpmy7q5rvzwvaqwqrm/logo.png"
+    }
+  ]
+}
+
