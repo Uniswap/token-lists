@@ -1,0 +1,27 @@
+{
+  "name": "LinkPay Token List",
+  "timestamp": "2025-11-08T14:51:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreif3iryy3ix3heluyrbzvjrbwheu62bnytbht4wecpzjw7iipkbi6m",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x2001A3A24f67cF61BFDD3e13CB75cB3250F1C296",
+      "name": "LinkPay",
+      "symbol": "LP",
+      "decimals": 18,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreif3iryy3ix3heluyrbzvjrbwheu62bnytbht4wecpzjw7iipkbi6m",
+      "website": "https://www.link-pay.io/"
+    }
+  ],
+  "keywords": [
+    "linkpay",
+    "lp",
+    "token"
+  ]
+}
