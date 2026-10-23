@@ -1,0 +1,13 @@
+{
+  "name": "NH Token List",
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0xF930Cf4150F7cb1108B30Df610f07188Fd794398",
+      "symbol": "NH",
+      "name": "NH Token",
+      "decimals": 18,
+      "logoURI": "https://github.com/yourusername/my-nh-tokenlist/blob/main/nh-logo.png?raw=true"
+    }
+  ]
+}
