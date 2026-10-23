@@ -1,0 +1,21 @@
+{
+  "name": "Foodye Token List",
+  "timestamp": "2025-05-26T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 8453,
+      "address": "0x289B9Fc2A3F19faF7260905d0b15e1c90e8A462c",
+      "name": "Foodye Coin",
+      "symbol": "FOODY",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/FoodyePay/foodyepay-dapp/main/public/foody-coin.png"
+    }
+  ],
+  "logoURI": "https://raw.githubusercontent.com/FoodyePay/foodyepay-dapp/main/public/foody-coin.png",
+  "keywords": ["foodye", "restaurant", "payment", "foodyepay"]
+}
