@@ -1,0 +1,12 @@
+{
+  "name": "FX1 Digital Hubs",
+  "symbol": "FDH",
+  "description": "FX1 Digital Hubs styles the blockchain with surreal NFT fashion and onchain creativity — a cultural token empowering builders, artists, and collectors on Base.",
+  "decimals": 18,
+  "chainId": 8453,
+  "address": "0x1f85705d939bb6fa1aebe99d7105adcee75ce380",
+  "logoURI": "https://raw.githubusercontent.com/yourusername/aerodrome-assets/main/tokens/base/0x1f85705d939bb6fa1aebe99d7105adcee75ce380/0x1f85705d939bb6fa1aebe99d7105adcee75ce380.png",
+  "website": "https://fx1hubs.short.gy",
+  "twitter": "https://x.com/fx1_hubs",
+  "tags": ["NFT", "Fashion", "Base", "CreatorCoin"]
+}
