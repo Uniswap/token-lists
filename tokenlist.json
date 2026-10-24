@@ -1,0 +1,27 @@
+{
+  "name": "LORE Token List",
+  "logoURI": "https://x.com/loreprotocoleth/logo.png",
+  "keywords": [
+    "lore",
+    "gaming",
+    "nft",
+    "ai"
+  ],
+  "timestamp": "2025-07-13T18:15:33.338887Z",
+  "tokens": [
+    {
+      "name": "LORE Protocol",
+      "symbol": "LORE",
+      "address": "0x7B50d0e97c9362FF004655d46FD2004fcFB9CBb2",
+      "chainId": 8453,
+      "decimals": 18,
+      "logoURI": "ipfs://QmTokenLogoPlaceholder",
+      "website": "https://x.com/loreprotocoleth"
+    }
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
