@@ -1,0 +1,19 @@
+{
+  "name": "XAITESLA Token List",
+  "timestamp": "2025-06-10T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x80Af9BF6E42f6e58AcbbC199D198A62F03561956",
+      "name": "XAITESLA",
+      "symbol": "XTSLA",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Lush84/xtsla-token-assets/main/logo.png"
+    }
+  ]
+}
