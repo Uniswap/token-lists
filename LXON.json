@@ -1,0 +1,138 @@
+{
+  "name": "LXON Network Token List",
+  "timestamp": "2026-11-14T09:43:08Z",
+  "version": {
+    "major": 4,
+    "minor": 0,
+    "patch": 0
+  },
+  "logoURI": "https://www.lxon.in/assets/lxon-mark-192.png",
+  "keywords": [
+    "lxon",
+    "wlxon",
+    "bridged",
+    "defi",
+    "settlement",
+    "polygon",
+    "metadata verified"
+  ],
+  "tags": {
+    "settlement": {
+      "name": "Settlement Asset",
+      "description": "Native ERC20 token of LXON chain 724"
+    },
+    "wrapped": {
+      "name": "Wrapped Token",
+      "description": "1 to 1 wrapper. Redeemable through its own contract for the underlying token"
+    },
+    "bridged": {
+      "name": "Bridged Asset",
+      "description": "Minted on Polygon 137 by the LXON attested bridge against LXON locked on chain 724. Read the coverage in the backing extension before relying on it"
+    },
+    "defi": {
+      "name": "DeFi",
+      "description": "Has an automated market maker pair on its chain. Depth and trade count are in the price feed, not asserted here"
+    },
+    "gas": {
+      "name": "Gas Asset",
+      "description": "Wrapped form of the native gas token of chain 724"
+    }
+  },
+  "tokens": [
+    {
+      "chainId": 724,
+      "address": "0x57b875ab86a40D79A1c35e44aa22008dfD049dc9",
+      "name": "LXON",
+      "symbol": "LXON",
+      "decimals": 18,
+      "logoURI": "https://www.lxon.in/assets/lxon-mark-192.png",
+      "tags": [
+        "settlement",
+        "defi"
+      ],
+      "extensions": {
+        "role": "Canonical ERC20 of chain 724",
+        "wrappedForm": {
+          "chainId": 724,
+          "address": "0x4891fA54AD4c57a160FB56Be1382cDc5512d4Db1"
+        },
+        "totalSupplyWei": "4071052000001000000000000",
+        "readAtBlock": "0x2e983",
+        "marketStatus": "No funded market. Both pairs 0 and 0",
+        "metadataVerifiedFromChain": "2026-11-14"
+      }
+    },
+    {
+      "chainId": 724,
+      "address": "0x4891fA54AD4c57a160FB56Be1382cDc5512d4Db1",
+      "name": "LXON Wrapped",
+      "symbol": "wLXON",
+      "decimals": 18,
+      "logoURI": "https://www.lxon.in/assets/lxon-mark-192.png",
+      "tags": [
+        "wrapped",
+        "defi"
+      ],
+      "extensions": {
+        "role": "1 to 1 wrapper of LXON on chain 724",
+        "underlying": {
+          "chainId": 724,
+          "address": "0x57b875ab86a40D79A1c35e44aa22008dfD049dc9"
+        },
+        "totalSupplyWei": "0",
+        "readAtBlock": "0x2e983",
+        "metadataVerifiedFromChain": "2026-11-14"
+      }
+    },
+    {
+      "chainId": 724,
+      "address": "0x189dE8AA752eBdD5845E98eFaF6088562a12e2AB",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "decimals": 18,
+      "tags": [
+        "gas",
+        "wrapped",
+        "defi"
+      ]
+    },
+    {
+      "chainId": 137,
+      "address": "0x7A3c0C34f157EfDD3E4913c5224C15E645469093",
+      "name": "Wrapped LXON",
+      "symbol": "wLXON",
+      "decimals": 18,
+      "logoURI": "https://www.lxon.in/assets/lxon-mark-192.png",
+      "tags": [
+        "bridged",
+        "wrapped"
+      ],
+      "extensions": {
+        "role": "Bridged wLXON on Polygon 137",
+        "bridgedFrom": {
+          "chainId": 724,
+          "address": "0x57b875ab86a40D79A1c35e44aa22008dfD049dc9"
+        },
+        "wrapperOnSourceChain": {
+          "chainId": 724,
+          "address": "0x4891fA54AD4c57a160FB56Be1382cDc5512d4Db1"
+        },
+        "duplicateNameOnSameChain": {
+          "address": "0xD69fB341F35cadE285331797D7d35c5613D7Dfbe",
+          "name": "Wrapped LXON",
+          "symbol": "wLXON",
+          "status": "Same name and symbol. Not this token"
+        },
+        "backing": {
+          "escrowedLxonOn724Bridge": "0",
+          "coveragePercent": "0.0",
+          "why": "724 restarted 2026-11-03. Escrow lost"
+        },
+        "totalSupplyWei": "31052000000000000000000",
+        "readAtBlock": "0x5cc9ac9",
+        "priceFeed": "https://www.lxon.in/swap/price.json",
+        "metadataVerifiedFromChain": "2026-11-14"
+      }
+    }
+  ]
+}
