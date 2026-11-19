@@ -23,11 +23,11 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
-    "postbuild": "cp src/tokenlist.schema.json dist/tokenlist.schema.json",
+    "build": "tsdx build && cp src/tokenlist.schema.json dist/tokenlist.schema.json",
     "test": "tsdx test",
     "lint": "tsdx lint src test",
-    "prepublishOnly": "yarn test && yarn build"
+    "prepack": "yarn build",
+    "prepublishOnly": "yarn test"
   },
   "publishConfig": {
     "access": "public"
